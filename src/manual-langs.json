@@ -1,0 +1,9 @@
+{
+    "languages": [
+        {
+            "displayName": "简体中文",
+            "code": "zh_CN",
+            "isDefault": true
+        }
+    ]
+}
