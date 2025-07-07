@@ -12,5 +12,15 @@
             "text": "安装",
             "path": "installation.md"
         }]
+    }, {
+        "text": "基础概念",
+        "path": "concepts",
+        "items": [{
+            "text": "概述",
+            "isIndex": true
+        },{
+            "text": "Avalonia 介绍",
+            "path": "what-is-avalonia.md"
+        }]
     }]
 }
