@@ -21,6 +21,12 @@
         },{
             "text": "Avalonia 介绍",
             "path": "what-is-avalonia.md"
+        },{
+            "text": "Ant Design 介绍",
+            "path": "what-is-antdesign.md"
+        },{
+            "text": "支持的平台",
+            "path": "supported-platforms.md"
         }]
     }]
 }
