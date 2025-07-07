@@ -8,3 +8,20 @@ Everyone is welcome to help improve the documentation. To contribute to the Atom
 
 ## Thanks
 Thank you for all your contributions and efforts to improve the AtomUI documentation. Thank you for being a member of our AtomUI/Avalonia community and building a useful cross-platform desktop software control library together.
+
+## Community
+
+<div align="center">
+    <table>
+      <tr>
+        <th>Wechat Press</th>
+        <th>Wechat Group</th>
+        <th>QQ Group</th>
+      </tr>
+      <tr>
+        <td><img src="resources/images/qinware-wechatpress.png" width="300"/> </td>
+        <td><img src="resources/images/atomui-wechat.png" width="300"/></td>
+        <td><img src="resources/images/atomui-qq.png" width="300"/></td>
+      </tr>
+    </table>
+</div>
