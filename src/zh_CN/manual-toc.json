@@ -65,8 +65,16 @@
                     "isIndex": true
                 },
                 {
-                    "text": "自定义开发 AtomUI 控件",
+                    "text": "自定义主题",
+                    "path": "create-custom.md"
+                },
+                {
+                    "text": "自定义 AtomUI 控件",
                     "path": "create-custom-atomui-control.md"
+                },
+                {
+                    "text": "创建自己的 Icon 包",
+                    "path": "create-custom-icon-package.md"
                 },
                 {
                     "text": "参与贡献，共创 AtomUI OSS",
