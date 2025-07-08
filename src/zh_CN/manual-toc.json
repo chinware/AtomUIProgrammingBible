@@ -29,6 +29,12 @@
                     },{
                         "text": "开发环境准备",
                         "path": "prepare-environment.md"
+                    },{
+                        "text": "创建项目结构",
+                        "path": "create-project.md"
+                    },{
+                        "text": "添加 AtomUI 控件",
+                        "path": "add-atomui-controls.md"
                     }]
                 }
             ]
