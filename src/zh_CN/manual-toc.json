@@ -26,6 +26,9 @@
                     "items": [{
                         "text": "概要",
                         "isIndex": true
+                    },{
+                        "text": "开发环境准备",
+                        "path": "prepare-environment.md"
                     }]
                 }
             ]
