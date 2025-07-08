@@ -9,7 +9,7 @@ Code。
 
 ### .NET 版本
 
-AtomUI 目前将最低的版本提升到 .NET 8，目前滚动的版本支持为 .NET 8 和 .NET 9，请确认您机器上的 .NET SDK 版本信息。Windows/Mac/Linux均可以通过dotnet --version命令来确认.NET版本。
+AtomUI 目前将最低的版本提升到 .NET 8，目前滚动的版本支持为 .NET 8 和 .NET 9，请确认您机器上的 .NET SDK 版本信息。Windows/Mac/Linux 均可以通过 dotnet --version 命令来确认.NET版本。
 
 ### AtomUI 与 Avalonia 版本说明
 
@@ -26,42 +26,41 @@ AtomUI 目前将最低的版本提升到 .NET 8，目前滚动的版本支持为
 
 ## Windows系统
 
-优先推荐Windows 11，如果是Windows 10理论上也没有任何问题。
+优先推荐 Windows 11，如果是 Windows 10 理论上也没有任何问题。
 
-1、安装最新版PowerShell：打开链接 https://aka.ms/powershell-release?tag=stable ，找到相应的msi安装包，下载安装即可
+1、安装最新版 PowerShell：打开链接 https://aka.ms/powershell-release?tag=stable ，找到相应的 msi 安装包，下载安装即可
 
-2、安装MSYS2：打开链接 https://www.msys2.org/ ，下载安装。小提示：MSYS2安装过程中可能下载基础软件的流程，Installing读条时间会稍微长一些，请耐心等待即可。
-安装完毕后，在Windows的开始菜单中可以看到很多不同版本的MSYS2，我们只需要留意其中的MSYS2 CLANG64版本即可
+2、安装 MSYS2：打开链接 https://www.msys2.org/ ，下载安装。小提示：MSYS2 安装过程中可能下载基础软件的流程，Installing 读条时间会稍微长一些，请耐心等待即可。
+安装完毕后，在 Windows 的开始菜单中可以看到很多不同版本的 MSYS2，我们只需要留意其中的 MSYS2 CLANG64 版本即可
 
 ![](./images/msys2-clang64.png)
 
-3、安装clang：打开链接 https://packages.msys2.org/search ，首先在Search in的下拉菜单中选择“Packages”，其次在搜索框中输入clang，搜索即可。结果如下图：
+3、安装 clang：打开链接 https://packages.msys2.org/search ，首先在 Search in 的下拉菜单中选择“ Packages ”，其次在搜索框中输入 clang，搜索即可。结果如下图：
 
 ![Search clang](./images/search-clang.png)
 
-注意在搜索结果中，一定要选对平台。对于我个人而言，选择图中x86 64位版本即可，点击进入详情页面，找到下图：
+注意在搜索结果中，一定要选对平台。对于我个人而言，选择图中 x86 64 位版本即可，点击进入详情页面，找到下图：
 
 ![Clang command](./images/clang-install-command.png)
 
-将Installation中的pacman安装命令复制一下，打开第3步中的MSYS2 CLANG64终端，粘贴进去后回车执行安装即可。
+将 Installation 中的 pacman 安装命令复制一下，打开第3步中的 MSYS2 CLANG64 终端，粘贴进去后回车执行安装即可。
 
-4、安装xmake：首先在Search in的下拉菜单中选择“Base Packages”，其次在搜索框中输入xmake，搜索即可。结果如下图：
+4、安装 xmake：首先在 Search in 的下拉菜单中选择“ Base Packages ”，其次在搜索框中输入 xmake，搜索即可。结果如下图：
 
 ![Search xmake](./images/search-xmake.png)
 
-点击进去详情页后，找到mingw-w64-clang-x86_64-xmake 3.0以及3.0以上的版本（即与clang对应的版本）后点击进入详情页，和第3步一样，将Installation中的
-pacman安装命令复制到MSYS2 CLANG64终端后，回车执行安装即可。
+点击进去详情页后，找到 mingw-w64-clang-x86_64-xmake 3.0以及3.0以上的版本（即与 clang 对应的版本）后点击进入详情页，和第3步一样，将 Installation 中的
+pacman 安装命令复制到 MSYS2 CLANG64 终端后，回车执行安装即可。
 
-5、配置系统环境变量：找到Windows系统配置环境变量的管理窗口，找到Path环境变量（至于是用户级Path还是系统级Path，可自行选择），双击
-修改Path系统变量。在打开的新窗口中找到第2步中MSYS2的安装目录，再进一步找到clang64目录，再进一步选择bin目录，点击确定后添加到Path
-环境变量中。
+5、配置系统环境变量：找到 Windows 系统配置环境变量的管理窗口，找到Path环境变量（至于是用户级 Path 还是系统级 Path，可自行选择），双击
+修改 Path 系统变量。在打开的新窗口中找到第2步中 MSYS2 的安装目录，再进一步找到 clang64 目录，再进一步选择 bin 目录，点击确定后添加到 Path 环境变量中。
 
-6、fork && clone项目：打开链接 https://github.com/chinware/AtomUI.ControlGallery ，执行fork操作，将fork后的项目clone到本地；打开链接 https://github.com/chinware/AtomUI ，执行fork操作，将fork后的项目clone到本地。
-打开AtomUI.ControlGallery项目所在的目录，找到.gitmodules文件并打开，将其中的url后的值修改为“AtomUI的fork git地址”（就是将AtomUI fork操作后的git地址）。
+6、fork && clone项目：打开链接 https://github.com/chinware/AtomUI.ControlGallery ，执行 fork 操作，将 fork 后的项目 clone 到本地；打开链接 https://github.com/chinware/AtomUI ，执行fork操作，将fork后的项目clone到本地。
+打开 AtomUI.ControlGallery 项目所在的目录，找到.gitmodules文件并打开，将其中的url后的值修改为“ AtomUI 的 fork git 地址”（就是将 AtomUI fork 操作后的 git 地址）。
 
-在终端窗口中打开AtomUI.ControlGallery项目所在的目录，执行git submodule update --init --recursive命令，将AtomUI.ControlGallery的子模块AtomUI从github上拉到本地。关于git的submodule知识，自行搜索学习。
+在终端窗口中打开 AtomUI.ControlGallery 项目所在的目录，执行git submodule update --init --recursive命令，将 AtomUI.ControlGallery 的子模块 AtomUI 从 github 上拉到本地。关于 git 的 submodule 知识，自行搜索学习。
 
-7、运行与开发：使用Rider或Visual Studio等IDE打开AtomUI.ControlGallery项目，可以尝试Run运行查看AtomUI.ControllGalley的最终效果；打开packages/AtomUI目录，可以对AtomUI项目源码进行修改，修改后可以再次Run运行AtomUI.ControlGallery
+7、运行与开发：使用 Rider 或 Visual Studio 等 IDE 打开 AtomUI.ControlGallery 项目，可以尝试Run运行查看 AtomUI.ControllGalley 的最终效果；打开 packages/AtomUI 目录，可以对 AtomUI 项目源码进行修改，修改后可以再次 Run 运行 AtomUI.ControlGallery
 项目查看修改
 
 ## Linux系统
