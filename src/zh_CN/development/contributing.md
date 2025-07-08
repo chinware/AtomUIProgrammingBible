@@ -69,6 +69,83 @@ git submodule update --init --recursive
 ```
 
 7、运行与开发：使用 Rider 或 Visual Studio 等 IDE 打开 AtomUI.ControlGallery 项目，可以尝试Run运行查看 AtomUI.ControllGalley 的最终效果；打开 packages/AtomUI 目录，可以对 AtomUI 项目源码进行修改，修改后可以再次 Run 运行 AtomUI.ControlGallery
-项目查看修改
+项目查看修改。注意运行的项目要选择 Desktop，如下图：
+
+![Run desktop project](./images/run-desktop-project.png)
 
 ## Linux系统
+
+1、安装最新版 PowerShell：打开链接 https://aka.ms/powershell-release?tag=stable ，找到相应的 Linux 发行版的安装包即可。一般说来，Debian 系的发行版选择 deb 后缀；Redhat 系选择 rpm 后缀即可。除此之外，注意系统是32位架构还是64位架构。
+
+如果是 deb 包，安装命令如下：
+
+```bash
+// sudo前缀是假设安装需要sudo权限；如果不需要sudo权限，直接去掉sudo即可
+sudo dpkg -i 名字.deb
+```
+
+如果是 rpm 包，安装命令如下：
+
+```bash
+sudo dnf install 名字.rpm
+```
+
+2、安装 xmake：这里同样需要安装3.0以及3.0以上版本。无论你的 Linux 为哪个发行版，均可以通过如下 xmake 官方推荐的方式安装
+
+```bash
+curl -fsSL https://xmake.io/shget.text | bash
+```
+
+这个命令会将 xmake 安装至 ~/.local/bin/xmake 这个路径中，然后我们通过如下命令将上述路径添加到环境变量中，以便于在命令行中随时使用。
+
+```bash
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+然后可以通过如下命令确认一下是否安装成功以及版本号。
+
+```bash
+xmake --version
+```
+
+3、安装 clang：在 Debian 系发行版中，通过如下命令快速安装
+
+```bash
+sudo apt install clang
+```
+
+4、安装基础依赖库：在 Debian 系发行版中，通过如下命令安装 libxcb 与 xcb-shape 库
+
+```bash
+sudo apt install libxcb1-dev
+sudo apt install libxcb-shape0-dev
+```
+
+在 Redhat 系发行版中，通过如下命令安装
+
+```bash
+sudo yum install libxcb-devel xcb-util-devel
+```
+
+5、编译依赖库：打开 AtomUI.ControlGallery 项目所在目录，切换至 packages/AtomUI/nativelibs 目录下，执行下面命令
+
+```bash
+xmake config --toolchain=clang
+```
+
+以上命令执行后，可能会有一些额外的依赖需要安装，此时输入y回车确认即可，如果一切顺利的话，最终如下图
+
+![Xmake config](./images/xmake-config.png)
+
+config 完成后，开始执行编译
+
+```bash
+xmake build
+```
+
+成功如下图
+
+![Xmake build](./images/xmake-build.png)
+
+6、参考 Windows 系统中的第7步即可
