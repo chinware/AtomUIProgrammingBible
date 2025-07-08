@@ -1,32 +1,70 @@
 {
-    "items": [{
-        "text": "AtomUI 编程参考手册",
-        "isIndex": true
-    }, {
-        "text": "快速入门",
-        "path": "get-started",
-        "items": [{
-            "text": "概要",
+    "items": [
+        {
+            "text": "AtomUI 编程参考手册",
             "isIndex": true
-        },{
-            "text": "安装",
-            "path": "installation.md"
-        }]
-    }, {
-        "text": "基础概念",
-        "path": "concepts",
-        "items": [{
-            "text": "概述",
-            "isIndex": true
-        },{
-            "text": "Avalonia 介绍",
-            "path": "what-is-avalonia.md"
-        },{
-            "text": "Ant Design 介绍",
-            "path": "what-is-antdesign.md"
-        },{
-            "text": "支持的平台",
-            "path": "supported-platforms.md"
-        }]
-    }]
+        },
+        {
+            "text": "快速入门",
+            "path": "get-started",
+            "items": [
+                {
+                    "text": "概要",
+                    "isIndex": true
+                },
+                {
+                    "text": "AtomUI Gallery 控件库体验",
+                    "path": "atomui-gallery.md"
+                },
+                {
+                    "text": "安装",
+                    "path": "installation.md"
+                }
+            ]
+        },
+        {
+            "text": "基础概念",
+            "path": "concepts",
+            "items": [
+                {
+                    "text": "概述",
+                    "isIndex": true
+                },
+                {
+                    "text": "Avalonia 介绍",
+                    "path": "what-is-avalonia.md"
+                },
+                {
+                    "text": "Ant Design 介绍",
+                    "path": "what-is-antdesign.md"
+                },
+                {
+                    "text": "支持的平台",
+                    "path": "supported-platforms.md"
+                },
+                {
+                    "text": "为什么选择 AtomUI",
+                    "path": "why-atomui.md"
+                }
+            ]
+        },
+        {
+            "text": "开发",
+            "path": "development",
+            "items": [
+                {
+                    "text": "概述",
+                    "isIndex": true
+                },
+                {
+                    "text": "自定义开发 AtomUI 控件",
+                    "path": "create-custom-atomui-control.md"
+                },
+                {
+                    "text": "参与贡献，共创 AtomUI OSS",
+                    "path": "contributing.md"
+                }
+            ]
+        }
+    ]
 }
