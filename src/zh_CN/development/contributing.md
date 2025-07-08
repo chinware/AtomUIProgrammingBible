@@ -9,7 +9,11 @@ Code。
 
 ### .NET 版本
 
-AtomUI 目前将最低的版本提升到 .NET 8，目前滚动的版本支持为 .NET 8 和 .NET 9，请确认您机器上的 .NET SDK 版本信息。Windows/Mac/Linux 均可以通过 dotnet --version 命令来确认.NET版本。
+AtomUI 目前将最低的版本提升到 .NET 8，目前滚动的版本支持为 .NET 8 和 .NET 9，请确认您机器上的 .NET SDK 版本信息。Windows/Mac/Linux 均可以通过下面的命令来确认.NET版本。
+
+```bash
+dotnet --version
+```
 
 ### AtomUI 与 Avalonia 版本说明
 
@@ -58,7 +62,11 @@ pacman 安装命令复制到 MSYS2 CLANG64 终端后，回车执行安装即可�
 6、fork && clone项目：打开链接 https://github.com/chinware/AtomUI.ControlGallery ，执行 fork 操作，将 fork 后的项目 clone 到本地；打开链接 https://github.com/chinware/AtomUI ，执行fork操作，将fork后的项目clone到本地。
 打开 AtomUI.ControlGallery 项目所在的目录，找到.gitmodules文件并打开，将其中的url后的值修改为“ AtomUI 的 fork git 地址”（就是将 AtomUI fork 操作后的 git 地址）。
 
-在终端窗口中打开 AtomUI.ControlGallery 项目所在的目录，执行git submodule update --init --recursive命令，将 AtomUI.ControlGallery 的子模块 AtomUI 从 github 上拉到本地。关于 git 的 submodule 知识，自行搜索学习。
+在终端窗口中打开 AtomUI.ControlGallery 项目所在的目录，执行下面的命令，将 AtomUI.ControlGallery 的子模块 AtomUI 从 github 上拉到本地。关于 git 的 submodule 知识，自行搜索学习。
+
+```bash
+git submodule update --init --recursive
+```
 
 7、运行与开发：使用 Rider 或 Visual Studio 等 IDE 打开 AtomUI.ControlGallery 项目，可以尝试Run运行查看 AtomUI.ControllGalley 的最终效果；打开 packages/AtomUI 目录，可以对 AtomUI 项目源码进行修改，修改后可以再次 Run 运行 AtomUI.ControlGallery
 项目查看修改
