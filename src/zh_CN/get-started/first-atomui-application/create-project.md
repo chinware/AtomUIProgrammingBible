@@ -11,11 +11,22 @@
 
 2. 在侧边栏中，向下滚动并选择 “Avalonia .NET App 应用”
 
-![create sln rider](images/create-sln-rider.png)
+
+<p align="center">
+    <img src="images/create-sln-rider.png" width="800"/>
+</p>
 
 3. 在解决方案名称字段中输入 `AtomUIProgressApp`
 4. 点击 Create，创建项目
 
 该模板将创建一个新的解决方案和项目，文件夹结构如下图：
 
-![sln structure](images/sln-structure.png)
+<p align="center">
+    <img src="images/sln-structure.png" width="400"/>
+</p>
+
+点击运行，rider 会进行编译，成功之后您就能看到应用的默认窗体了
+
+<p align="center">
+    <img src="images/default-app-win.png" width="800"/>
+</p>
