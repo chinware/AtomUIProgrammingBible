@@ -65,8 +65,14 @@
                     "isIndex": true
                 },
                 {
-                    "text": "自定义主题",
-                    "path": "create-custom.md"
+                    "text": "主题系统",
+                    "items": [{
+                        "text": "概述",
+                        "isIndex": true
+                    },{
+                        "text": "自定义主题",
+                        "path": "create-custom.md"
+                    }]
                 },
                 {
                     "text": "自定义 AtomUI 控件",
