@@ -19,6 +19,14 @@
                 {
                     "text": "安装",
                     "path": "installation.md"
+                },
+                {
+                    "text": "开发第一个 AtomUI 应用",
+                    "path": "first-atomui-application",
+                    "items": [{
+                        "text": "概要",
+                        "isIndex": true
+                    }]
                 }
             ]
         },
