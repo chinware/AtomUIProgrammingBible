@@ -58,6 +58,10 @@ dotnet --version
 5、配置系统环境变量：找到 `Windows` 系统配置环境变量的管理窗口，找到 `Path` 环境变量（至于是用户级 `Path` 还是系统级 `Path`，可自行选择），双击
 修改 `Path` 系统变量。在打开的新窗口中找到第2步中 `MSYS2` 的安装目录，再进一步找到 `clang64` 目录，再进一步选择 `bin` 目录，点击确定后添加到 `Path` 环境变量中。
 
+![Path vars](./images/path-var.png)
+
+![Add new var to path](./images/add-new-path.png)
+
 6、fork && clone 项目：打开链接 https://github.com/chinware/AtomUI.ControlGallery ，执行 fork 操作，将 fork 后的项目 clone 到本地；打开链接 https://github.com/chinware/AtomUI ，执行 fork 操作，将 fork 后的项目 clone 到本地。
 打开 `AtomUI.ControlGallery` 项目所在的目录，找到 `.gitmodules` 文件并打开，将其中的url后的值修改为 **`AtomUI` 的 fork git 地址** （就是将 `AtomUI` fork 操作后的 git 地址）。
 
