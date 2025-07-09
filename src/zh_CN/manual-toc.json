@@ -1,7 +1,7 @@
 {
     "items": [
         {
-            "text": "AtomUI 编程参考手册",
+            "text": "概述",
             "isIndex": true
         },
         {
@@ -9,7 +9,7 @@
             "path": "get-started",
             "items": [
                 {
-                    "text": "概要",
+                    "text": "概述",
                     "isIndex": true
                 },
                 {
@@ -24,7 +24,7 @@
                     "text": "开发第一个 AtomUI 应用",
                     "path": "first-atomui-application",
                     "items": [{
-                        "text": "概要",
+                        "text": "概述",
                         "isIndex": true
                     },{
                         "text": "开发环境准备",

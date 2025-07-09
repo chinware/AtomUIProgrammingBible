@@ -1,5 +1,3 @@
-# AtomUI Gallery 控件库程序
-
 为了大家快速体验 AtomUI OSS 里面的控件，我们在发布 AtomUI OSS 新版本的时候会一起发布一个对应版本的 AtomUI Gallery 程序。目前 AtomUI Gallery 支持在 Windows、macOS 和 Linux (Ubuntu) 上进行体验。
 
 ![AtomUI Gallery](./images/atomui-gallery.png)

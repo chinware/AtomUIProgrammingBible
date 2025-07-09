@@ -1,4 +1,6 @@
-# 安装 AtomUI
+---
+title: 安装 AtomUI
+---
 
 > [!NOTE]
 > AtomUI OSS 底层是基于 Avalonia 技术打造，同时也是使用 Avalonia 标准方式进行研发，所以开发者如果对 Avalonia 不熟悉，可以去
