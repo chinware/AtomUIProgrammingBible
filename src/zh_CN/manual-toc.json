@@ -75,6 +75,7 @@
                 },
                 {
                     "text": "主题系统",
+                    "path": "themes",
                     "items": [{
                         "text": "概述",
                         "isIndex": true
