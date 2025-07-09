@@ -2,7 +2,7 @@
 
 ![AtomUI Gallery](./images/atomui-gallery.png)
 
-### 下载体验包
+#### 下载体验包
 
 AtomUI 每次版本发布都会在 Github 和 Gitee 上创建版本发布，大家自行去下载即可
 
@@ -12,7 +12,7 @@ AtomUI 每次版本发布都会在 Github 和 Gitee 上创建版本发布，大�
 
 ![AtomUI Gallery](./images/github-releases.png)
 
-### Ubuntu 系统体验
+#### Ubuntu 系统体验
 
 AtomUI Gallery 在 Ubuntu 发行版上的体验包采用了 AppImage， 这个包格式作为体验程序非常合适。
 
