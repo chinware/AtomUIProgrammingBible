@@ -12,7 +12,6 @@ title: 创建您的第一个 AtomUI 项目
 
 2. 在侧边栏中，向下滚动并选择 “Avalonia .NET App 应用”
 
-
 <p align="center">
     <img src="./images/create-sln-rider.png" width="800"/>
 </p>

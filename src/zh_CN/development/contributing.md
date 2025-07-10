@@ -1,10 +1,10 @@
 如果你有兴趣一同参与 `AtomUI` 的开发与推进，需要在你的设备上搭建一套基础环境，下文将具体说明 `Windows/Linux` 平台上需要的基础配置。
 
-## 前置准备
+#### 前置准备
 
 `AtomUI` 支持 `Visual Studio`、`Rider` 和 `Visual Studio Code`。但是如果您是进行跨平台软件的研发，推荐使用 `Rider` 和 `Visual Studio Code`。
 
-### .NET 版本
+##### .NET 版本
 
 AtomUI 目前将最低的版本提升到 `.NET 8`，目前滚动的版本支持为 `.NET 8` 和 `.NET 9`，请确认您机器上的 `.NET SDK` 版本信息。`Windows/Mac/Linux` 均可以通过下面的命令来确认 `.NET` 版本。
 
@@ -12,7 +12,7 @@ AtomUI 目前将最低的版本提升到 `.NET 8`，目前滚动的版本支持�
 dotnet --version
 ```
 
-### AtomUI 与 Avalonia 版本说明
+##### AtomUI 与 Avalonia 版本说明
 
 目前 `AtomUI` 正在属于快速开发迭代阶段，所以每次小版本发布我们大概率会锚定 `Avalonia` 已经发布的最新的版本。目前 `Avalonia`
 也没有发布长期支持版，所以这种策略是可以接受的。
@@ -25,7 +25,7 @@ dotnet --version
 >
 > 但是这个情况其实影响不大，因为 `Avalonia` 编成接口还是比较稳定，不同版本间只需要重新编译即可，一般不会涉及接口的调整。
 
-## Windows系统
+##### Windows系统
 
 优先推荐 `Windows 11`，如果是 `Windows 10` 理论上也没有任何问题。
 
@@ -70,7 +70,7 @@ git submodule update --init --recursive
 
 ![Run desktop project](./images/run-desktop-project.png)
 
-## Linux系统
+##### Linux系统
 
 1、安装最新版 `PowerShell`：打开链接 https://aka.ms/powershell-release?tag=stable ，找到相应的 `Linux` 发行版的安装包即可。一般说来，`Debian` 系的发行版选择 `deb` 后缀；`Redhat` 系选择 `rpm` 后缀即可。除此之外，注意系统是 32 位架构还是 64 位架构。
 

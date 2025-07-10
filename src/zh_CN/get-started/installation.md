@@ -8,14 +8,14 @@ title: 安装 AtomUI
 >
 > [Avalonia 快速入门](https://docs.avaloniaui.net/docs/get-started)
 
-## 前置准备
+### 前置准备
 
-### 开发工具推荐
+#### 开发工具推荐
 
 AtomUI 支持 Visual Studio、Rider 和 Visual Studio Code。但是如果您是进行跨平台软件的研发，推荐使用 Rider 和 Visual Studio
 Code
 
-### .NET 版本
+#### .NET 版本
 
 AtomUI 目前将最低的版本提升到 .NET 8，目前滚动的版本支持为 .NET 8 和 .NET 9，请确认您机器上的 .NET SDK 版本信息。
 
@@ -28,7 +28,7 @@ dotnet --list-sdks
 9.0.107 [/usr/lib/dotnet/sdk]
 ```
 
-### AtomUI 与 Avalonia 版本说明
+#### AtomUI 与 Avalonia 版本说明
 
 目前 AtomUI 正在属于快速开发迭代阶段，所以每次小版本发布我们大概率会锚定 Avalonia 已经发布的最新的版本。目前 Avalonia
 也没有发布长期支持版，所以这种策略是可以接受的。
@@ -41,7 +41,7 @@ dotnet --list-sdks
 >
 > 但是这个情况其实影响不大，因为 Avalonia 编成接口还是比较稳定，不同版本间只需要重新编译即可，一般不会涉及接口的调整。
 
-## 安装方式
+#### 安装方式
 
 AtomUI 推荐的以 nuget 包的方式进行安装，我们已经将 AtomUI OSS 相关的包上传到 nuget.org，目前 AtomUI
 没有发布长期支持版，所以推荐安装我们发布的最新版本
@@ -55,7 +55,7 @@ AtomUI 推荐的以 nuget 包的方式进行安装，我们已经将 AtomUI OSS 
 | AtomUI.Generator         | 自定义控件需要的一些源码生成器定义，您如果在自定义控件的时候需要接入 AtomUI 主题系统，需要引入此包 |
 | AtomUI.IconPkg.Generator | 如果您需要自定义 Icon 包，需要引入此包                                |
 
-### nuget 包安装
+#### nuget 包安装
 
 ```bash
 dotnet add package AtomUI --version 0.0.6-build.4

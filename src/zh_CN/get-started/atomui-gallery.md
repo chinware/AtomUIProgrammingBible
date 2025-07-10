@@ -1,7 +1,8 @@
 为了大家快速体验 AtomUI OSS 里面的控件，我们在发布 AtomUI OSS 新版本的时候会一起发布一个对应版本的 AtomUI Gallery 程序。目前 AtomUI Gallery 支持在 Windows、macOS 和 Linux (Ubuntu) 上进行体验。
 
 ![AtomUI Gallery](./images/atomui-gallery.png)
-
+</br>
+</br>
 #### 下载体验包
 
 AtomUI 每次版本发布都会在 Github 和 Gitee 上创建版本发布，大家自行去下载即可
@@ -10,8 +11,8 @@ AtomUI 每次版本发布都会在 Github 和 Gitee 上创建版本发布，大�
 > 
 > [Github release 下载链接](https://github.com/chinware/AtomUI/releases)
 
-![AtomUI Gallery](./images/github-releases.png)
-
+![AtomUI Gallery](./images/github-releases.png)  
+</br>
 #### Ubuntu 系统体验
 
 AtomUI Gallery 在 Ubuntu 发行版上的体验包采用了 AppImage， 这个包格式作为体验程序非常合适。
