@@ -74,6 +74,10 @@
                     "isIndex": true
                 },
                 {
+                    "text": "更新日志",
+                    "path": "release-notes.md"
+                },
+                {
                     "text": "主题系统",
                     "path": "themes",
                     "items": [{
