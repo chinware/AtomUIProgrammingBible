@@ -19,11 +19,11 @@ dotnet --version
 > 比如 AtomUI 0.0.6-build.1 就锚定了 Avalonia 11.3.2 版本
 
 > [!IMPORTANT]
-> 因为 `AtomUI` 是基于 `Avalonia` 的深度定制，所以 `AtomUI` 跟 `Avalonia` 版本是一个强绑定，您在开发的时候需要主要，这样强绑定的好处可以用
+> 因为 `AtomUI` 是基于 `Avalonia` 的深度定制，所以 `AtomUI` 跟 `Avalonia` 版本是一个强绑定，您在开发的时候需要注意，这样强绑定的好处可以用
 > `Avalonia` 的内部接口和类，不足之处就是 `AtomUI` 无法同时多个版本，会导致使用 `AtomUI` 做开发的项目也会形成对 `Avalonia`
 > 特定版本的绑定。
 >
-> 但是这个情况其实影响不大，因为 `Avalonia` 编成接口还是比较稳定，不同版本间只需要重新编译即可，一般不会涉及接口的调整。
+> 但是这个情况其实影响不大，因为 `Avalonia` 编程接口还是比较稳定，不同版本间只需要重新编译即可，一般不会涉及接口的调整。
 
 ##### Windows系统
 
