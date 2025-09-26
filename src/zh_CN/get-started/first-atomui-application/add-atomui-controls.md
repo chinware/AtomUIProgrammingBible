@@ -17,9 +17,9 @@ title: 为项目添加 AtomUI 控件
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AtomUI" Version="0.0.6-build.4"/>
-        <PackageReference Include="Avalonia.Desktop" Version="11.3.2"/>
-        <PackageReference Include="Avalonia.Diagnostics" Version="11.3.2">
+        <PackageReference Include="AtomUI" Version="1.0.0"/>
+        <PackageReference Include="Avalonia.Desktop" Version="11.3.6"/>
+        <PackageReference Include="Avalonia.Diagnostics" Version="11.3.6">
             <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
             <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
         </PackageReference>
@@ -42,16 +42,17 @@ class Program
         .StartWithClassicDesktopLifetime(args);
     public static AppBuilder BuildAvaloniaApp()
     {
-        var builder = AppBuilder.Configure<App>()
+         return AppBuilder.Configure<App>()
             .UsePlatformDetect()
-            .WithInterFont()
+            .WithAlibabaSansFont()
             .With(new Win32PlatformOptions())
+            .UseAtomUI(builder =>
+            {
+                builder.WithDefaultLanguageVariant(LanguageVariant.zh_CN);
+                builder.WithDefaultTheme(IThemeManager.DEFAULT_THEME_ID);
+                builder.UseOSSControls();
+            })
             .LogToTrace();
-        var themeBuilder = builder.CreateThemeManagerBuilder();
-        themeBuilder.UseCultureInfo(new CultureInfo(LanguageCode.en_US));
-        themeBuilder.UseTheme(ThemeManager.DEFAULT_THEME_ID);
-        themeBuilder.UseOSSControls();
-        return builder.UseAtomUI(themeBuilder);
     }
 }
 ```

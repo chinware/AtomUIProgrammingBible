@@ -1,7 +1,7 @@
 我们文档使用的操作系统环境如下：
 
 1. Ubuntu 24.04 操作系统
-2. Avalonia 11.3.2
+2. Avalonia 11.3.6
 3. JetBrains Rider 2025.1.4
 
 开发 IDE 我们强烈推荐 JetBrains Rider
@@ -31,7 +31,7 @@ dotnet new list
 
 如果安装过程没有问题，您应该看到已安装的 Avalonia 模板：
 ```
-Success: Avalonia.Templates::11.3.2 installed the following templates:
+Success: Avalonia.Templates::11.3.6 installed the following templates:
 Template Name       Short Name                 Language  Tags
 ------------------  -------------------------  --------  -----------------------------------------
 Avalonia .NET App   avalonia.app               [C#],F#   Desktop/Xaml/Avalonia/Windows/Linux/macOS
