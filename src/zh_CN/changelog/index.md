@@ -1,5 +1,5 @@
 ### 版本更新标准
-、
+
 `AtomUI` 遵循 Semantic Versioning 2.0.0 语义化版本规范。
 
 发布周期
