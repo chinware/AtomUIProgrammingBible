@@ -57,6 +57,31 @@ class Program
 }
 ```
 
+> [!IMPORTANT]
+> 需要注意的事情是 `AtomUI` 定制了自己的 `Application`。所以在程序启动的时候我们需要将 `App` 类继承自 `AtomUI.Controls.AtomApplication` 类
+> `AtomApplication` 封装了语言切换，主题切换等实用功能，详情大家可以阅读对应的代码。
+> 开发者朋友可以参考下面代码，自定义自己的应用类
+
+```csharp
+public partial class App : AtomApplication
+{
+    public override void Initialize()
+    {
+        AvaloniaXamlLoader.Load(this);
+    }
+
+    public override void OnFrameworkInitializationCompleted()
+    {
+        if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
+        {
+            desktop.MainWindow = new MainWindow();
+        }
+
+        base.OnFrameworkInitializationCompleted();
+    }
+}
+```
+
 接下来，我们开始定义窗口本身，我们这个项目只要是在窗口上有两个进度条，然后有增加和减少进度两个按钮控制进度当前值，我们窗口定义在文件 `MainWindow.axaml` 中。
 
 在代码中，如果要引入 `AtomUI` 控件库，我们需要引入 `AtomUI` 命名空间 `xmlns:atom="using:AtomUI.Controls"`，同时我们为了简化操作 `DataContext` 设置成了 `atom:Window` 本身。
@@ -132,6 +157,8 @@ public partial class MainWindow : Window
     }
 }
 ```
+
+
 
 好见证奇迹的时刻到了，我们编译运行项目，您将看到下面的效果。
 
