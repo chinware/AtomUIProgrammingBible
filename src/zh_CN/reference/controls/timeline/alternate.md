@@ -115,3 +115,23 @@ public partial class TimelineShowCase : ReactiveUserControl<TimelineViewModel>
 }
 ```
 
+### 右
+
+![AtomUI Timeline组件](./images/right-alternate.png)
+
+```axaml
+<atom:Timeline Mode="Right">
+    <atom:TimelineItem>
+        2024-01-01 AtomUI Officially Initiated
+    </atom:TimelineItem>
+    <atom:TimelineItem>
+        2024-01-01 AtomUI Officially Initiated
+    </atom:TimelineItem>
+    <atom:TimelineItem>
+        2024-01-01 AtomUI Officially Initiated
+    </atom:TimelineItem>
+    <atom:TimelineItem>
+        2024-01-01 AtomUI Officially Initiated
+    </atom:TimelineItem>
+</atom:Timeline>
+```
