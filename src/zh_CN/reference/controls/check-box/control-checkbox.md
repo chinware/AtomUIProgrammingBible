@@ -26,7 +26,7 @@ axaml文件：
 </StackPanel>
 ```
 
-axaml.cs文件，即code-behind：
+code-behind文件：
 ```csharp
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.ReactiveUI;
@@ -41,7 +41,7 @@ public partial class CheckBoxShowCase : ReactiveUserControl<CheckBoxViewModel>
 }
 ```
 
-view model文件：
+view-model文件：
 ```csharp
 using System.Reactive;
 using System.Reactive.Disposables;

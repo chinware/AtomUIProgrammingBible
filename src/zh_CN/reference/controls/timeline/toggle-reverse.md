@@ -27,7 +27,7 @@ axaml文件：
 </StackPanel>
 ```
 
-axaml.cs文件，即code-behind：
+code-behind文件：
 ```csharp
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.ReactiveUI;
@@ -78,7 +78,7 @@ public partial class TimelineShowCase : ReactiveUserControl<TimelineViewModel>
 }
 ```
 
-view model文件：
+view-model文件：
 ```csharp
 using ReactiveUI;
 public class TimelineViewModel : ReactiveObject, IRoutableViewModel

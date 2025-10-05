@@ -64,7 +64,7 @@ axaml文件：
 </StackPanel>
 ```
 
-axaml.cs文件，即code-behind：
+code-behind文件：
 ```csharp
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.ReactiveUI;

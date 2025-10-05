@@ -42,7 +42,7 @@ axaml文件：
 </StackPanel>
 ```
 
-axaml.cs文件，即code-behind：
+code-behind文件：
 ```csharp
 public partial class BadgeShowCase : ReactiveUserControl<BadgeViewModel>
 {
@@ -53,7 +53,7 @@ public partial class BadgeShowCase : ReactiveUserControl<BadgeViewModel>
 }
 ```
 
-view model文件：
+view-model文件：
 ```csharp
 using System.Reactive.Disposables;
 using ReactiveUI;

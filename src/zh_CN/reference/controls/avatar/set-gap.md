@@ -25,7 +25,7 @@ axaml文件：
     </atom:Button>
 </StackPanel>
 ```
-axaml.cs文件，即code-behind：
+code-behind文件：
 ```csharp
 using AtomUIGallery.ShowCases.ViewModels;
 using Avalonia.ReactiveUI;
@@ -49,7 +49,7 @@ public partial class AvatarShowCase : ReactiveUserControl<AvatarViewModel>
 }
 ```
 
-view model文件：
+view-model文件：
 ```csharp
 using System.Reactive.Disposables;
 using ReactiveUI;
