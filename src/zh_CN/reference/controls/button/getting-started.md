@@ -1,4 +1,4 @@
-﻿# AtomUI Button快速入门
+﻿# Button 快速入门
 
 ### 基础配置条件
 
@@ -7,7 +7,7 @@
 
 ### 基础用法
 
-最基础最小配置化的徽标组件功能，通过Border的 `Width` 与 `Height` 设定大小，通过 `Count` 属性设置数字，`ShowZero` 表示当数字为0时是否显示。
+最基础最小配置化的徽标组件功能，通过 `Border` 的 `Width` 与 `Height` 设定大小，通过 `Count` 属性设置数字，`ShowZero` 表示当数字为0时是否显示。
 
 ![AtomUI Badge组件](./images/basic.png)
 
