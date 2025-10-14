@@ -7,199 +7,87 @@
 
 ### 基础用法
 
-`PopupConfirm` 弹窗在业务场景中极其常见，`AtomUI` 提供了一个非常简单的组件来满足这种业务场景。
+这个示例是最简单的基础用法，开发者将会得到一个最基础的 `LineEdit` 组件。
 
-这个示例中，使用一个 `Button` 组件来触发 `PopupConfirm`，这其中需要留意的属性为：
-* `Title`: 弹窗的标题
-* `ConfirmContent`: 弹窗内容
-* `OkText`: 确认按钮的文字
-* `CancelText`: 取消按钮的文字
-* `Placement`: 弹窗出现的位置
-* `IsShowArrow`: 是否显示箭头
-
-![AtomUI PopupConfirm组件](./images/basic.webp)
+![AtomUI LineEdit组件](./images/basic.webp)
 
 axaml文件：
 ```axaml
-<atom:PopupConfirm
-    Title="Delete the task"
-    ConfirmContent="Are you sure to delete this task?"
-    OkText="Ok"
-    CancelText="Cancel"
-    Placement="Top"
-    IsShowArrow="True">
-    <atom:Button ButtonType="Default" IsDanger="True">Delete</atom:Button>
-</atom:PopupConfirm>
+<atom:LineEdit Watermark="Basic usage" />
 ```
 
-### 默认本地语系
+### 大小尺寸
 
-这个示例中展示了默认情况下，弹窗中的确认按钮、取消按钮的语系与文案。
+`SizeType` 决定了控件大小，内置了三种不同的大小：Small、Middle、Large。
 
-![AtomUI PopupConfirm组件](./images/basic-locale-text.webp)
+`Watermark` 类似于 `Placeholder` 的功能，当输入框为空无内容时则默认会显示 `Watermark` 属性的值。
+
+![AtomUI LineEdit组件](./images/size.webp)
 
 ```axaml
-<atom:PopupConfirm
-    Title="Delete the task"
-    ConfirmContent="Are you sure to delete this task?">
-    <atom:Button ButtonType="Default" IsDanger="True">Delete</atom:Button>
-</atom:PopupConfirm>
+<StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
+    <atom:LineEdit Watermark="Large" SizeType="Large"
+                   InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
+    <atom:LineEdit Watermark="Middle" SizeType="Middle"
+                   InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
+    <atom:LineEdit Watermark="Small" SizeType="Small"
+                   InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
+</StackPanel>
 ```
 
-### 弹出位置
+### 变体
 
-这个示例中，通过 `Placement` 来展示弹窗出现的位置。
+`StyleVariant` 改变组件的变体样式，内置三种变体：Outline、Filled、Borderless。
 
-![AtomUI PopupConfirm组件](./images/placement.webp)
+![AtomUI LineEdit组件](./images/variants.webp)
 
 ```axaml
-<Grid>
-    <Grid.Styles>
-        <Style Selector="atom|Button">
-            <Setter Property="Margin" Value="5" />
-            <Setter Property="Width" Value="80" />
-        </Style>
-    </Grid.Styles>
-    <Grid.RowDefinitions>
-        <RowDefinition Height="Auto" />
-        <RowDefinition Height="Auto" />
-        <RowDefinition Height="Auto" />
-        <RowDefinition Height="Auto" />
-        <RowDefinition Height="Auto" />
-    </Grid.RowDefinitions>
-    <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-        <ColumnDefinition Width="Auto" />
-    </Grid.ColumnDefinitions>
-
-    <atom:PopupConfirm
-        Grid.Row="1" Grid.Column="0" Trigger="Click" Placement="LeftEdgeAlignedTop"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">LT</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="2" Grid.Column="0" Trigger="Click" Placement="Left"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">Left</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="3" Grid.Column="0" Trigger="Click" Placement="LeftEdgeAlignedBottom"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">LB</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="0" Grid.Column="1" Trigger="Click" Placement="TopEdgeAlignedLeft"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">TL</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="0" Grid.Column="2" Trigger="Click" Placement="Top"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">Top</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="0" Grid.Column="3" Trigger="Click" Placement="TopEdgeAlignedRight"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">TR</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="1" Grid.Column="4" Trigger="Click" Placement="RightEdgeAlignedTop"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">RT</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="2" Grid.Column="4" Trigger="Click" Placement="Right"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">Right</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="3" Grid.Column="4" Trigger="Click" Placement="RightEdgeAlignedBottom"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">RB</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="4" Grid.Column="1" Trigger="Click" Placement="BottomEdgeAlignedLeft"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">BL</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="4" Grid.Column="2" Trigger="Click" Placement="Bottom"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">Bottom</atom:Button>
-    </atom:PopupConfirm>
-
-    <atom:PopupConfirm
-        Grid.Row="4" Grid.Column="3" Trigger="Click" Placement="BottomEdgeAlignedRight"
-        Title="Delete the task"
-        ConfirmContent="Are you sure to delete this task?"
-        OkText="Ok"
-        CancelText="Cancel">
-        <atom:Button ButtonType="Default">BR</atom:Button>
-    </atom:PopupConfirm>
-
-</Grid>
+<StackPanel Orientation="Vertical" Spacing="10">
+    <atom:LineEdit Watermark="Outlined" StyleVariant="Outline" />
+    <atom:LineEdit Watermark="Filled" StyleVariant="Filled" />
+    <atom:LineEdit Watermark="Borderless" StyleVariant="Borderless" />
+</StackPanel>
 ```
 
-### 自定义图标
+### 禁用
 
-这个示例通过 `Icon` （图标参考 `AtomUI` 的图标库）来展示图标。
+`IsEnabled` 用来操作组件的禁用/启用状态。
 
-![AtomUI PopupConfirm组件](./images/custom-icon.webp)
+![AtomUI LineEdit组件](./images/disabled.png)
 
 ```axaml
-<atom:PopupConfirm
-    Title="Delete the task"
-    ConfirmContent="Are you sure to delete this task?"
-    Icon="{atom:IconProvider Kind=QuestionCircleOutlined}"
-    ConfirmStatus="Error"
-    OkText="Ok"
-    CancelText="Cancel">
-    <atom:Button ButtonType="Default" IsDanger="True">Delete</atom:Button>
-</atom:PopupConfirm>
+<StackPanel Orientation="Vertical" Spacing="10">
+    <atom:LineEdit Watermark="Outlined" StyleVariant="Outline" IsEnabled="False" />
+    <atom:LineEdit Watermark="Filled" StyleVariant="Filled" IsEnabled="False" />
+    <atom:LineEdit Watermark="Borderless" StyleVariant="Borderless" IsEnabled="False" />
+</StackPanel>
+```
+
+### 状态色
+
+`Status` 属性用来给组件设定不同的状态色，内置三种状态色：Error、Warning、Default。
+
+![AtomUI LineEdit组件](./images/status.webp)
+
+```axaml
+<StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
+    <atom:LineEdit Watermark="Error" Status="Error" />
+    <atom:LineEdit Watermark="Warning" Status="Warning" />
+    <atom:LineEdit Watermark="Error with prefix"
+                   InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" Status="Error" />
+    <atom:LineEdit Watermark="Warning with prefix"
+                   InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" Status="Warning" />
+
+    <atom:LineEdit Watermark="Error" Status="Error"
+                   InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" StyleVariant="Filled" />
+    <atom:LineEdit Watermark="Warning" Status="Warning"
+                   InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}" StyleVariant="Filled" />
+
+    <atom:LineEdit Watermark="Error" Status="Error"
+                   InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                   StyleVariant="Borderless" />
+    <atom:LineEdit Watermark="Warning" Status="Warning"
+                   InnerLeftContent="{atom:IconProvider Kind=ClockCircleOutlined}"
+                   StyleVariant="Borderless" />
+</StackPanel>
 ```
