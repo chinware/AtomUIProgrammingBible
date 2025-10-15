@@ -59,6 +59,6 @@ AtomUI 推荐的以 nuget 包的方式进行安装，我们已经将 AtomUI OSS 
 #### nuget 包安装
 
 ```bash
-dotnet add package AtomUI --version 1.0.0
+dotnet add package AtomUI --version 5.0.0
 ```
 

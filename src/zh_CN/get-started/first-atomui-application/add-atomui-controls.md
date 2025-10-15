@@ -17,7 +17,7 @@ title: 为项目添加 AtomUI 控件
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AtomUI" Version="1.0.0"/>
+        <PackageReference Include="AtomUI" Version="5.0.0"/>
         <PackageReference Include="Avalonia.Desktop" Version="11.3.6"/>
         <PackageReference Include="Avalonia.Diagnostics" Version="11.3.6">
             <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
@@ -57,13 +57,14 @@ class Program
 }
 ```
 
-> [!IMPORTANT]
-> 需要注意的事情是 `AtomUI` 定制了自己的 `Application`。所以在程序启动的时候我们需要将 `App` 类继承自 `AtomUI.Controls.AtomApplication` 类
-> `AtomApplication` 封装了语言切换，主题切换等实用功能，详情大家可以阅读对应的代码。
-> 开发者朋友可以参考下面代码，自定义自己的应用类
-
 ```csharp
-public partial class App : AtomApplication
+using Avalonia;
+using Avalonia.Controls.ApplicationLifetimes;
+using Avalonia.Markup.Xaml;
+
+namespace AtomUIProgressApp;
+
+public partial class App : Application
 {
     public override void Initialize()
     {

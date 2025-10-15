@@ -28,9 +28,9 @@ sudo apt update
 sudo apt install fuse libfuse2
 ```
 
-安装完成之后就可以直接在终端输入命令运行 `AtomUI Gallery` 程序了，我们这里以 `AtomUIGallery-linux-x64-1.0.0.0925.AppImage` 为例，不同的版本请根据情况进行调整
+安装完成之后就可以直接在终端输入命令运行 `AtomUI Gallery` 程序了，我们这里以 `AtomUIGallery-linux-x64-5.0.0.1015.AppImage` 为例，不同的版本请根据情况进行调整
 
 ```bash
-./AtomUIGallery-linux-x64-1.0.0.0925.AppImage
+./AtomUIGallery-linux-x64-5.0.0.1015.AppImage
 ```
 
