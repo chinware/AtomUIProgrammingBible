@@ -1,4 +1,4 @@
-### 版本更新
+![Changelog](./images/changelog.png)
 
 #### v5.0.0
 `2025年10月15日`
@@ -43,19 +43,19 @@ AtomUI OSS 本质上是 **Ant Design 5.0** 设计语言的 Avalonia/.NET 实现�
 `2025年10月2日`
 
 **新特性**
-1. 实现虚线类型的按钮类型新增
-2. Separator 分割线的样式和分割线跟修饰的间距
+- 实现虚线类型的按钮类型新增
+- Separator 分割线的样式和分割线跟修饰的间距
 
 **优化**
 
-1. 优化控件的 Design Token 生成
-2. 还有不少不应该被公开的类被公开，需要清理
+- 优化控件的 Design Token 生成
+- 还有不少不应该被公开的类被公开，需要清理
 
 **Bug 修复**
 
-1. TabControl 动态添加标签的时候有问题
-2. ToggleSwitch With text and icon模式存在显示文字溢出bug
-3. Alert分割线的配色太淡了，视觉效果不明显
+- TabControl 动态添加标签的时候有问题
+- ToggleSwitch With text and icon模式存在显示文字溢出bug
+- Alert分割线的配色太淡了，视觉效果不明显
 
 #### v1.0.0
 `2025年9月25日`
