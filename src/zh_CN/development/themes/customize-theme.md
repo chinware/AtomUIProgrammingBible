@@ -463,7 +463,6 @@ public class ThemeConfigProvider : Control, IThemeConfigProvider
 
 ### AliasToken
 
-### MapToken
 > [!NOTE]
 > 继承所有 `SeedToken` 和 `MapToken` 的属性
 > 
