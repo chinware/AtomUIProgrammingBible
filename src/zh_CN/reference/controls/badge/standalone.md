@@ -1,6 +1,6 @@
-﻿# AtomUI Badge Standalone模式
+﻿# Standalone 模式
 
-Badge组件不包裹任何child子元素，直接使用即为独立使用模式（有别于其他案例中包裹一个child级的Border元素）。这种情况下，将会直接显示数字角标本身。
+`Badge` 组件不包裹任何child子元素，直接使用即为独立使用模式（有别于其他案例中包裹一个child级的 `Border` 元素）。这种情况下，将会直接显示数字角标本身。
 
 ![AtomUI Badge](./images/standalone.webp)
 

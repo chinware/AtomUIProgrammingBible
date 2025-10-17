@@ -1,6 +1,6 @@
 ﻿# 垂直Slider
 
-这个案例展示了垂直方向的Slider组件，重点关注如下属性：
+这个案例展示了垂直方向的 `Slider` 组件，重点关注如下属性：
 
 * `Orientation`：设定为Vertical设置滑块为垂直方向。
 * `Marks`："{Binding SliderMarks}" 绑定标记点数据，在滑块旁显示刻度标记。

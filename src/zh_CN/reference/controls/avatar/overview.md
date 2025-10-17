@@ -1,4 +1,4 @@
-﻿# AtomUI Avatar概述
+﻿# Avatar 概述
 
 ### 简介
 

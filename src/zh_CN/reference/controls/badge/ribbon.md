@@ -1,4 +1,4 @@
-﻿# AtomUI Badge缎带
+﻿# 缎带
 
 `RibbonBadge` 包裹子元素（强烈建议使用AtomUI组件），可以制作出非常精美的缎带样徽标。
 

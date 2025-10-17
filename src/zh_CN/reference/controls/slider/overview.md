@@ -1,8 +1,8 @@
-﻿# AtomUI Slider概述
+﻿# Slider概述
 
 ### 简介
 
-简洁而又不是精悍的Slider组件，快速实现精美的Tag UI。
+简洁而又不失精悍的Slider组件，快速实现精美的Tag UI。
 
 ![AtomUI Slider组件](./images/basic.webp)
 

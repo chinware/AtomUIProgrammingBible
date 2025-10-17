@@ -1,8 +1,8 @@
-﻿# AtomUI Tag概述
+﻿# Tag 概述
 
 ### 简介
 
-简洁而又不是精悍的Tag组件，快速实现精美的Tag UI。
+简洁而又不失精悍的 `Tag` 组件。
 
 ![AtomUI Tag组件](./images/colorful.png)
 

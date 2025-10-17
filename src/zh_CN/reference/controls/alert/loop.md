@@ -1,4 +1,4 @@
-﻿# AtomUI Alert自定义行为
+﻿# Alert 自定义行为
 
 当文案过长时，可以通过 `IsMessageMarqueEnabled` 属性开启滚动效果。
 

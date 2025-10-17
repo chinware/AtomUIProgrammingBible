@@ -1,4 +1,4 @@
-﻿# AtomUI Button自定义图标
+﻿# 图标
 
 按钮的图标由 `Icon` 属性决定，而 `Icon` 也是由 `AtomUI` 提供的基础组件，详情参考 `Icon` 章节。
 

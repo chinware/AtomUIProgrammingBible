@@ -1,4 +1,4 @@
-﻿# AtomUI InfoFlyout快速入门
+﻿# InfoFlyout 快速入门
 
 ### 基础配置条件
 

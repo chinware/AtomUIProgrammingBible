@@ -1,4 +1,4 @@
-﻿# AtomUI LoadingIndicator快速入门
+﻿# LoadingIndicator 快速入门
 
 ### 基础配置条件
 

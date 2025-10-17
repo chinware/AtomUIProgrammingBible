@@ -1,6 +1,6 @@
-﻿# AtomUI Alert携带图标
+﻿# 图标
 
-Alert组件可以在显示文本与描述的同时，开启 `IsShowIcon` 特性打开图标功能，提供被用户感知的能力。
+`Alert` 组件可以在显示文本与描述的同时，开启 `IsShowIcon` 特性打开图标功能，提供被用户感知的能力。
 
 ![AtomUI Alert图标](./images/description-with-icon.png)
 

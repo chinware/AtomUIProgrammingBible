@@ -1,4 +1,4 @@
-﻿# AtomUI Separator快速入门
+﻿# Separator 快速入门
 
 ### 基础配置条件
 

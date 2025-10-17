@@ -1,4 +1,4 @@
-﻿# AtomUI Button自定义图标
+﻿# Loading 特性
 
 按钮的加载动画由 `IsLoading` 属性决定，一共有True、False两个值；默认为False。
 

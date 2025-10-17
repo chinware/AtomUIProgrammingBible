@@ -1,6 +1,6 @@
 ﻿# Group Grid
 
-通过与WrapPanel与CheckBox数组方式实现一个横向的CheckBox组。
+通过与 `WrapPanel` 与 `CheckBox` 数组方式实现一个横向的 `CheckBox` 组。
 
 ![AtomUI CheckBox组件](./images/group-checkbox.webp)
 

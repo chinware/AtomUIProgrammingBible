@@ -1,4 +1,4 @@
-﻿# AtomUI Empty快速入门
+﻿# Empty 快速入门
 
 ### 基础配置条件
 

@@ -1,6 +1,6 @@
 ﻿# Never Close Notification
 
-在一些业务场景中，我们并不希望弹出的Notification自动关闭，因此我们需要Never close notification。
+在一些业务场景中，我们并不希望弹出的 `Notification` 自动关闭，因此我们需要Never close notification。
 
 我们可以看到，这个特性是通过初始化时传入一个expiration为0的 `Notification` 对象，来达到never close的目的。
 

@@ -1,4 +1,4 @@
-﻿# AtomUI Alert快速入门
+﻿# Alert快速入门
 
 ### 基础配置条件
 

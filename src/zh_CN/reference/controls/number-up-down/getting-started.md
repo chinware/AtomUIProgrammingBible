@@ -1,4 +1,4 @@
-﻿# AtomUI NumberUpDown快速入门
+﻿# NumberUpDown 快速入门
 
 ### 基础配置条件
 

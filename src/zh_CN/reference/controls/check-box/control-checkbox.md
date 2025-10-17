@@ -1,6 +1,6 @@
 ﻿# 控制CheckBox
 
-如何通过mvvm方式与事件配合，控制CheckBox的 `IsChecked` 与 `IsEnabled` 属性。
+如何通过mvvm方式与事件配合，控制 `CheckBox` 的 `IsChecked` 与 `IsEnabled` 属性。
 
 ![AtomUI CheckBox组件](./images/controlled-checkbox.webp)
 

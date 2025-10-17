@@ -1,6 +1,6 @@
 ﻿# 内部卡片
 
-在一个主卡片内部嵌套多个子卡片，更好地展示层级关系。将 `IsInnerMode` 设定为true即可实现内部嵌套卡片。
+在一个主卡片内部嵌套多个子卡片，更好地展示层级关系。将 `IsInnerMode` 设定为True即可实现内部嵌套卡片。
 
 ![AtomUI Card组件](./images/inner-card.png)
 

@@ -1,6 +1,6 @@
-﻿# Grid布局
+﻿# Grid 布局
 
-通过与Avalonia原生Grid配合，实现更加复杂的布局。
+通过与 `Avalonia` 原生 `Grid` 配合，实现更加复杂的布局。
 
 ![AtomUI CheckBox组件](./images/grid-checkbox.webp)
 

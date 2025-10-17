@@ -5,7 +5,7 @@
 * `IsShowIcon`: 控制是否显示节点图标
 * `IsShowLeafIcon`: 控制是否显示叶节点图标
 
-ToggleSwitch相关逻辑还需要参考code-behind与view model。
+`ToggleSwitch` 相关逻辑还需要参考code-behind与view-model。
 
 `IsExpanded` 为True预设某些节点为展开状态，`IsSwitcherRotation` 为False禁用切换器旋转动画效果。
 

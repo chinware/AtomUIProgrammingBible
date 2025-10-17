@@ -1,4 +1,4 @@
-﻿# AtomUI Slider快速入门
+﻿# Slider 快速入门
 
 ### 基础配置条件
 

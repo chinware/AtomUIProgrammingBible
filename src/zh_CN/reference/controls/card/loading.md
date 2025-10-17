@@ -1,6 +1,6 @@
 ﻿# loading状态
 
-通过 `IsLoading` 属性，实现loading状态。当IsLoading为true时，会通过在正式内容的Card上方显示loading遮罩的方式实现loading状态。
+通过 `IsLoading` 属性，实现loading状态。当 `IsLoading` 为True时，会通过在正式内容的 `Card` 上方显示loading遮罩的方式实现loading状态。
 
 ![AtomUI Card组件](./images/loading.webp)
 

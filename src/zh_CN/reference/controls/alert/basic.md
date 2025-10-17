@@ -1,4 +1,4 @@
-﻿# AtomUI Alert基础用法
+﻿# Alert 基础用法
 
 ### 四种样式
 
@@ -17,7 +17,7 @@ Alert组件提供了四种基础样式可供用户选择，分别对应 `success
 
 ### 关闭按钮
 
-如果允许用户关闭Alert，可以开启Alert的 `IsClosable` 选项。
+如果允许用户关闭 `Alert` ，可以开启 `Alert` 的 `IsClosable` 选项。
 
 ![AtomUI Alert](./images/closer.png)
 
@@ -40,7 +40,7 @@ Alert组件提供了四种基础样式可供用户选择，分别对应 `success
 
 ### 描述信息
 
-需要对Alert进行详细描述时，可以开启 `Description` 特性。
+需要对 `Alert` 进行详细描述时，可以开启 `Description` 特性。
 
 ![AtomUI Alert](./images/description.png)
 

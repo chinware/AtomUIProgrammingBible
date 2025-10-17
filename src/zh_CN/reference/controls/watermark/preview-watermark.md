@@ -1,6 +1,6 @@
 ﻿# 图片水印
 
-通过给StackPanel添加自定义配置 atom:Watermark.Glyph="{atom:TextGlyph 'AtomUI'} 来预览StackPanel的水印背景。
+通过给 `StackPanel` 添加自定义配置 `atom:Watermark.Glyph` ="{atom:TextGlyph 'AtomUI'} 来预览 `StackPanel` 的水印背景。
 
 ![AtomUI Watermark组件](./images/custom-watermark.png)
 

@@ -1,6 +1,6 @@
 ﻿# Icons
 
-AtomUI内置了一些常用的Icons图标，通过 `Icons` 组件进行使用。
+`AtomUI` 内置了一些常用的 `Icons` 图标，通过 `Icons` 组件进行使用。
 
 ## 基本用法
 

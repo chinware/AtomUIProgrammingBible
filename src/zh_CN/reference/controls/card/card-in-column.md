@@ -1,6 +1,6 @@
 ﻿# 栅格卡片
 
-配合Grid栅格布局使用，可以达到非常不错的预览墙效果。
+配合 `Grid` 栅格布局使用，可以达到非常不错的预览墙效果。
 
 ![AtomUI Card组件](./images/card-in-column.png)
 

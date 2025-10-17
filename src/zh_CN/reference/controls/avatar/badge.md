@@ -1,8 +1,8 @@
-﻿# AtomUI Badge角标
+﻿# 角标
 
 头像组件支持数字角标功能，通常用于消息提示。
 
-![AtomUI Badge](./images/badge.png)
+![AtomUI Avatar](./images/badge.png)
 
 ```axaml
 <StackPanel>

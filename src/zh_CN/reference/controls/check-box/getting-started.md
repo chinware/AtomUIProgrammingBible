@@ -1,4 +1,4 @@
-﻿# AtomUI CheckBox快速入门
+﻿# CheckBox快速入门
 
 ### 基础配置条件
 

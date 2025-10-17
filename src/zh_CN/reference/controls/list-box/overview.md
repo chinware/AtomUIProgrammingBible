@@ -1,8 +1,8 @@
-﻿# AtomUI ListBox概述
+﻿# ListBox 概述
 
 ### 简介
 
-简洁而又不是精悍的ListBox组件，快速实现精美的ListBox。
+简洁而又不失精悍的 `ListBox` 组件，快速实现精美的 `ListBox`。
 
 ![AtomUI ListBox组件](./images/basic.webp)
 

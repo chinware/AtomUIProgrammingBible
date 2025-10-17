@@ -1,8 +1,8 @@
-﻿# AtomUI NumberUpDown概述
+﻿# NumberUpDown 概述
 
 ### 简介
 
-功能简洁且可以设定回调的NumberUpDown组件。
+功能简洁且可以设定回调的 `NumberUpDown` 组件。
 
 ![AtomUI NumberUpDown组件](./images/basic.webp)
 

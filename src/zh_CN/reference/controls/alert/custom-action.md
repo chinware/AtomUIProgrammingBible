@@ -1,6 +1,6 @@
-﻿# AtomUI Alert自定义行为
+﻿# 自定义行为
 
-Alert组件允许自定义行为，通过提供 `ExtraAction` 属性，可以开启更多适合场景的自定义行为。
+`Alert` 组件允许自定义行为，通过提供 `ExtraAction` 属性，可以开启更多适合场景的自定义行为。
 
 ![AtomUI Alert自定义行为](./images/custom-action.png)
 

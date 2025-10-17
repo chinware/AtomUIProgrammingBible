@@ -1,4 +1,4 @@
-﻿# AtomUI SplitButton快速入门
+﻿# SplitButton 快速入门
 
 ### 基础配置条件
 

@@ -1,6 +1,6 @@
 ﻿# 无边框
 
-无边框Card样式，将属性 `StyleVariant` 设定为Borderless即可。无边框Card更容易与背景色融为一体。
+无边框 `Card` 样式，将属性 `StyleVariant` 设定为Borderless即可。无边框 `Card` 更容易与背景色融为一体。
 
 ![AtomUI Card组件](./images/noborder-card-with-gray-bg.png)
 

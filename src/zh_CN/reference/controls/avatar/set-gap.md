@@ -1,4 +1,4 @@
-﻿# AtomUI Avatar角标
+﻿# 内边距
 
 字符型的头像，当字符串较长时，字体大小可以根据头像宽度自动调整，也可使用通过事件来设置字符距离左右两侧边界单位像素。
 
@@ -25,6 +25,7 @@ axaml文件：
     </atom:Button>
 </StackPanel>
 ```
+
 code-behind文件：
 ```csharp
 using AtomUIGallery.ShowCases.ViewModels;

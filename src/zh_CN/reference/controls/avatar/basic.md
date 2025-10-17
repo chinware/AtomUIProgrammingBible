@@ -1,10 +1,10 @@
-﻿# AtomUI Alert基础用法
+﻿# 基础用法
 
 ### 四种样式
 
-Alert组件提供了四种基础样式可供用户选择，分别对应 `success` 、 `info` 、 `warning` 、 `error` 。
+`Avatar` 组件提供了四种基础样式可供用户选择，分别对应 `success` 、 `info` 、 `warning` 、 `error` 。
 
-![AtomUI Alert](./images/different-types.png)
+![AtomUI Avatar](./images/different-types.png)
 
 ```axaml
 <StackPanel>
@@ -19,7 +19,7 @@ Alert组件提供了四种基础样式可供用户选择，分别对应 `success
 
 如果允许用户关闭Alert，可以开启Alert的 `IsClosable` 选项。
 
-![AtomUI Alert](./images/closer.png)
+![AtomUI Avatar](./images/closer.png)
 
 ```axaml
 <StackPanel>
@@ -42,7 +42,7 @@ Alert组件提供了四种基础样式可供用户选择，分别对应 `success
 
 需要对Alert进行详细描述时，可以开启 `Description` 特性。
 
-![AtomUI Alert](./images/description.png)
+![AtomUI Avatar](./images/description.png)
 
 ```axaml
 <StackPanel Orientation="Vertical" Spacing="10">

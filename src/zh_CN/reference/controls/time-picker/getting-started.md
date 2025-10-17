@@ -1,4 +1,4 @@
-﻿# AtomUI TimePicker快速入门
+﻿# TimePicker 快速入门
 
 ### 基础配置条件
 

@@ -1,4 +1,4 @@
-﻿# AtomUI Separator概述
+﻿# Separator 概述
 
 ### 简介
 

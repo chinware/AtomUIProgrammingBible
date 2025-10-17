@@ -1,8 +1,8 @@
-﻿# AtomUI Notification概述
+﻿# Notification 概述
 
 ### 简介
 
-功能简洁且可以设定回调的Notification组件。
+功能简洁且可以设定回调的 `Notification` 组件。
 
 ![AtomUI Notification组件](./images/basic.webp)
 

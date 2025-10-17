@@ -1,8 +1,8 @@
-﻿# AtomUI CheckBox概述
+﻿# CheckBox概述
 
 ### 简介
 
-简洁高效的CheckBox组件。
+`CheckBox` 组件提供了多种布局用法，支持一键全选/反选等特性。
 
 ![AtomUI CheckBox组件](./images/grid-checkbox.webp)
 

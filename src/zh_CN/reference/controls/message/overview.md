@@ -1,8 +1,8 @@
-﻿# AtomUI Message概述
+﻿# Message 概述
 
 ### 简介
 
-功能简洁且可以设定回调的Message组件。
+功能简洁且可以设定回调的 `Message` 组件。
 
 ![AtomUI Message组件](./images/callback.webp)
 

@@ -1,8 +1,8 @@
-﻿# AtomUI Empty概述
+﻿# Empty 概述
 
 ### 简介
 
-简洁而又不是精悍的Empty组件，快速实现精美的Empty。
+简洁而又不失精悍的 `Empty` 组件。
 
 ![AtomUI Empty组件](./images/basic.png)
 

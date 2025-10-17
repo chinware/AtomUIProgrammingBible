@@ -1,4 +1,4 @@
-﻿# AtomUI Notification快速入门
+﻿# Notification 快速入门
 
 ### 基础配置条件
 
