@@ -111,6 +111,721 @@
                     "path": "contributing.md"
                 }
             ]
+        },
+        {
+            "text": "参考手册",
+            "path": "reference",
+            "items": [
+                {
+                    "text": "组件",
+                    "path": "controls",
+                    "items": [
+                        {
+                            "text": "概述",
+                            "isIndex": true
+                        },
+                        {
+                            "text": "Alert",
+                            "path": "alert",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                  "text": "快速开始",
+                                  "path": "getting-started.md"
+                                },
+                                {
+                                  "text": "基础用法",
+                                  "path": "basic.md"
+                                },
+                                {
+                                  "text": "带有图标",
+                                  "path": "with-icon.md"
+                                },
+                                {
+                                  "text": "文案滚动",
+                                  "path": "loop.md"
+                                },
+                                {
+                                  "text": "自定义行为",
+                                  "path": "custom-action.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Avatar",
+                            "path": "avatar",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "基础用法",
+                                    "path": "basic.md"
+                                },
+                                {
+                                    "text": "多类型",
+                                    "path": "type.md"
+                                },
+                                {
+                                    "text": "带徽标",
+                                    "path": "badge.md"
+                                },
+                                {
+                                    "text": "组合头像",
+                                    "path": "group.md"
+                                },
+                                {
+                                    "text": "设置间距",
+                                    "path": "set-gap.md"
+                                }
+                            ]
+                        },
+                        {
+                          "text": "Badge",
+                          "path": "badge",
+                          "items": [
+                            {
+                              "text": "概述",
+                              "path": "overview.md"
+                            },
+                            {
+                              "text": "快速开始",
+                              "path": "getting-started.md"
+                            },
+                            {
+                              "text": "基础用法",
+                              "path": "basic.md"
+                            },
+                            {
+                              "text": "独立使用",
+                              "path": "standalone.md"
+                            },
+                            {
+                              "text": "状态点",
+                              "path": "status.md"
+                            },
+                            {
+                              "text": "动态展示",
+                              "path": "dynamic.md"
+                            },
+                            {
+                              "text": "红点模式",
+                              "path": "red-dot.md"
+                            },
+                            {
+                              "text": "缎带模式",
+                              "path": "ribbon.md"
+                            }
+                          ]
+                        },
+                        {
+                          "text": "Button",
+                          "path": "button",
+                          "items": [
+                            {
+                              "text": "概述",
+                              "path": "overview.md"
+                            },
+                            {
+                              "text": "快速开始",
+                              "path": "getting-started.md"
+                            },
+                            {
+                              "text": "基础用法",
+                              "path": "basic.md"
+                            },
+                            {
+                              "text": "图标按钮",
+                              "path": "with-icon.md"
+                            },
+                            {
+                              "text": "加载中状态",
+                              "path": "with-loading.md"
+                            },
+                            {
+                              "text": "危险按钮",
+                              "path": "danger.md"
+                            },
+                            {
+                              "text": "幽灵按钮",
+                              "path": "ghost.md"
+                            },
+                            {
+                              "text": "块级按钮",
+                              "path": "block.md"
+                            }
+                          ]
+                        },
+                        {
+                          "text": "Calendar",
+                          "path": "calendar",
+                          "items": [
+                            {
+                              "text": "概述",
+                              "path": "overview.md"
+                            },
+                            {
+                              "text": "快速开始",
+                              "path": "getting-started.md"
+                            }
+                          ]
+                        },
+                        {
+                          "text": "Card",
+                          "path": "card",
+                          "items": [
+                            {
+                              "text": "概述",
+                              "path": "overview.md"
+                            },
+                            {
+                              "text": "快速开始",
+                              "path": "getting-started.md"
+                            },
+                            {
+                              "text": "无边框卡片",
+                              "path": "no-border.md"
+                            },
+                            {
+                              "text": "简洁卡片",
+                              "path": "inner-card.md"
+                            },
+                            {
+                              "text": "带标签页的卡片",
+                              "path": "tab-card.md"
+                            },
+                            {
+                              "text": "栅格卡片",
+                              "path": "grid.md"
+                            },
+                            {
+                              "text": "栅格列卡片",
+                              "path": "card-in-column.md"
+                            },
+                            {
+                              "text": "自定义卡片",
+                              "path": "custom.md"
+                            },
+                            {
+                              "text": "复杂卡片",
+                              "path": "complex-card.md"
+                            },
+                            {
+                              "text": "加载中卡片",
+                              "path": "loading.md"
+                            }
+                          ]
+                        },
+                        {
+                          "text": "CheckBox",
+                          "path": "check-box",
+                          "items": [
+                            {
+                              "text": "概述",
+                              "path": "overview.md"
+                            },
+                            {
+                              "text": "快速开始",
+                              "path": "getting-started.md"
+                            },
+                            {
+                              "text": "控制复选框",
+                              "path": "control-checkbox.md"
+                            },
+                            {
+                              "text": "复选框组",
+                              "path": "checkbox-in-group.md"
+                            },
+                            {
+                              "text": "栅格中的复选框",
+                              "path": "checkbox-in-grid.md"
+                            },
+                            {
+                              "text": "全选/反选控制",
+                              "path": "check-all.md"
+                            }
+                          ]
+                        },
+                        {
+                          "text": "Drawer",
+                          "path": "drawer",
+                          "items": [
+                            {
+                              "text": "概述",
+                              "path": "overview.md"
+                            },
+                            {
+                              "text": "快速开始",
+                              "path": "getting-started.md"
+                            },
+                            {
+                              "text": "预设",
+                              "path": "presets.md"
+                            },
+                            {
+                              "text": "自定义位置",
+                              "path": "custom-placement.md"
+                            },
+                            {
+                              "text": "内部展示",
+                              "path": "inner-display.md"
+                            },
+                            {
+                              "text": "额外的页眉与页脚",
+                              "path": "extra-header-footer.md"
+                            },
+                            {
+                              "text": "多层抽屉",
+                              "path": "multi-level-drawer.md"
+                            }
+                          ]
+                        },
+                        {
+                          "text": "Empty",
+                          "path": "empty",
+                          "items": [
+                            {
+                              "text": "概述",
+                              "path": "overview.md"
+                            },
+                            {
+                              "text": "快速开始",
+                              "path": "getting-started.md"
+                            }
+                          ]
+                        },
+                        {
+                            "text": "GroupBox",
+                            "path": "group-box",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Icons",
+                            "path": "icons",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "InfoFlyout",
+                            "path": "info-flyout",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "触发方式",
+                                    "path": "trigger-way.md"
+                                },
+                                {
+                                    "text": "位置",
+                                    "path": "placement.md"
+                                },
+                                {
+                                    "text": "箭头",
+                                    "path": "arrow.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "LineEdit",
+                            "path": "line-edit",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "前缀与后缀",
+                                    "path": "pre-post-tab.md"
+                                },
+                                {
+                                    "text": "搜索框",
+                                    "path": "search.md"
+                                },
+                                {
+                                    "text": "密码框",
+                                    "path": "password.md"
+                                },
+                                {
+                                    "text": "清除图标",
+                                    "path": "clear-icon.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "ListBox",
+                            "path": "list-box",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "LoadingIndicator",
+                            "path": "loading-indicator",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "自定义旋转指示器",
+                                    "path": "custom-spinning-indicator.md"
+                                },
+                                {
+                                    "text": "加载遮罩",
+                                    "path": "loadingmask.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Message",
+                            "path": "message",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "动态支持",
+                                    "path": "dynamic.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Notification",
+                            "path": "notification",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "图标通知",
+                                    "path": "icon-notification.md"
+                                },
+                                {
+                                    "text": "永不关闭的通知",
+                                    "path": "never-close-notification.md"
+                                },
+                                {
+                                    "text": "暂停",
+                                    "path": "pause.md"
+                                },
+                                {
+                                    "text": "位置",
+                                    "path": "placement.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "NumberUpDown",
+                            "path": "number-up-down",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "高级用法",
+                                    "path": "advanced.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Palette",
+                            "path": "palette",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "PopupConfirm",
+                            "path": "popup-confirm",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Segmented",
+                            "path": "segmented",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "图标",
+                                    "path": "icon.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Separator",
+                            "path": "separator",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "标题分隔符",
+                                    "path": "title-separator.md"
+                                },
+                                {
+                                    "text": "变体分隔符",
+                                    "path": "variants-separator.md"
+                                },
+                                {
+                                    "text": "垂直分隔符",
+                                    "path": "vertical-separator.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Slider",
+                            "path": "slider",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "渐变",
+                                    "path": "graduate.md"
+                                },
+                                {
+                                    "text": "提示",
+                                    "path": "tooltips.md"
+                                },
+                                {
+                                    "text": "垂直",
+                                    "path": "vertical.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "SplitButton",
+                            "path": "split-button",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "图标",
+                                    "path": "icon.md"
+                                },
+                                {
+                                    "text": "尺寸",
+                                    "path": "size.md"
+                                },
+                                {
+                                    "text": "危险按钮",
+                                    "path": "danger.md"
+                                },
+                                {
+                                    "text": "触发方式",
+                                    "path": "trigger-way.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Tag",
+                            "path": "tag",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "TimePicker",
+                            "path": "time-picker",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "无边框",
+                                    "path": "bordered-less.md"
+                                },
+                                {
+                                    "text": "格式化",
+                                    "path": "format.md"
+                                },
+                                {
+                                    "text": "间隔",
+                                    "path": "interval.md"
+                                },
+                                {
+                                    "text": "范围选择",
+                                    "path": "ranger.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Timeline",
+                            "path": "timeline",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "交替显示",
+                                    "path": "alternate.md"
+                                },
+                                {
+                                    "text": "切换倒序",
+                                    "path": "toggle-reverse.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "TreeView",
+                            "path": "tree-view",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "连接线",
+                                    "path": "tree-with-line.md"
+                                },
+                                {
+                                    "text": "块级显示",
+                                    "path": "block-node.md"
+                                },
+                                {
+                                    "text": "拖拽",
+                                    "path": "drag.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Watermark",
+                            "path": "watermark",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "图片水印",
+                                    "path": "image-watermark.md"
+                                },
+                                {
+                                    "text": "预览水印",
+                                    "path": "preview-watermark.md"
+                                }
+                            ]
+                        }
+
+                    ]
+                }
+            ]
         }
     ]
 }
