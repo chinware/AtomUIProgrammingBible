@@ -1,8 +1,8 @@
-﻿# Alert 基础用法
+﻿# 基础用法
 
 ### 四种样式
 
-Alert组件提供了四种基础样式可供用户选择，分别对应 `success` 、 `info` 、 `warning` 、 `error` 。
+`Alert` 组件提供了四种基础样式可供用户选择，分别对应 `success` 、 `info` 、 `warning` 、 `error` 。
 
 ![AtomUI Alert](./images/different-types.png)
 

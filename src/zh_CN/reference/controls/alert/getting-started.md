@@ -1,11 +1,11 @@
-﻿# Alert快速入门
+﻿# Alert 快速入门
 
 ### 基础配置条件
 
 * Nuget安装Avalonia
 * Nuget安装AtomUI
 
-### 初始化一个最基础的Alert文本框
+### 初始化一个最基础的 `Alert` 文本框
 
 ```axaml
 <StackPanel>
