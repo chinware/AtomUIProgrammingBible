@@ -765,6 +765,50 @@
                             ]
                         },
                         {
+                            "text": "ToggleSwitch",
+                            "path": "toggle-switch",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "高级用法",
+                                    "path": "advanced.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Tooltip",
+                            "path": "tooltip",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "位置",
+                                    "path": "placement.md"
+                                },
+                                {
+                                    "text": "箭头",
+                                    "path": "arrow.md"
+                                },
+                                {
+                                    "text": "颜色",
+                                    "path": "color.md"
+                                }
+                            ]
+                        },
+                        {
                             "text": "TreeView",
                             "path": "tree-view",
                             "items": [
