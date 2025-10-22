@@ -653,6 +653,24 @@
                             ]
                         },
                         {
+                            "text": "Skeleton",
+                            "path": "skeleton",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "高级用法",
+                                    "path": "advanced.md"
+                                }
+                            ]
+                        },
+                        {
                             "text": "Slider",
                             "path": "slider",
                             "items": [
@@ -771,6 +789,50 @@
                                 {
                                     "text": "切换倒序",
                                     "path": "toggle-reverse.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "ToggleSwitch",
+                            "path": "toggle-switch",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "高级用法",
+                                    "path": "advanced.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Tooltip",
+                            "path": "tooltip",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "位置",
+                                    "path": "placement.md"
+                                },
+                                {
+                                    "text": "箭头",
+                                    "path": "arrow.md"
+                                },
+                                {
+                                    "text": "颜色",
+                                    "path": "color.md"
                                 }
                             ]
                         },
