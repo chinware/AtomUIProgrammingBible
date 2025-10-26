@@ -345,6 +345,40 @@
                           ]
                         },
                         {
+                            "text": "Dialog",
+                            "path": "dialog",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "自定义页脚",
+                                    "path": "custom-footer.md"
+                                },
+                                {
+                                    "text": "异步逻辑处理",
+                                    "path": "with-async-logic.md"
+                                },
+                                {
+                                    "text": "自动关闭",
+                                    "path": "auto-close.md"
+                                },
+                                {
+                                    "text": "加载状态",
+                                    "path": "with-loading.md"
+                                },
+                                {
+                                    "text": "按钮属性",
+                                    "path": "button-props.md"
+                                }
+                            ]
+                        },
+                        {
                           "text": "Drawer",
                           "path": "drawer",
                           "items": [
@@ -595,6 +629,66 @@
                                 {
                                     "text": "快速开始",
                                     "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "ProgressBar",
+                            "path": "progress-bar",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "动态进度",
+                                    "path": "dynamic-progress.md"
+                                },
+                                {
+                                    "text": "成功状态",
+                                    "path": "success.md"
+                                },
+                                {
+                                    "text": "线型选项",
+                                    "path": "line-option.md"
+                                },
+                                {
+                                    "text": "垂直显示",
+                                    "path": "vertical-progress-bar.md"
+                                },
+                                {
+                                    "text": "仪表盘",
+                                    "path": "dashboard.md"
+                                },
+                                {
+                                    "text": "改变位置值",
+                                    "path": "change-position-value.md"
+                                },
+                                {
+                                    "text": "步骤进度条",
+                                    "path": "step-progress-bar.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "RadioButton",
+                            "path": "radio-button",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "按钮样式",
+                                    "path": "button.md"
                                 }
                             ]
                         },
