@@ -345,6 +345,20 @@
                           ]
                         },
                         {
+                            "text": "DatePicker",
+                            "path": "date-picker",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
                             "text": "Dialog",
                             "path": "dialog",
                             "items": [
