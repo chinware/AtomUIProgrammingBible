@@ -283,18 +283,32 @@
                           ]
                         },
                         {
-                          "text": "Calendar",
-                          "path": "calendar",
-                          "items": [
-                            {
-                              "text": "概述",
-                              "path": "overview.md"
-                            },
-                            {
-                              "text": "快速开始",
-                              "path": "getting-started.md"
-                            }
-                          ]
+                            "text": "Button Spinner",
+                            "path": "button-spinner",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Calendar",
+                            "path": "calendar",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
                         },
                         {
                           "text": "Card",
