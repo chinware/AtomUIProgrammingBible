@@ -626,7 +626,57 @@
                                 }
                             ]
                         },
-                        {
+                      {
+                          "text": "Menu",
+                          "path": "menu",
+                          "items": [
+                              {
+                                  "text": "概述",
+                                  "path": "overview.md"
+                              },
+                              {
+                                  "text": "快速开始",
+                                  "path": "getting-started.md"
+                              },
+                              {
+                                  "text": "顶部导航",
+                                  "path": "top-navigation.md"
+                              },
+                              {
+                                  "text": "垂直菜单",
+                                  "path": "vertical-menu.md"
+                              },
+                              {
+                                  "text": "可滚动菜单",
+                                  "path": "scrollable.md"
+                              },
+                              {
+                                  "text": "带图标",
+                                  "path": "with-icon.md"
+                              },
+                              {
+                                  "text": "单选与复选框",
+                                  "path": "with-radio-checkbox.md"
+                              },
+                              {
+                                  "text": "默认展开",
+                                  "path": "default-opened.md"
+                              },
+                              {
+                                  "text": "切换菜单类型",
+                                  "path": "switch-menu-type.md"
+                              },
+                              {
+                                  "text": "通过 ItemsSource 导航菜单",
+                                  "path": "nav-menu-by-itemsource.md"
+                              },
+                              {
+                                  "text": "上下文菜单",
+                                  "path": "context.md"
+                              }
+                          ]
+                      },
+                      {
                             "text": "Message",
                             "path": "message",
                             "items": [
@@ -693,6 +743,20 @@
                             ]
                         },
                         {
+                            "text": "Pagination",
+                            "path": "pagination",
+                            "items": [
+                              {
+                                  "text": "概述",
+                                  "path": "overview.md"
+                              },
+                              {
+                                  "text": "快速开始",
+                                  "path": "getting-started.md"
+                              }
+                            ]
+                        },
+                      {
                             "text": "Palette",
                             "path": "palette",
                             "items": [
@@ -894,7 +958,87 @@
                                 }
                             ]
                         },
-                        {
+                      {
+                        "text": "Steps",
+                        "path": "steps",
+                        "items": [
+                          {
+                            "text": "概述",
+                            "path": "overview.md"
+                          },
+                          {
+                            "text": "快速开始",
+                            "path": "getting-started.md"
+                          },
+                          {
+                            "text": "可点击",
+                            "path": "clickable.md"
+                          },
+                          {
+                            "text": "点状样式",
+                            "path": "dot-style.md"
+                          },
+                          {
+                            "text": "内联步骤",
+                            "path": "inline-step.md"
+                          },
+                          {
+                            "text": "标签放置",
+                            "path": "label-placement.md"
+                          },
+                          {
+                            "text": "导航步骤",
+                            "path": "navigation-step.md"
+                          },
+                          {
+                            "text": "状态",
+                            "path": "status.md"
+                          },
+                          {
+                            "text": "切换步骤",
+                            "path": "switch-step.md"
+                          },
+                          {
+                            "text": "垂直步骤",
+                            "path": "vertical-step.md"
+                          },
+                          {
+                            "text": "带进度",
+                            "path": "with-progress.md"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "TabControl",
+                        "path": "tab-control",
+                        "items": [
+                          {
+                            "text": "概述",
+                            "path": "overview.md"
+                          },
+                          {
+                            "text": "快速开始",
+                            "path": "getting-started.md"
+                          },
+                          {
+                            "text": "卡片类型",
+                            "path": "card-type.md"
+                          },
+                          {
+                            "text": "动态标签页",
+                            "path": "dynamic-tab.md"
+                          },
+                          {
+                            "text": "位置",
+                            "path": "position.md"
+                          },
+                          {
+                            "text": "滑块",
+                            "path": "slider.md"
+                          }
+                        ]
+                      },
+                      {
                             "text": "Tag",
                             "path": "tag",
                             "items": [
