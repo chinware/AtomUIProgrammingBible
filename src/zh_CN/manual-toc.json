@@ -5,6 +5,20 @@
             "isIndex": true
         },
         {
+            "text": "更新日志",
+            "path": "changelog",
+            "items": [
+                {
+                    "text": "概述",
+                    "isIndex": true
+                },
+                {
+                    "text": "版本更新",
+                    "path": "release-notes.md"
+                }
+            ]
+        },
+        {
             "text": "快速入门",
             "path": "get-started",
             "items": [
@@ -72,10 +86,6 @@
                 {
                     "text": "概述",
                     "isIndex": true
-                },
-                {
-                    "text": "更新日志",
-                    "path": "release-notes.md"
                 },
                 {
                     "text": "主题系统",
