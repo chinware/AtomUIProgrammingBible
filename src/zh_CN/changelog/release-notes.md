@@ -7,7 +7,7 @@
 **新特性**
 
 - 新增 OverlayPopupHost 弹出载体，优化某些场景下的弹窗性能
-- 新增二维码扫描空间
+- 新增二维码扫描控件
 - 新增 CSS FlexBox 布局控件
 - 新增 TextArea 多行文本控件
 - 新增 Gallery 探测操作系统信息页面
