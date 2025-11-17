@@ -255,44 +255,6 @@
                             ]
                         },
                         {
-                          "text": "Button",
-                          "path": "button",
-                          "items": [
-                            {
-                              "text": "概述",
-                              "path": "overview.md"
-                            },
-                            {
-                              "text": "快速开始",
-                              "path": "getting-started.md"
-                            },
-                            {
-                              "text": "基础用法",
-                              "path": "basic.md"
-                            },
-                            {
-                              "text": "图标按钮",
-                              "path": "with-icon.md"
-                            },
-                            {
-                              "text": "加载中状态",
-                              "path": "with-loading.md"
-                            },
-                            {
-                              "text": "危险按钮",
-                              "path": "danger.md"
-                            },
-                            {
-                              "text": "幽灵按钮",
-                              "path": "ghost.md"
-                            },
-                            {
-                              "text": "块级按钮",
-                              "path": "block.md"
-                            }
-                          ]
-                        },
-                        {
                             "text": "Button Spinner",
                             "path": "button-spinner",
                             "items": [
