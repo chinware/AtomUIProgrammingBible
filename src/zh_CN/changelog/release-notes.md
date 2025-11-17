@@ -1,5 +1,48 @@
 ![Changelog](./images/changelog.png)
 
+#### v5.0.1
+`2025年11月3日`
+
+**新特性**
+
+- 新增 Select 控件
+- 实现数据表格列拖动改变列宽
+- 全新的 List 控件实现
+
+**优化**
+
+- 优化 MenuFlyout 的数据源绑定生成模板
+- 优化弹出菜单滚动条
+- 优化 Design Token 系统
+- 优化 Tree 控件，需要支持数据源绑定生成节点
+- RadioButton 新增可以定制 label 内容
+- Spin 加载器背景新增是否模糊开关
+- 优化 AddOnDecoratedBox，大大降低使用难度
+
+**Bug 修复**
+
+- TreeView 多级树形结构中复选框父级状态异常
+- Combobox 点击 arrow icon 无法弹出 popup
+- NavMenu 菜单级别的选中需要单独处理，目前的处理是错误的
+- 默认类型的按钮背景颜色计算有问题
+- ThemeConfigProvider 修改全局 Token 的时候，组件没有正确计算
+- Drawer抽屉第二次点击弹出有问题 Multi-level drawer
+- AtomLayer 问题，layer 无法监控 target 控件的（包含嵌套的）父控件的(IsVisible的Changed或者是Bounds的Changed)
+- Pagination 组件 CurrentPage 属性在页面导航时显示错误值
+
+**API 变更说明**
+
+为了保持命名跟 Ant Design 一致，我们进行了以下控件的重命名：
+
+- ListBox -> List
+- EmptyIndicator -> Empty
+- LoadIndicator -> Spin
+
+因为 API 变化给大家带来的不便，还请各位开发者朋友多多包涵。
+
+**完整的更新日志**: https://gitee.com/chinware/atomui/compare/v5.0.1-build.4...v5.0.1
+
+
 #### v5.0.0
 `2025年10月15日`
 
