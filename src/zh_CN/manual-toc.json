@@ -255,6 +255,44 @@
                             ]
                         },
                         {
+                          "text": "Button",
+                          "path": "button",
+                          "items": [
+                            {
+                              "text": "Overview",
+                              "path": "overview.md"
+                            },
+                            {
+                              "text": "Getting Started",
+                              "path": "getting-started.md"
+                            },
+                            {
+                              "text": "Block Button",
+                              "path": "block-button.md"
+                            },
+                            {
+                              "text": "Danger Button",
+                              "path": "danger.md"
+                            },
+                            {
+                              "text": "Disabled Button",
+                              "path": "disabled.md"
+                            },
+                            {
+                              "text": "Ghost Button",
+                              "path": "ghost.md"
+                            },
+                            {
+                              "text": "Loading Button",
+                              "path": "loading.md"
+                            },
+                            {
+                              "text": "Button with Icon",
+                              "path": "with-icon.md"
+                            }
+                          ]
+                        },
+                        {
                             "text": "Button Spinner",
                             "path": "button-spinner",
                             "items": [
