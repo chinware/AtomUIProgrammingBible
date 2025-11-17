@@ -16,7 +16,7 @@ dotnet --version
 
 目前 `AtomUI` 正在属于快速开发迭代阶段，所以每次小版本发布我们大概率会锚定 `Avalonia` 已经发布的最新的版本。目前 `Avalonia`
 也没有发布长期支持版，所以这种策略是可以接受的。
-> 比如 AtomUI 0.0.6-build.1 就锚定了 Avalonia 11.3.2 版本
+> 比如 AtomUI 5.0.0 就锚定了 Avalonia 11.3.6 版本
 
 > [!IMPORTANT]
 > 因为 `AtomUI` 是基于 `Avalonia` 的深度定制，所以 `AtomUI` 跟 `Avalonia` 版本是一个强绑定，您在开发的时候需要注意，这样强绑定的好处可以用

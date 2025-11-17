@@ -2,10 +2,12 @@
 
 ### 简介
 
-功能简洁且可以设定回调的 `Message` 组件。
+横向菜单、竖向菜单、右键菜单，全都在这里。
 
-![AtomUI Message组件](./images/callback.webp)
+![AtomUI Menu组件](./images/with-icon.webp)
 
 ### 主要功能
-* 支持多种样式
-* 支持loading状态，支持设定callback回调
+* 常规顶部横向菜单
+* 竖向的垂直菜单
+* 多级菜单
+* 右键菜单
