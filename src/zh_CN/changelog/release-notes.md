@@ -1,5 +1,64 @@
 ![Changelog](./images/changelog.png)
 
+#### v5.1.0
+
+`2025 年 11 月 20 日`
+
+**API 变更说明**
+
+*Nuget 包变更*
+1. 引入 AtomUI.Core 包，所有 AtomUI 内核代码都方在这个包里面实现
+2. 引入新的 AtomUI.Desktop 包，所有桌面版本的控件都规划到这个包
+
+- 删除了 AtomUI.ReactiveUI 包，合并到 AtomUI.Desktop.Controls 包
+- 命名控件 AtomUI.Controls 变更成为 AtomUI.Desktop.Controls 为未来手机版本 AtomUI.Mobile.Controls 做准备
+- 删除 AtomUI.IconPkg 包，相关功能并入 AtomUI.Core
+
+**引入控件方式变更**
+
+- builder.UseOSSControls() 变更成为 builder.UseDesktopControls()
+- builder.UseOSSDataGrid() 变更成为 builder.UseDesktopDataGrid()
+- builder.UseColorPicker() 变更成为 builder.UseDesktopColorPicker()
+
+**字体引入方式统一**
+推荐在配置 AtomUI 的地方配置字体信息
+
+```csharp
+public override void Initialize()
+{
+    base.Initialize();
+    this.UseAtomUI(builder =>
+    {
+        builder.WithDefaultLanguageVariant(LanguageVariant.zh_CN);
+        builder.WithDefaultTheme(IThemeManager.DEFAULT_THEME_ID);
+        builder.UseAlibabaSansFont(); // 配置字体
+        builder.UseDesktopControls();
+        builder.UseGalleryControls();
+        builder.UseDesktopDataGrid();
+        builder.UseDesktopColorPicker(); 
+    });
+}
+```
+
+**Icon 系统的调整**
+
+- 删除了 IconPackage 和 IconInfoProvider
+- 为每一个 Icon 生成对应的类
+- 为 atom:IconProvider 提供智能补全支持
+
+在 axaml 可以向下面方便的引用了
+```xaml
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:atom="https://atomui.net"
+             xmlns:antdicons="https://atomui.net/icons/antdesign">
+    <StackPanel>
+        <antdicons:AudioOutlined Width="16" Height="16"/>
+        <atom:Button Icon="{atom:IconProvider AudioOutlined}"/>
+    </StackPanel>
+</UserControl>
+```
+
 #### v5.0.2
 
 `2025 年 11 月 17 日`
