@@ -4,7 +4,7 @@
 
 简洁的分隔线组件。
 
-![AtomUI Separator组件](./images/default-separator.PNG)
+![AtomUI Separator组件](./images/horizontal.PNG)
 
 ### 主要功能
 * 水平分割线、垂直分割线
