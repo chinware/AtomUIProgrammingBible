@@ -6,7 +6,7 @@
 
 ![AtomUI ProgressBar组件](./images/bar-with-steps.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="5">
     <atom:StepsProgressBar Value="50" Minimum="0" Maximum="100" Steps="3" />
     <atom:StepsProgressBar Value="30" Minimum="0" Maximum="100" Steps="5" />
@@ -29,7 +29,7 @@
 
 ![AtomUI ProgressBar组件](./images/calculate-with-steps.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="5">
     <WrapPanel Orientation="Horizontal">
         <atom:CircleProgress Value="50" Minimum="0" Maximum="100" StepCount="4" StepGap="8"

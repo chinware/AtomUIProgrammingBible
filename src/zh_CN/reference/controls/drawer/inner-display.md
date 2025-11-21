@@ -6,7 +6,7 @@
 
 ![AtomUI Drawer组件](./images/render-in-this.webp)
 
-```axaml
+```xaml
 <Panel>
     <StackPanel Orientation="Vertical" Spacing="10">
         <atom:TextBlock>Render in this</atom:TextBlock>

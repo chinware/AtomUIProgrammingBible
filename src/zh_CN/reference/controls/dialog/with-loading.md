@@ -7,7 +7,7 @@
 ![AtomUI Dialog组件](./images/loading.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <Panel>
         <atom:Button ButtonType="Primary" Name="LoadingDialogOpenModalButton">

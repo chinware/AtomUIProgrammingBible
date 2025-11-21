@@ -4,7 +4,7 @@
 
 ![AtomUI ProgressBar组件](./images/vertical-progress-bar.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10" Height="300">
     <atom:ProgressBar Value="100" Minimum="0" Maximum="100" Orientation="Vertical" />
     <atom:ProgressBar Value="55" Minimum="0" Maximum="100" Orientation="Vertical" />
@@ -29,7 +29,7 @@
 
 ![AtomUI ProgressBar组件](./images/vertical-progress-bar-1.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10" Height="300">
     <atom:StepsProgressBar Value="100" Minimum="0" Maximum="100" Steps="10" Orientation="Vertical"
                            PercentPosition="End" />

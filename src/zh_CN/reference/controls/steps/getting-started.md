@@ -9,7 +9,7 @@
 
 ![AtomUI Steps](./images/basic.png)
 
-```axaml
+```xaml
 <atom:Steps CurrentStep="0">
     <atom:StepsItem Header="Finished" Description="This is a description." />
     <atom:StepsItem Header="In Progress" Description="This is a description." SubHeader="Left 00:00:08" />
@@ -21,7 +21,7 @@
 
 ![AtomUI Steps](./images/mini-size.png)
 
-```axaml
+```xaml
 <atom:Steps CurrentStep="0" SizeType="Small">
     <atom:StepsItem Header="Finished" Description="This is a description." />
     <atom:StepsItem Header="In Progress" Description="This is a description." SubHeader="Left 00:00:08" />
@@ -33,7 +33,7 @@
 
 ![AtomUI Steps](./images/with-icon.webp)
 
-```axaml
+```xaml
 <atom:Steps CurrentStep="0">
     <atom:StepsItem Header="Login" Status="Finish" Icon="{atom:IconProvider Kind=UserOutlined}" />
     <atom:StepsItem Header="Verification" Status="Finish" Icon="{atom:IconProvider Kind=SolutionOutlined}" />

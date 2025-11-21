@@ -7,7 +7,7 @@
 ![AtomUI Notification组件](./images/duration.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Button ButtonType="Primary" Click="ShowNeverCloseNotification">
     Open the notification box
 </atom:Button>

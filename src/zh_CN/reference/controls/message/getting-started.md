@@ -14,7 +14,7 @@
 ![AtomUI Message组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Button ButtonType="Primary"
              Click="ShowSimpleMessage">
     Display normal message
@@ -158,7 +158,7 @@ public class MessageViewModel : ReactiveObject, IRoutableViewModel
 
 ![AtomUI Message组件](./images/types.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:Button ButtonType="Default"
                  Click="ShowSuccessMessage">

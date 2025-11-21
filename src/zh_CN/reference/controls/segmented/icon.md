@@ -6,7 +6,7 @@
 
 ![AtomUI Segmented组件](./images/with-icon.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Spacing="10">
     <atom:Segmented Margin="20">
         <atom:SegmentedItem Icon="{atom:IconProvider Kind=BarsOutlined}" />
@@ -21,7 +21,7 @@
 
 ![AtomUI Segmented组件](./images/icon-text.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Spacing="10">
     <atom:Segmented Margin="20">
         <atom:SegmentedItem Icon="{atom:IconProvider Kind=BarsOutlined}">

@@ -6,7 +6,7 @@
 
 ![AtomUI ProgressBar组件](./images/change-progress-with-value.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ProgressBar Value="30" Minimum="0" Maximum="100" Width="300"
                       PercentPosition="{Binding InnerStartPercentPosition}" />
@@ -31,7 +31,7 @@
 
 ![AtomUI ProgressBar组件](./images/change-progress-with-value-in-StepsProgressBar.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:StepsProgressBar Value="100" Minimum="0" Maximum="100" Steps="8" PercentPosition="Start" />
     <atom:StepsProgressBar Value="100" Minimum="0" Maximum="100" Steps="8" PercentPosition="Center" />

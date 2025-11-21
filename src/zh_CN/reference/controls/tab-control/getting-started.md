@@ -11,7 +11,7 @@
 
 ![AtomUI TabControl组件](./images/basic.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:TabControl Name="TestControl">
         <atom:TabItem Header="Tab 1">Content of Tab Pane 1</atom:TabItem>
@@ -27,7 +27,7 @@
 
 ![AtomUI TabControl组件](./images/generate-from-itemsource.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:TabControl ItemsSource="{Binding TabItemDataSource}">
         <atom:TabControl.ItemTemplate>
@@ -47,7 +47,7 @@
 
 ![AtomUI TabControl组件](./images/generate-from-itemsource.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:CardTabControl HeaderStartEdgePadding="">
         <atom:TabItem Header="Tab 1">Content of Tab Pane 1</atom:TabItem>
@@ -69,7 +69,7 @@
 
 ![AtomUI TabControl组件](./images/generate-from-itemsource.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:TabControl TabAlignmentCenter="True">
         <atom:TabItem Header="Tab 1">Content of Tab Pane 1</atom:TabItem>
@@ -92,7 +92,7 @@
 
 ![AtomUI TabControl组件](./images/with-icon.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:TabControl>
         <atom:TabItem Header="Tab 1" Icon="{atom:IconProvider Kind=AppleOutlined}">Content of Tab Pane 1</atom:TabItem>
@@ -108,7 +108,7 @@
 
 ![AtomUI TabControl组件](./images/size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <atom:TextBlock VerticalAlignment="Center">Tab position:</atom:TextBlock>

@@ -4,7 +4,7 @@
 
 ![AtomUI Card组件](./images/tag-card.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical">
    <atom:Card Header="Card title" HorizontalAlignment="Stretch" SizeType="Large">
        <atom:Card.Extra>

@@ -8,7 +8,7 @@
 
 ![AtomUI Slider组件](./images/gradruate.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:TextBlock FontWeight="Bold">included=true</atom:TextBlock>
     <atom:Slider

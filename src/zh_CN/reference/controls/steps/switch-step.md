@@ -2,7 +2,7 @@
 
 ![AtomUI Steps](./images/switch-step.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:Steps Name="CurrentStepContentSteps" CurrentStep="{Binding CurrentStep}">
         <atom:StepsItem Header="First" Content="First-content" />

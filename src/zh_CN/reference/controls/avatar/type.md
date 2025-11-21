@@ -4,7 +4,7 @@
 
 ![AtomUI Avatar](./images/type.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Avatar Icon="{atom:IconProvider UserOutlined}" />
     <atom:Avatar>U</atom:Avatar>

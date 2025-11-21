@@ -11,7 +11,7 @@
 
 ![AtomUI Empty组件](./images/basic.png)
 
-```axaml
+```xaml
 <atom:EmptyIndicator PresetImage="Default" />
 ```
 
@@ -21,7 +21,7 @@
 
 ![AtomUI Empty组件](./images/size.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical">
     <StackPanel Orientation="Horizontal">
         <atom:EmptyIndicator PresetImage="Simple" SizeType="Small" />
@@ -37,7 +37,7 @@
 
 ![AtomUI Empty组件](./images/customize.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:EmptyIndicator ImagePath="avares://AtomUIGallery/Assets/EmptyShowCase/empty.svg"
                          SizeType="Large"
@@ -52,6 +52,6 @@
 
 ![AtomUI Empty组件](./images/no-description.png)
 
-```axaml
+```xaml
 <atom:EmptyIndicator PresetImage="Default" IsShowDescription="False" />
 ```

@@ -12,7 +12,7 @@
 ![AtomUI TreeView组件](./images/line-tree.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" Spacing="10">
         <TextBlock VerticalAlignment="Center">showLine:</TextBlock>

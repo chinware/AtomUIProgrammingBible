@@ -3,7 +3,7 @@
 ![AtomUI Menu组件](./images/top-navigation.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel>
     <atom:NavMenu>
         <atom:NavMenuItem Header="Navigation One" Icon="{atom:IconProvider Kind=MailOutlined}" />
@@ -48,7 +48,7 @@ axaml文件：
 ![AtomUI Menu组件](./images/context-menu-with-itemssource.webp)
 
 axaml文件：
-```axaml
+```xaml
 <gallerycontrols:ShowCaseItem.Styles>
     <Style Selector="Border#ItemSourcesContextMenuContainer">
         <Setter Property="BorderBrush" Value="Gray" />
@@ -76,7 +76,7 @@ axaml文件：
 ![AtomUI Menu组件](./images/flyout-menu.webp)
 
 axaml文件：
-```axaml
+```xaml
 <gallerycontrols:ShowCaseItem.Styles>
     <Style Selector="Border.ContextFlyoutContainer">
         <Setter Property="BorderBrush" Value="Gray" />

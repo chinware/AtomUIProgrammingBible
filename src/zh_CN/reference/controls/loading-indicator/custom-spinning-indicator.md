@@ -5,7 +5,7 @@
 ![AtomUI LoadingIndicator组件](./images/custom-spinning.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal">
     <atom:LoadingIndicator SizeType="Small"
                            VerticalAlignment="Center"

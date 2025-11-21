@@ -4,7 +4,7 @@
 
 ![AtomUI Card组件](./images/loading.webp)
 
-```axaml
+```xaml
 // 通过绑定IsLoading属性，实现loading状态
 <StackPanel>
    <atom:ToggleSwitch IsChecked="{Binding IsLoading, Mode=TwoWay}"/>

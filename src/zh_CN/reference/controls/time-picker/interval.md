@@ -4,7 +4,7 @@
 
 ![AtomUI TimePicker](./images/interval-option.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:TimePicker Watermark="Select time"
                      DefaultTime="12:08:23"

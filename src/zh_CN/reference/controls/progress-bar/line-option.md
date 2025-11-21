@@ -5,7 +5,7 @@
 
 ![AtomUI ProgressBar组件](./images/stroke-linecap.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ProgressBar Value="75" Minimum="0" Maximum="100" StrokeLineCap="Square" />
     <WrapPanel Orientation="Horizontal">
@@ -22,7 +22,7 @@
 ![AtomUI ProgressBar组件](./images/custom-line-gradient.png)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ProgressBar Value="99" Minimum="0" Maximum="100"
                       StrokeBrush="{Binding TwoStopsGradientStrokeColor}" />

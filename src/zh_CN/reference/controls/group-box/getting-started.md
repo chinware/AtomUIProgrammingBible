@@ -11,7 +11,7 @@
 
 ![AtomUI GroupBox组件](./images/basic.png)
 
-```axaml
+```xaml
 <atom:GroupBox HeaderTitle="Title Info">
     <Panel Height="100">
         <atom:TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">
@@ -27,7 +27,7 @@
 
 ![AtomUI GroupBox组件](./images/header-position.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:GroupBox HeaderTitle="Title Info">
         <Panel Height="40">
@@ -59,7 +59,7 @@
 
 ![AtomUI GroupBox组件](./images/header-title-style.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:GroupBox HeaderTitle="Title Info" HeaderFontStyle="Italic">
         <Panel Height="40">
@@ -99,7 +99,7 @@
 
 ![AtomUI GroupBox组件](./images/header-icon.png)
 
-```axaml
+```xaml
 <atom:GroupBox HeaderTitle="Title Info" HeaderIcon="{atom:IconProvider Kind=GithubOutlined}">
     <Panel Height="100">
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">

@@ -21,7 +21,7 @@
 ![AtomUI Dialog组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <Panel>
         <atom:Button ButtonType="Primary" Name="BasicOpenModalButton">
@@ -495,7 +495,7 @@ public class ModalViewModel : ReactiveObject, IRoutableViewModel
 
 ![AtomUI Dialog组件](./images/style.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <TextBlock VerticalAlignment="Center">Native Window:</TextBlock>
@@ -579,7 +579,7 @@ public class ModalViewModel : ReactiveObject, IRoutableViewModel
 ![AtomUI Dialog组件](./images/draggable.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <Panel>
         <atom:Button ButtonType="Primary" Name="DraggableDialogOpenButton">

@@ -4,7 +4,7 @@
 
 ![AtomUI Avatar](./images/group.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:AvatarGroup>
         <atom:Avatar Src="avares://AtomUIGallery/Assets/AvatarShowCase/PeopleAvatar1.svg"/>

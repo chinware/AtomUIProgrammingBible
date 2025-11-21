@@ -4,7 +4,7 @@
 
 ![AtomUI Watermark组件](./images/image-watermark.png)
 
-```axaml
+```xaml
 <Border Height="400">
     <atom:Watermark.Glyph>
         <atom:ImageGlyph Source="/Assets/ATOMUI-LOGO.png" />

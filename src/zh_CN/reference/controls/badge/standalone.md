@@ -4,7 +4,7 @@
 
 ![AtomUI Badge](./images/standalone.webp)
 
-```axaml
+```xaml
 // 下面代码中Binding的属性，请自行修改为实际项目中的属性名称
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:ToggleSwitch IsChecked="{Binding StandaloneSwitchChecked}" />

@@ -3,7 +3,7 @@
 ![AtomUI Menu组件](./images/switch-menu-type.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <atom:ToggleSwitch Name="ChangeModeSwitch" />

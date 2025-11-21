@@ -5,7 +5,7 @@
 ![AtomUI CheckBox组件](./images/controlled-checkbox.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Spacing="10" Orientation="Vertical">
     <atom:CheckBox IsChecked="{Binding ControlledCheckBoxCheckedStatus}"
                    IsEnabled="{Binding ControlledCheckBoxEnabledStatus}"

@@ -18,7 +18,7 @@
 
 ![AtomUI ProgressBar组件](./images/basic.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ProgressBar Value="30" Minimum="0" Maximum="100" />
     <atom:ProgressBar Value="50" Minimum="0" Maximum="100" />
@@ -30,7 +30,7 @@
 
 ![AtomUI ProgressBar组件](./images/circle-bar.png)
 
-```axaml
+```xaml
 <WrapPanel Orientation="Horizontal">
     <atom:CircleProgress Value="75" Minimum="0" Maximum="100" />
     <atom:CircleProgress Value="70" Minimum="0" Maximum="100" Status="Exception" />
@@ -44,7 +44,7 @@
 
 ![AtomUI ProgressBar组件](./images/mini-size-bar.png)
 
-```axaml
+```xaml
 <WrapPanel Orientation="Horizontal" Width="180" HorizontalAlignment="Left">
     <atom:ProgressBar Value="30" Minimum="0" Maximum="100" SizeType="Middle" />
     <atom:ProgressBar Value="50" Minimum="0" Maximum="100" SizeType="Middle" />
@@ -56,7 +56,7 @@
 
 ![AtomUI ProgressBar组件](./images/small-circle-bar.png)
 
-```axaml
+```xaml
 <WrapPanel Orientation="Horizontal">
     <atom:CircleProgress Value="75" Minimum="0" Maximum="100" SizeType="Middle" />
     <atom:CircleProgress Value="70" Minimum="0" Maximum="100" Status="Exception" SizeType="Middle" />
@@ -70,7 +70,7 @@
 
 ![AtomUI ProgressBar组件](./images/disable-enable.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ProgressBar Value="30" Minimum="0" Maximum="100" IsEnabled="{Binding ToggleStatus}" />
     <atom:ProgressBar Value="50" Minimum="0" Maximum="100" IsEnabled="{Binding ToggleStatus}" />

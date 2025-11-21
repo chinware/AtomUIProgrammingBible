@@ -13,7 +13,7 @@
 
 ![AtomUI ButtonSpinner组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:ButtonSpinner>
     <atom:TextBlock
         HorizontalAlignment="Left"
@@ -28,7 +28,7 @@
 
 ![AtomUI ButtonSpinner组件](./images/size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:ButtonSpinner SizeType="Large">
         <atom:TextBlock
@@ -57,7 +57,7 @@
 
 ![AtomUI ButtonSpinner组件](./images/variants.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ButtonSpinner StyleVariant="Outline">
         <atom:TextBlock
@@ -86,7 +86,7 @@
 
 ![AtomUI ButtonSpinner组件](./images/disabled.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ButtonSpinner StyleVariant="Outline" IsEnabled="False">
         <atom:TextBlock
@@ -117,7 +117,7 @@
 
 ![AtomUI ButtonSpinner组件](./images/pre-post-tab.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ButtonSpinner
         LeftAddOn="http://"
@@ -164,7 +164,7 @@
 
 ![AtomUI ButtonSpinner组件](./images/prefix-suffix.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
 
     <atom:ButtonSpinner
@@ -208,7 +208,7 @@
 
 ![AtomUI ButtonSpinner组件](./images/status.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:ButtonSpinner
         Status="Error"

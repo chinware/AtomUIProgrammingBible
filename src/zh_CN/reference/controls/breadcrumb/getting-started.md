@@ -11,7 +11,7 @@
 
 ![AtomUI Breadcrumb组件](./images/basic.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Breadcrumb>
         <atom:BreadcrumbItem>Home</atom:BreadcrumbItem>
@@ -28,7 +28,7 @@
 
 ![AtomUI Breadcrumb组件](./images/with-icon.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Breadcrumb>
         <atom:BreadcrumbItem Icon="{atom:IconProvider Kind=HomeOutlined}"></atom:BreadcrumbItem>
@@ -44,7 +44,7 @@
 
 ![AtomUI Breadcrumb组件](./images/with-param.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Breadcrumb NavigateRequest="HandleNavigateRequest">
         <atom:BreadcrumbItem>Users</atom:BreadcrumbItem>
@@ -59,7 +59,7 @@
 
 ![AtomUI Breadcrumb组件](./images/configure-separator.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Breadcrumb Separator=">">
         <atom:BreadcrumbItem>Home</atom:BreadcrumbItem>
@@ -74,7 +74,7 @@
 
 ![AtomUI Breadcrumb组件](./images/configuire-single-separator.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Breadcrumb>
         <atom:BreadcrumbItem Separator=":">Location</atom:BreadcrumbItem>
@@ -91,7 +91,7 @@
 
 ![AtomUI Breadcrumb组件](./images/generate.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Breadcrumb ItemsSource="{Binding BreadcrumbItems}"
                      x:DataType="viewModels:BreadcrumbViewModel">

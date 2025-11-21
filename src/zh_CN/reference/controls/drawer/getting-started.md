@@ -12,7 +12,7 @@
 ![AtomUI Drawer组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <Panel>
     <atom:ToggleSwitch />
     <atom:Drawer IsOpen="{Binding $parent[Panel].((atom:ToggleSwitch)Children[0]).IsChecked}"
@@ -86,7 +86,7 @@ public partial class DrawerShowCase : ReactiveUserControl<DrawerViewModel>
 
 ![AtomUI Drawer组件](./images/no-mask.webp)
 
-```axaml
+```xaml
 <Panel>
     <atom:ToggleSwitch Content="Open" />
     <atom:Drawer IsOpen="{Binding $parent[Panel].((atom:ToggleSwitch)Children[0]).IsChecked}"

@@ -11,7 +11,7 @@
 
 ![AtomUI DatePicker组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:DatePicker Watermark="Select date"/>
 ```
 
@@ -21,7 +21,7 @@
 
 ![AtomUI DatePicker组件](./images/range.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:RangeDatePicker IsShowTime="true" Watermark="Select date" SecondaryWatermark="End date"/>
     <atom:RangeDatePicker IsShowTime="False" Watermark="Select date" SecondaryWatermark="End date"/>
@@ -34,7 +34,7 @@
 
 ![AtomUI DatePicker组件](./images/confirm.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:DatePicker IsNeedConfirm="True" Watermark="Select date" />
     <atom:RangeDatePicker IsNeedConfirm="True" IsShowTime="False" Watermark="Select date" SecondaryWatermark="End date" />
@@ -47,7 +47,7 @@
 
 ![AtomUI DatePicker组件](./images/disabled.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:DatePicker IsNeedConfirm="True" Watermark="Select date" SelectedDateTime="2024-01-20"
                      IsEnabled="False" />
@@ -82,7 +82,7 @@
 
 ![AtomUI DatePicker组件](./images/size.webp)
 
-```axaml
+```xaml
 <DockPanel Margin="0, 0, 0, 0">
     <StackPanel Orientation="Horizontal" Spacing="5" DockPanel.Dock="Top">
         <atom:TextBlock VerticalAlignment="Center">Expand direction:</atom:TextBlock>
@@ -113,7 +113,7 @@
 
 ![AtomUI DatePicker组件](./images/status.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <atom:DatePicker Status="Default"
@@ -157,7 +157,7 @@
 
 ![AtomUI DatePicker组件](./images/variants.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <atom:DatePicker Status="Default"
@@ -198,7 +198,7 @@
 
 ![AtomUI DatePicker组件](./images/placement.webp)
 
-```axaml
+```xaml
 <DockPanel Margin="0, 0, 0, 0">
     <StackPanel Orientation="Horizontal" Spacing="5" DockPanel.Dock="Top">
         <atom:TextBlock VerticalAlignment="Center">Expand direction:</atom:TextBlock>

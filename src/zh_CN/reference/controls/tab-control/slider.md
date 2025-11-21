@@ -4,7 +4,7 @@
 
 ![AtomUI TabControl组件](./images/slide.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:TabControl>
         <atom:TabItem Header="Tab 1">Content of Tab Pane 1</atom:TabItem>

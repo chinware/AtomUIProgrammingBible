@@ -6,7 +6,7 @@
 
 ![AtomUI TabControl组件](./images/closeble.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:CardTabControl IsTabClosable="True"
                          IsTabAutoHideCloseButton="True">
@@ -46,7 +46,7 @@
 
 ![AtomUI TabControl组件](./images/dynamic-add.webp)
 
-```axaml
+```xaml
 <atom:CardTabControl IsShowAddTabButton="True" Name="AddTabDemoTabControl">
     <atom:TabItem Header="Tab 1" Icon="{atom:IconProvider Kind=AppleOutlined}">Content of Tab Pane 1</atom:TabItem>
     <atom:TabItem Header="Tab 2" Icon="{atom:IconProvider Kind=AndroidOutlined}">Content of Tab Pane 2</atom:TabItem>

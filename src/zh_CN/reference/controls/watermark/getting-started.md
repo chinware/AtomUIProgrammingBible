@@ -15,7 +15,7 @@
 
 ![AtomUI Watermark组件](./images/basic.png)
 
-```axaml
+```xaml
 <Border Height="300" 
         HorizontalAlignment="Stretch" 
         atom:Watermark.Glyph="{atom:TextGlyph 'AtomUI'}" />
@@ -27,7 +27,7 @@
 
 ![AtomUI Watermark组件](./images/inline-watermark.png)
 
-```axaml
+```xaml
 <Border Height="200"
         HorizontalAlignment="Stretch"
         atom:Watermark.Glyph="{atom:TextGlyph 'AtomUI&#x000A;Happy Working', FontSize=18, Foreground=Gray}" />

@@ -4,7 +4,7 @@
 
 ![AtomUI Card组件](./images/noborder-card-with-gray-bg.png)
 
-```axaml
+```xaml
 // Binding BorderlessFrameBg请自行修改
 <Border Padding="20" Background="{Binding BorderlessFrameBg}">
     <atom:Card Header="Card title" Width="300" StyleVariant="Borderless">

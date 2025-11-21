@@ -13,7 +13,7 @@
 
 ![AtomUI InfoFlyout组件](./images/basic.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:FlyoutHost Trigger="Hover">
         <atom:FlyoutHost.Flyout>

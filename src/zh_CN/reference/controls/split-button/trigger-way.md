@@ -4,7 +4,7 @@
 
 ![AtomUI SplitButton组件](./images/trigger-split-button.webp)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:SplitButton TriggerType="Hover">
         Hover Me

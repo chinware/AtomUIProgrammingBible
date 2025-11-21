@@ -7,7 +7,7 @@
 
 ![AtomUI Slider组件](./images/tooltips.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:Slider
         Maximum="100"

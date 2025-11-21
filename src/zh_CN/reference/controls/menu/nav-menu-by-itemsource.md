@@ -3,7 +3,7 @@
 ![AtomUI Menu组件](./images/generate-nav-menuitem-by-itemsource.png)
 
 axaml文件：
-```axaml
+```xaml
 <atom:NavMenu Mode="Inline" ItemsSource="{Binding NavMenuItems}"
               x:DataType="viewModels:MenuViewModel">
     <atom:NavMenu.ItemTemplate>

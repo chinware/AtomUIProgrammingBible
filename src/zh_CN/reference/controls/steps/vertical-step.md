@@ -4,7 +4,7 @@
 
 ![AtomUI Steps](./images/vertical-steps.png)
 
-```axaml
+```xaml
 <atom:Steps CurrentStep="1" Orientation="Vertical">
     <atom:StepsItem Header="Finished" Description="This is a description." />
     <atom:StepsItem Header="In Progress" Description="This is a description." SubHeader="Left 00:00:08" />
@@ -16,7 +16,7 @@
 
 ![AtomUI Steps](./images/vertical-mini-size.png)
 
-```axaml
+```xaml
 <atom:Steps CurrentStep="1" Orientation="Vertical" SizeType="Small">
     <atom:StepsItem Header="Finished" Description="This is a description." />
     <atom:StepsItem Header="In Progress" Description="This is a description." SubHeader="Left 00:00:08" />

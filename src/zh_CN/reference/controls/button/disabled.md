@@ -4,7 +4,7 @@
 
 ![AtomUI Button组件](./images/disabled-button.webp)
 
-```axaml
+```xaml
 <WrapPanel HorizontalAlignment="Stretch" Orientation="Vertical">
     <StackPanel Orientation="Horizontal">
         <atom:Button ButtonType="Primary">

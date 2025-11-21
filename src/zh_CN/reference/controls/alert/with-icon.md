@@ -4,7 +4,7 @@
 
 ![AtomUI Alert图标](./images/description-with-icon.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Alert Type="Success"
                 Message="Success Tips"

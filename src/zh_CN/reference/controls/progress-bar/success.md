@@ -8,7 +8,7 @@
 
 ![AtomUI ProgressBar组件](./images/bar-with-success-segment.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ProgressBar Value="60" Minimum="0" Maximum="100" SuccessThreshold="30" />
     <WrapPanel Orientation="Horizontal">

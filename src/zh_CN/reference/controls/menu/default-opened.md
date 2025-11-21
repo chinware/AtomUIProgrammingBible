@@ -3,7 +3,7 @@
 ![AtomUI Menu组件](./images/default-opened-path.png)
 
 axaml文件：
-```axaml
+```xaml
 <atom:NavMenu Mode="Inline" Margin="0, 0, 0, 20"
               DefaultOpenPaths="{Binding DefaultOpenPaths}"
               DefaultSelectedPath="{Binding DefaultSelectedPath}">

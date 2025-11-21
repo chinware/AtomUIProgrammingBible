@@ -20,7 +20,7 @@
 ![AtomUI PopupConfirm组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:PopupConfirm
     Title="Delete the task"
     ConfirmContent="Are you sure to delete this task?"
@@ -38,7 +38,7 @@ axaml文件：
 
 ![AtomUI PopupConfirm组件](./images/basic-locale-text.webp)
 
-```axaml
+```xaml
 <atom:PopupConfirm
     Title="Delete the task"
     ConfirmContent="Are you sure to delete this task?">
@@ -52,7 +52,7 @@ axaml文件：
 
 ![AtomUI PopupConfirm组件](./images/placement.webp)
 
-```axaml
+```xaml
 <Grid>
     <Grid.Styles>
         <Style Selector="atom|Button">
@@ -192,7 +192,7 @@ axaml文件：
 
 ![AtomUI PopupConfirm组件](./images/custom-icon.webp)
 
-```axaml
+```xaml
 <atom:PopupConfirm
     Title="Delete the task"
     ConfirmContent="Are you sure to delete this task?"

@@ -4,7 +4,7 @@
 
 ![AtomUI ProgressBar组件](./images/dashboard.png)
 
-```axaml
+```xaml
 <WrapPanel Orientation="Horizontal">
     <atom:DashboardProgress Value="75" Minimum="0" Maximum="100" DashboardGapPosition="Left" />
     <atom:DashboardProgress Value="60" Minimum="0" Maximum="100" DashboardGapPosition="Top" />

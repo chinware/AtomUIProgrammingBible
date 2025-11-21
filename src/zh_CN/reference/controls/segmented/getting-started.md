@@ -11,7 +11,7 @@
 
 ![AtomUI Segmented组件](./images/basic.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Spacing="10">
     <atom:Segmented Margin="20">
         <atom:SegmentedItem>Daily</atom:SegmentedItem>
@@ -29,7 +29,7 @@
 
 ![AtomUI Segmented组件](./images/block-segment.png)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical">
     <atom:Segmented IsExpanding="True" Margin="20">
         <atom:SegmentedItem>123</atom:SegmentedItem>
@@ -45,7 +45,7 @@
 
 ![AtomUI Segmented组件](./images/disabled.png)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Spacing="10">
     <atom:Segmented Margin="20">
         <atom:SegmentedItem IsEnabled="False">Map</atom:SegmentedItem>
@@ -68,7 +68,7 @@
 
 ![AtomUI Segmented组件](./images/size.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Spacing="10">
     <atom:Segmented SizeType="Large" Margin="20">
         <atom:SegmentedItem>Daily</atom:SegmentedItem>

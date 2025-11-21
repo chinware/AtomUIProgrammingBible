@@ -3,7 +3,7 @@
 ![AtomUI Dialog组件](./images/button-props.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <Panel>
         <atom:Button ButtonType="Primary" Name="ConfigureButtonsDialogOpenButton">

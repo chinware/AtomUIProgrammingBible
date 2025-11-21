@@ -4,7 +4,7 @@
 
 ![AtomUI TabControl组件](./images/position.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <atom:TextBlock VerticalAlignment="Center">Tab position:</atom:TextBlock>
@@ -48,7 +48,7 @@
 
 ![AtomUI TabControl组件](./images/card-shape-position.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <TextBlock VerticalAlignment="Center">Tab position:</TextBlock>

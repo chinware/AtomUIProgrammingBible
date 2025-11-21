@@ -5,7 +5,7 @@
 ![AtomUI TreeView组件](./images/draggable.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:TreeView IsDraggable="True" NodeHoverMode="Block">
     <atom:TreeViewItem Header="0-0">
         <atom:TreeViewItem Header="0-0-0">

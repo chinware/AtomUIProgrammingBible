@@ -4,7 +4,7 @@
 
 ![AtomUI TreeView组件](./images/block-mode.webp)
 
-```axaml
+```xaml
 <atom:TreeView ToggleType="Radio" IsDefaultExpandAll="True" NodeHoverMode="Block">
     <atom:TreeViewItem Header="parent">
         <atom:TreeViewItem Header="child 1" IsEnabled="False" />

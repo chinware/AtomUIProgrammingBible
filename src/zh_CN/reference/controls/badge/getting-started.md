@@ -11,7 +11,7 @@
 
 ![AtomUI Badge组件](./images/basic.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:CountBadge Count="5">
         <Border Width="40"
@@ -34,7 +34,7 @@
 
 ![AtomUI Badge组件](./images/overflow-counter.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:CountBadge Count="99">
         <Border Width="40"
@@ -69,7 +69,7 @@
 
 ![AtomUI Badge组件](./images/offset.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:CountBadge Count="5" Offset="10, 10">
         <Border Width="40"
@@ -86,7 +86,7 @@
 
 ![AtomUI Badge组件](./images/size.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:CountBadge Count="5">
         <Border Width="40"

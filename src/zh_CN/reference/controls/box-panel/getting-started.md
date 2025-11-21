@@ -11,7 +11,7 @@
 
 ![AtomUI BoxPanel组件](./images/basic.webp)
 
-```axaml
+```xaml
 <StackPanel
     Margin="20"
     Orientation="Vertical"
@@ -43,7 +43,7 @@
 
 ![AtomUI BoxPanel组件](./images/flex.webp)
 
-```axaml
+```xaml
 <StackPanel
     Margin="20"
     Orientation="Vertical"
@@ -84,7 +84,7 @@
 
 ![AtomUI BoxPanel组件](./images/child-alignment.png)
 
-```axaml
+```xaml
 <StackPanel
     Margin="20"
     Orientation="Vertical"
@@ -122,7 +122,7 @@
 
 ![AtomUI BoxPanel组件](./images/space-flex.webp)
 
-```axaml
+```xaml
 <StackPanel
     Margin="20"
     Orientation="Vertical"
@@ -173,7 +173,7 @@
 
 ![AtomUI BoxPanel组件](./images/ratio-child.webp)
 
-```axaml
+```xaml
 <StackPanel
     Margin="20"
     Orientation="Vertical"

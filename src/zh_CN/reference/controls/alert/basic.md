@@ -6,7 +6,7 @@
 
 ![AtomUI Alert](./images/different-types.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Alert Type="Success">Success Text</atom:Alert>
     <atom:Alert Type="Info">Info Text</atom:Alert>
@@ -21,7 +21,7 @@
 
 ![AtomUI Alert](./images/closer.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Alert Type="Warning" IsClosable="True">
         Warning Text Warning Text Warning Text Warning Text Warning Text Warning TextWarning Text
@@ -44,7 +44,7 @@
 
 ![AtomUI Alert](./images/description.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Alert Type="Success"
                 Message="Success Text"

@@ -11,7 +11,7 @@
 
 ![AtomUI ComboBox组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:ComboBox PlaceholderText="Please select" Width="300">
     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
@@ -64,7 +64,7 @@
 
 ![AtomUI ComboBox组件](./images/generate.webp)
 
-```axaml
+```xaml
 <atom:ComboBox PlaceholderText="Please select" Width="300"
                x:DataType="viewModels:ComboBoxViewModel"
                ItemsSource="{Binding ComboBoxItems}">
@@ -82,7 +82,7 @@
 
 ![AtomUI ComboBox组件](./images/disabled.png)
 
-```axaml
+```xaml
 <atom:ComboBox PlaceholderText="Please select" Width="300" IsEnabled="False">
     <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
@@ -97,7 +97,7 @@
 
 ![AtomUI ComboBox组件](./images/size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:ComboBox SizeType="Large" PlaceholderText="Please select">
         <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
@@ -126,7 +126,7 @@
 
 ![AtomUI ComboBox组件](./images/variants.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ComboBox StyleVariant="Outline" PlaceholderText="Please select" Width="300">
         <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
@@ -159,7 +159,7 @@
 
 ![AtomUI ComboBox组件](./images/pre-post-tab.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ComboBox PlaceholderText="Please select" Width="300"
                    LeftAddOn="http://"
@@ -201,7 +201,7 @@
 
 ![AtomUI ComboBox组件](./images/prefix-suffix.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ComboBox PlaceholderText="Please select" Width="300"
                    InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
@@ -239,7 +239,7 @@
 
 ![AtomUI ComboBox组件](./images/status.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:ComboBox PlaceholderText="Please select" Width="300"
                    Status="Error">

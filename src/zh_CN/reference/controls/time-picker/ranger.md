@@ -4,7 +4,7 @@
 
 ![AtomUI TimePicker](./images/ranger.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:RangeTimePicker Status="Default"
                           Watermark="Start time"

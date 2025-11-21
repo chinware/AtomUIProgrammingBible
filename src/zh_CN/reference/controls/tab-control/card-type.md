@@ -4,7 +4,7 @@
 
 ![AtomUI TabControl组件](./images/card-type.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:CardTabControl>
         <atom:TabItem Header="Tab 1" Icon="{atom:IconProvider Kind=AppleOutlined}">Content of Tab Pane 1</atom:TabItem>

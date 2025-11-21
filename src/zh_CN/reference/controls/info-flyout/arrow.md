@@ -6,7 +6,7 @@
 
 ![AtomUI InfoFlyout组件](./images/arrow-option.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Segmented x:Name="ArrowSegmented">
         <atom:SegmentedItem>Show</atom:SegmentedItem>

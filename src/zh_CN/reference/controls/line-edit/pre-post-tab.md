@@ -13,7 +13,7 @@
 ![AtomUI LineEdit组件](./images/prepost.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:LineEdit LeftAddOn="http://" RightAddOn=".com" Width="400" HorizontalAlignment="Left"
                    Text="myFsite" />
@@ -32,7 +32,7 @@ axaml文件：
 ![AtomUI LineEdit组件](./images/pre-suf-icon.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:LineEdit Watermark="Enter your username"
                    InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"

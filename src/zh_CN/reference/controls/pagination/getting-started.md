@@ -9,7 +9,7 @@
 
 ![AtomUI Pagination组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:Pagination Total="50" CurrentPage="1" />
 ```
 
@@ -17,7 +17,7 @@
 
 ![AtomUI Pagination组件](./images/align.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Pagination Total="50" CurrentPage="1" Align="Start" />
     <atom:Pagination Total="50" CurrentPage="1" Align="Center" />
@@ -29,11 +29,11 @@
 
 ![AtomUI Pagination组件](./images/align.webp)
 
-```axaml
+```xaml
 <atom:Pagination Total="500" CurrentPage="6" IsShowSizeChanger="True" />
 ```
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Pagination Total="500" CurrentPage="3" IsShowSizeChanger="True" IsShowQuickJumper="True" />
     <atom:Pagination Total="500" CurrentPage="3" IsShowSizeChanger="True" IsEnabled="False"
@@ -45,7 +45,7 @@
 
 ![AtomUI Pagination组件](./images/mini-size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Pagination Total="50" CurrentPage="1" SizeType="Small" />
     <atom:Pagination Total="50" CurrentPage="1" SizeType="Small" IsShowSizeChanger="True"
@@ -61,7 +61,7 @@
 
 ![AtomUI Pagination组件](./images/mini-size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Pagination Total="85" CurrentPage="1" PageSize="20" IsShowSizeChanger="True" IsShowTotalInfo="True" />
     <atom:Pagination Total="85"
@@ -77,7 +77,7 @@
 
 ![AtomUI Pagination组件](./images/simple-mode.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:SimplePagination Total="50" CurrentPage="1"/>
     <atom:SimplePagination Total="50" CurrentPage="1" IsReadOnly="False"/>

@@ -2,7 +2,7 @@
 
 ![AtomUI Steps](./images/with-progress.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:Steps CurrentStep="1" ProgressValue="60" IsShowItemProgress="True">
         <atom:StepsItem Header="Finished" Description="This is a description." />

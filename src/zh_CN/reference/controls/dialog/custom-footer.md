@@ -9,7 +9,7 @@
 ![AtomUI Dialog组件](./images/custom-footer.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <Panel>
         <atom:Button ButtonType="Primary" Name="CustomFooterDialogOpenButton">

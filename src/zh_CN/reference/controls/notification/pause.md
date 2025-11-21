@@ -9,7 +9,7 @@
 ![AtomUI Notification组件](./images/progress.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:OptionButtonGroup Name="HoverOptionGroup" ButtonStyle="Outline">
         <atom:OptionButton IsChecked="True">Pause on hover</atom:OptionButton>

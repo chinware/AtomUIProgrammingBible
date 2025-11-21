@@ -4,7 +4,7 @@
 
 ![AtomUI Badge](./images/red-badge.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal">
     <atom:DotBadge Offset="-7,8">
         <atom:Button ButtonType="Link" Icon="{atom:IconProvider Kind=NotificationOutlined}" />

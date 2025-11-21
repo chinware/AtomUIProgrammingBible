@@ -4,7 +4,7 @@
 
 ![AtomUI TimePicker](./images/variants.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <atom:TimePicker Watermark="Outline"

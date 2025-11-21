@@ -10,7 +10,7 @@
 ![AtomUI Menu组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Menu>
     <atom:MenuItem Header="_File">
         <atom:MenuItem Header="New Text File" InputGesture="Ctrl+N" />
@@ -31,7 +31,7 @@ axaml文件：
 ![AtomUI Menu组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Menu ItemsSource="{Binding MenuItems}"
            x:DataType="viewModels:MenuViewModel">
     <atom:Menu.ItemTemplate>

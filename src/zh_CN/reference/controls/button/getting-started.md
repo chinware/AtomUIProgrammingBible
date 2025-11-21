@@ -11,7 +11,7 @@
 
 ![AtomUI Button组件](./images/basic-button.webp)
 
-```axaml
+```xaml
 <atom:Button ButtonType="Primary">Primary Button</atom:Button>
 <atom:Button>Default Button</atom:Button>
 <atom:Button ButtonType="Text">Text Button</atom:Button>
@@ -24,7 +24,7 @@
 
 ![AtomUI Button组件](./images/button-shape.webp)
 
-```axaml
+```xaml
 <WrapPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0, 0, 0, 20">
     <atom:Button ButtonType="Primary">Primary</atom:Button>
     <atom:Button>Default</atom:Button>
@@ -52,7 +52,7 @@
 ![AtomUI Button组件](./images/button-size.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="5" DockPanel.Dock="Top">
     <atom:TextBlock VerticalAlignment="Center">Expand direction:</atom:TextBlock>
     <atom:OptionButtonGroup ButtonStyle="Outline"

@@ -6,7 +6,7 @@
 
 ![AtomUI Drawer组件](./images/preset-size.webp)
 
-```axaml
+```xaml
 <Panel>
     <WrapPanel>
         <WrapPanel.Styles>

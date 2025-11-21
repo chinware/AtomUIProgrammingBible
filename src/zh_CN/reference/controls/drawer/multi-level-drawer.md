@@ -5,7 +5,7 @@
 ![AtomUI Drawer组件](./images/multi-level.webp)
 
 axaml文件：
-```axaml
+```xaml
 <Panel>
     <StackPanel Height="120" Classes="ControllerPanel">
         <ListBox Classes="PlacementList"

@@ -12,7 +12,7 @@
 ![AtomUI LineEdit组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:LineEdit Watermark="Basic usage" />
 ```
 
@@ -24,7 +24,7 @@ axaml文件：
 
 ![AtomUI LineEdit组件](./images/size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:LineEdit Watermark="Large" SizeType="Large"
                    InnerLeftContent="{atom:IconProvider Kind=UserOutlined}" />
@@ -41,7 +41,7 @@ axaml文件：
 
 ![AtomUI LineEdit组件](./images/variants.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:LineEdit Watermark="Outlined" StyleVariant="Outline" />
     <atom:LineEdit Watermark="Filled" StyleVariant="Filled" />
@@ -55,7 +55,7 @@ axaml文件：
 
 ![AtomUI LineEdit组件](./images/disabled.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:LineEdit Watermark="Outlined" StyleVariant="Outline" IsEnabled="False" />
     <atom:LineEdit Watermark="Filled" StyleVariant="Filled" IsEnabled="False" />
@@ -69,7 +69,7 @@ axaml文件：
 
 ![AtomUI LineEdit组件](./images/status.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:LineEdit Watermark="Error" Status="Error" />
     <atom:LineEdit Watermark="Warning" Status="Warning" />

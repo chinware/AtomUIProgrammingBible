@@ -4,7 +4,7 @@
 
 ![AtomUI Button组件](./images/icon-button.webp)
 
-```axaml
+```xaml
 <WrapPanel HorizontalAlignment="Left" Orientation="Horizontal">
     <atom:Button ButtonType="Primary" Shape="Circle" Icon="{atom:IconProvider Kind=SearchOutlined}" />
     <atom:Button ButtonType="Primary" Shape="Round"

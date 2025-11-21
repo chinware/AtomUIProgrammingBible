@@ -5,7 +5,7 @@
 ![AtomUI Dialog组件](./images/auto-close.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <Panel>
         <atom:Button Name="DelayedCloseMsgBoxOpenButton">

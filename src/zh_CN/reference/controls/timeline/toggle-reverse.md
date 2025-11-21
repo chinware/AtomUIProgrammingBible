@@ -5,7 +5,7 @@
 ![AtomUI Timeline组件](./images/toggle-reverse.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel>
     <atom:Timeline
         Pending="Recording..."

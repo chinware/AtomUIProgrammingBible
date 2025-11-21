@@ -3,7 +3,7 @@
 ![AtomUI Menu组件](./images/vertical-nav-menu.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:NavMenu Mode="Vertical" Width="300" Margin="0, 0, 0, 20">
     <atom:NavMenuItem Header="Navigation One" Icon="{atom:IconProvider Kind=MailOutlined}" />
     <atom:NavMenuItem Header="Navigation Two" Icon="{atom:IconProvider Kind=AppstoreOutlined}"
@@ -26,7 +26,7 @@ axaml文件：
 ![AtomUI Menu组件](./images/inline-menu.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:NavMenu Mode="Inline" Width="300" Margin="0, 0, 0, 20">
     <atom:NavMenuItem Header="Navigation One" Icon="{atom:IconProvider Kind=MailOutlined}" />
     <atom:NavMenuItem Header="Navigation Two" Icon="{atom:IconProvider Kind=AppstoreOutlined}"

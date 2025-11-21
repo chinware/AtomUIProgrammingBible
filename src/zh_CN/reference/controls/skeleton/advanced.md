@@ -7,7 +7,7 @@
 ![AtomUI Skeleton组件](./images/advanced.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <StackPanel Orientation="Horizontal" Spacing="10">
         <atom:SkeletonButton IsActive="{Binding IsSkeletonActive}" IsBlock="{Binding IsSkeletonBlock}"
@@ -85,7 +85,7 @@ axaml文件：
 ![AtomUI Skeleton组件](./images/contain-sub-component.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Skeleton IsLoading="{Binding SkeletonLoading}">
         <StackPanel Orientation="Vertical" Spacing="20">

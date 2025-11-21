@@ -7,7 +7,7 @@
 ![AtomUI Notification组件](./images/placement.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" Spacing="10">
         <atom:Button ButtonType="Primary" Click="ShowTopNotification">

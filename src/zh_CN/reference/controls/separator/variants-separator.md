@@ -4,7 +4,7 @@
 
 ![AtomUI Separator组件](./images/variants.PNG)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical">
     <atom:TextBlock TextWrapping="Wrap">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nonne merninisti licere mihi ista probare, quae sunt a te dicta? Refert tamen, quo modo.

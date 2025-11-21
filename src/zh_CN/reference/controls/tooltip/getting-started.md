@@ -12,7 +12,7 @@
 ![AtomUI Tooltip组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:TextBlock
     HorizontalAlignment="Left"
     atom:ToolTip.Tip="prompt text">
@@ -29,7 +29,7 @@ axaml文件：
 ![AtomUI Tooltip组件](./images/placement.webp)
 
 axaml文件：
-```axaml
+```xaml
 <Grid>
     <Grid.Styles>
         <Style Selector="atom|Button">
@@ -116,7 +116,7 @@ axaml文件：
 ![AtomUI Tooltip组件](./images/arrow.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Segmented x:Name="ArrowSegmented">
         <atom:SegmentedItem>Show</atom:SegmentedItem>
@@ -321,7 +321,7 @@ public class TooltipViewModel : ReactiveObject, IRoutableViewModel
 ![AtomUI Tooltip组件](./images/presets.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical">
     <TextBlock FontWeight="Bold" FontSize="14" Margin="0, 0, 0, 10">Presets</TextBlock>
     <WrapPanel HorizontalAlignment="Left">

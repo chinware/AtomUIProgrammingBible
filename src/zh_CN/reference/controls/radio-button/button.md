@@ -8,7 +8,7 @@
 
 ![AtomUI OptionButton组件](./images/option.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
         <atom:RadioButton IsChecked="True">Apple</atom:RadioButton>
@@ -40,7 +40,7 @@
 
 ![AtomUI OptionButton组件](./images/option-style.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:OptionButtonGroup>
         <atom:OptionButton IsChecked="True">Hangzhou</atom:OptionButton>
@@ -72,7 +72,7 @@
 
 ![AtomUI RadioButton组件](./images/solid-option.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
 
     <atom:OptionButtonGroup ButtonStyle="Solid">
@@ -105,7 +105,7 @@
 
 ![AtomUI RadioButton组件](./images/size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:OptionButtonGroup SizeType="Large">
         <atom:OptionButton IsChecked="True">Hangzhou</atom:OptionButton>

@@ -6,7 +6,7 @@
 
 ![AtomUI Badge](./images/status.png)
 
-```axaml
+```xaml
 <StackPanel>
     <StackPanel Orientation="Horizontal" Spacing="10">
         <atom:DotBadge Status="Success" />
@@ -31,7 +31,7 @@
 
 ![AtomUI Badge](./images/presets.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Separator Title="Presets"
                     FontWeight="SemiBold"

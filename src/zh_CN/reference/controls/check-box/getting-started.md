@@ -11,7 +11,7 @@
 
 ![AtomUI CheckBox组件](./images/basic.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left">
     <atom:CheckBox>Checkbox</atom:CheckBox>
 </StackPanel>
@@ -23,7 +23,7 @@
 
 ![AtomUI CheckBox组件](./images/disabled.png)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Spacing="10" Orientation="Vertical">
     <atom:CheckBox IsChecked="False" IsEnabled="False">UnChecked</atom:CheckBox>
     <atom:CheckBox IsChecked="{x:Null}" IsEnabled="False">Indeterminate</atom:CheckBox>

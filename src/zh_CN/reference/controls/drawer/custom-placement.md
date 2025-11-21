@@ -4,7 +4,7 @@
 
 ![AtomUI Drawer组件](./images/basic.webp)
 
-```axaml
+```xaml
 <Panel>
     <StackPanel Classes="ControllerPanel">
         <ListBox Classes="PlacementList"

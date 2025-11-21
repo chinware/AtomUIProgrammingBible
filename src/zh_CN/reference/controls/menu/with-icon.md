@@ -3,7 +3,7 @@
 ![AtomUI Menu组件](./images/with-icon.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Menu>
     <atom:MenuItem Header="_File">
         <atom:MenuItem Header="New Text File" InputGesture="Ctrl+N" />

@@ -11,7 +11,7 @@
 
 ![AtomUI RadioButton组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:RadioButton>Radio</atom:RadioButton>
 ```
 
@@ -21,7 +21,7 @@
 
 ![AtomUI RadioButton组件](./images/vertical.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
     <atom:RadioButton>Option A</atom:RadioButton>
     <atom:RadioButton>Option B</atom:RadioButton>
@@ -36,7 +36,7 @@
 
 ![AtomUI RadioButton组件](./images/disabled.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Orientation="Vertical">
     <StackPanel Orientation="Horizontal">
         <atom:RadioButton x:Name="ToggleDisabledRadioUnChecked">Radio1</atom:RadioButton>
@@ -56,7 +56,7 @@
 
 在现实业务场景中，多个单选框组成一个组且每个单选之间都是互斥的。同时，也可以为一个单选框组设置图标。
 
-```axaml
+```xaml
 <WrapPanel Orientation="Horizontal" ItemSpacing="10">
     <atom:RadioButton>
         <StackPanel Spacing="5" Orientation="Vertical">

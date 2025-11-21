@@ -4,7 +4,7 @@
 
 ![AtomUI Card组件](./images/grid-card.webp)
 
-```axaml
+```xaml
 <atom:Card HorizontalAlignment="Stretch" Header="Card Title" SizeType="Large">
     <atom:CardGridContent ColumnDefinitions="*, *, *, *"
                           RowDefinitions="Auto, Auto">

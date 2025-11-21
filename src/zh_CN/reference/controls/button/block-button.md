@@ -4,7 +4,7 @@
 
 ![AtomUI Button组件](./images/block-button.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Margin="10">
     <atom:Button ButtonType="Primary" HorizontalAlignment="Stretch">
         Primary

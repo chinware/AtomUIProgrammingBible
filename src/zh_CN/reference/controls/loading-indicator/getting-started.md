@@ -10,7 +10,7 @@
 ![AtomUI LoadingIndicator组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:LoadingIndicator />
 ```
 
@@ -20,7 +20,7 @@ axaml文件：
 
 ![AtomUI LoadingIndicator组件](./images/size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal">
     <atom:LoadingIndicator SizeType="Small" VerticalAlignment="Center" />
     <atom:LoadingIndicator SizeType="Middle" VerticalAlignment="Center" />

@@ -4,7 +4,7 @@
 
 ![AtomUI Separator组件](./images/vertical.PNG)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal">
     <atom:TextBlock>
         Item1

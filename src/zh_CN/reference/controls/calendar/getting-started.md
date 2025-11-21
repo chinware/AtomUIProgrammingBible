@@ -11,7 +11,7 @@
 
 ![AtomUI Calendar组件](./images/basic.webp)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Calendar />
 </StackPanel>

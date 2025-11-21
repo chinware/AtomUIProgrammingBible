@@ -5,7 +5,7 @@
 ![AtomUI CheckBox组件](./images/check-all-checkbox.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Spacing="10">
     <StackPanel>
         <atom:CheckBox IsChecked="{Binding CheckedAllStatus}"

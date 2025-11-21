@@ -11,7 +11,7 @@
 
 ![AtomUI TimePicker组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:TimePicker Watermark="Select time" IsNeedConfirm="False" IsShowNow="True" />
 ```
 
@@ -21,7 +21,7 @@
 
 ![AtomUI TimePicker组件](./images/size.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:TimePicker Watermark="Select time" SizeType="Large" DefaultTime="12:08:23" />
     <atom:TimePicker Watermark="Select time" SizeType="Middle" DefaultTime="12:08:23" />
@@ -35,7 +35,7 @@
 
 ![AtomUI TimePicker组件](./images/disabled.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:TimePicker Watermark="Select time" IsEnabled="False" DefaultTime="12:08:23" />
 </StackPanel>
@@ -47,7 +47,7 @@
 
 ![AtomUI TimePicker组件](./images/status.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" Spacing="5">
         <atom:TimePicker Status="Default"

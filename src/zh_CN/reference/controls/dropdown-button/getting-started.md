@@ -13,7 +13,7 @@
 
 ![AtomUI DropdownButton组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:DropdownButton ButtonType="Link" TriggerType="Hover" x:Name="Test">
     Hover me
     <atom:DropdownButton.DropdownFlyout>
@@ -39,7 +39,7 @@
 
 ![AtomUI DropdownButton组件](./images/button-type.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:DropdownButton ButtonType="Primary" TriggerType="Click">
         Edit File
@@ -110,7 +110,7 @@
 
 ![AtomUI DropdownButton组件](./images/arrow.webp)
 
-```axaml
+```xaml
 <gallerycontrols:ShowCaseItem.Styles>
         <Style Selector="atom|DropdownButton">
             <Setter Property="Margin" Value="5" />
@@ -215,7 +215,7 @@
 
 ![AtomUI DropdownButton组件](./images/placement.webp)
 
-```axaml
+```xaml
 <gallerycontrols:ShowCaseItem.Styles>
         <Style Selector="atom|DropdownButton">
             <Setter Property="Margin" Value="5" />

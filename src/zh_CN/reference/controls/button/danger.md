@@ -4,7 +4,7 @@
 
 ![AtomUI Button组件](./images/danger-button.webp)
 
-```axaml
+```xaml
 <WrapPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
     <atom:Button ButtonType="Primary" IsDanger="True">
         Primary

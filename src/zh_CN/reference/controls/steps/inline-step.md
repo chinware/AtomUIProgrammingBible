@@ -2,7 +2,7 @@
 
 ![AtomUI Steps](./images/inline-steps.png)
 
-```axaml
+```xaml
 <ItemsControl>
     <DockPanel LastChildFill="True">
         <atom:Steps CurrentStep="0" DockPanel.Dock="Right" Style="Inline">

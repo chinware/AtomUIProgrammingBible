@@ -2,7 +2,7 @@
 
 ![AtomUI Steps](./images/label-placement.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:Steps CurrentStep="1" LabelPlacement="Vertical">
         <atom:StepsItem Header="Finished" Description="This is a description." />

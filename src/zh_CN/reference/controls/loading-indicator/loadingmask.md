@@ -11,7 +11,7 @@
 ![AtomUI LoadingIndicator组件](./images/custom-description.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <StackPanel Orientation="Horizontal" Spacing="10">
         <atom:LoadingMaskHost IsLoading="True" SizeType="Small"
@@ -43,7 +43,7 @@ axaml文件：
 下面这段示例是试图想开发者演示一个动态控制遮罩Loading业务场景。依然还是通过老面孔 `atom:ToggleSwitch` 来控制IsLoadingSwitchChecked的值进而影响 `atom:LoadingMaskHost` 的显示与隐藏。所以，开发者要做的就是在自己的业务逻辑种控制IsLoadingSwitchChecked的值即可。
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:LoadingMaskHost IsLoading="{Binding IsLoadingSwitchChecked}"
                           IsShowLoadingMsg="True"

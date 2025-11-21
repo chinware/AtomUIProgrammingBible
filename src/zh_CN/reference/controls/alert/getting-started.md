@@ -7,7 +7,7 @@
 
 ### 初始化一个最基础的 `Alert` 文本框
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Alert Type="Success">Success Text</atom:Alert>
 </StackPanel>

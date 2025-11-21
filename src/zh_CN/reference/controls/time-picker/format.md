@@ -4,7 +4,7 @@
 
 ![AtomUI TimePicker](./images/1224.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal">
     <atom:TimePicker Watermark="Select time" IsNeedConfirm="True" IsShowNow="True"
                      ClockIdentifier="HourClock24" />

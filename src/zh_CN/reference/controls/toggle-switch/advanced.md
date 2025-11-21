@@ -9,7 +9,7 @@
 
 ![AtomUI ToggleSwitch组件](./images/text-icon.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Spacing="10" Orientation="Vertical">
     <atom:ToggleSwitch
         OnContent="On"
@@ -45,7 +45,7 @@
 ![AtomUI ToggleSwitch组件](./images/loading.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Spacing="10" Orientation="Vertical">
     <atom:ToggleSwitch IsLoading="True" IsChecked="true" x:Name="ToggleSwitchDefault" />
     <atom:ToggleSwitch SizeType="Small" IsLoading="True" x:Name="ToggleSwitchSmall" />

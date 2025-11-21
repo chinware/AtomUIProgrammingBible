@@ -4,7 +4,7 @@
 
 ![AtomUI Steps](./images/dot-style.png)
 
-```axaml
+```xaml
 <atom:Steps CurrentStep="1" ItemIndicatorType="Dot">
     <atom:StepsItem Header="Finished" Description="This is a description." />
     <atom:StepsItem Header="In Progress" Description="This is a description." SubHeader="Left 00:00:08" />
@@ -16,7 +16,7 @@
 
 ![AtomUI Steps](./images/vertical-dot-style.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:Steps CurrentStep="1" ItemIndicatorType="Dot" Orientation="Vertical">
         <atom:StepsItem Header="Finished" Description="This is a description." />

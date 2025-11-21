@@ -9,7 +9,7 @@
 
 ![AtomUI ToggleSwitch组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:ToggleSwitch />
 ```
 
@@ -19,7 +19,7 @@
 
 ![AtomUI ToggleSwitch组件](./images/size.png)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Spacing="10" Orientation="Vertical">
     <atom:ToggleSwitch />
     <atom:ToggleSwitch SizeType="Small" />
@@ -33,7 +33,7 @@
 ![AtomUI ToggleSwitch组件](./images/disabled.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Spacing="10" Orientation="Vertical">
     <atom:ToggleSwitch x:Name="ToggleDisabledSwitch" />
     <atom:Button ButtonType="Primary"

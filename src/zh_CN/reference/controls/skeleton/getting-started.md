@@ -14,7 +14,7 @@
 ![AtomUI Skeleton组件](./images/basic.png)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Skeleton IsLoading="True"/>
 ```
 
@@ -25,7 +25,7 @@ axaml文件：
 ![AtomUI Skeleton组件](./images/complex.png)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Skeleton IsShowAvatar="True" ParagraphRows="4" IsLoading="True"/>
 ```
 
@@ -36,6 +36,6 @@ axaml文件：
 ![AtomUI Skeleton组件](./images/animation.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Skeleton IsActive="True" IsLoading="True"/>
 ```

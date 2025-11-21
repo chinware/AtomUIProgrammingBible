@@ -4,7 +4,7 @@
 
 ![AtomUI Alert自定义行为](./images/custom-action.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:Alert Type="Success"
                 IsShowIcon="True"

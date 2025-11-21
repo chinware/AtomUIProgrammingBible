@@ -2,7 +2,7 @@
 
 ![AtomUI Steps](./images/navigation-step.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="20">
     <atom:Steps CurrentStep="0" Style="Navigation" IsItemClickable="True" SizeType="Small">
         <atom:StepsItem Header="Step 1" Description="This is a description." SubHeader="00:00:05" Status="Finish"/>

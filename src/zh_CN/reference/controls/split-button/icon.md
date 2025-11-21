@@ -4,7 +4,7 @@
 
 ![AtomUI SplitButton组件](./images/custom-split-button.webp)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:SplitButton>
         Default

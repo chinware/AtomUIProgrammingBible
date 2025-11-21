@@ -4,7 +4,7 @@
 
 ![AtomUI ProgressBar组件](./images/dynamic-bar.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:ProgressBar Value="{Binding ProgressValue}" Minimum="0" Maximum="100" />
     <atom:CircleProgress Value="{Binding ProgressValue}" Minimum="0" Maximum="100" />

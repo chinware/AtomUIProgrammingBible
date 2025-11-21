@@ -4,7 +4,7 @@
 
 ![AtomUI Card组件](./images/complex-card.png)
 
-```axaml
+```xaml
 <atom:Card Width="300">
     <atom:Card.Cover>
         <Image Source="/Assets/CardShowCase/Cover2.png" />

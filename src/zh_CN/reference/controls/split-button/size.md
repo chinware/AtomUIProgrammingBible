@@ -4,7 +4,7 @@
 
 ![AtomUI SplitButton组件](./images/split-button-size.webp)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:SplitButton SizeType="Large">
         Large

@@ -10,7 +10,7 @@
 ![AtomUI ListBox组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:ListBox>
     <atom:ListBoxItem>Blue</atom:ListBoxItem>
     <atom:ListBoxItem>Green</atom:ListBoxItem>
@@ -23,7 +23,7 @@ axaml文件：
 
 ![AtomUI ListBox组件](./images/disable-hover-effect.webp)
 
-```axaml
+```xaml
 <atom:ListBox DisabledItemHoverEffect="True">
     <atom:ListBoxItem>Blue</atom:ListBoxItem>
     <atom:ListBoxItem>Green</atom:ListBoxItem>
@@ -36,7 +36,7 @@ axaml文件：
 
 ![AtomUI ListBox组件](./images/disabled.png)
 
-```axaml
+```xaml
 <atom:ListBox>
     <atom:ListBoxItem>Blue</atom:ListBoxItem>
     <atom:ListBoxItem>Green</atom:ListBoxItem>

@@ -4,7 +4,7 @@
 
 ![AtomUI Button组件](./images/ghost-button.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical">
 <WrapPanel HorizontalAlignment="Stretch" Orientation="Horizontal">
     <atom:Button ButtonType="Primary" IsGhost="True">

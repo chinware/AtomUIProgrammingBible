@@ -4,7 +4,7 @@
 
 ![AtomUI Card组件](./images/card-in-column.png)
 
-```axaml
+```xaml
 <Border Padding="20"">
     <Grid RowDefinitions="*" ColumnDefinitions="*, *, *" ColumnSpacing="20">
         <atom:Card Header="Card title" StyleVariant="Borderless" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Stretch">

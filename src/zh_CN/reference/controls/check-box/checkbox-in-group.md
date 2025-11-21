@@ -4,7 +4,7 @@
 
 ![AtomUI CheckBox组件](./images/group-checkbox.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Left" Spacing="10" Orientation="Vertical">
     <WrapPanel Margin="0, 0, 0, 10">
         <atom:CheckBox IsChecked="True">Apple</atom:CheckBox>

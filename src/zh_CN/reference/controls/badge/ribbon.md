@@ -4,7 +4,7 @@
 
 ![AtomUI Badge](./images/ribbon.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:RibbonBadge Text="精益求精，打造体验优秀的 UISDK">
         <Border Height="80"

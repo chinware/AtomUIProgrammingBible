@@ -19,7 +19,7 @@
 ![AtomUI Notification组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Button ButtonType="Primary" Click="ShowSimpleNotification">
     Show Notification
 </atom:Button>

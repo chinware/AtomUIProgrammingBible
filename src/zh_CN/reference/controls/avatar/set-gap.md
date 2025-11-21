@@ -5,7 +5,7 @@
 ![AtomUI Avatar](./images/autoset.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:Avatar Background="{Binding AvatarBackground}"
                  Gap="{Binding AvatarGap}"

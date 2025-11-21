@@ -4,7 +4,7 @@
 
 ![AtomUI InfoFlyout组件](./images/trigger-way.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:FlyoutHost Trigger="Hover">
         <atom:FlyoutHost.Flyout>

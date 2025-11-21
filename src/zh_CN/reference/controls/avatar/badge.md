@@ -4,7 +4,7 @@
 
 ![AtomUI Avatar](./images/badge.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:CountBadge Count="5">
         <atom:Avatar Shape="Square" Icon="{atom:IconProvider UserOutlined}" />

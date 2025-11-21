@@ -10,7 +10,7 @@
 ![AtomUI LineEdit组件](./images/password.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:LineEdit Watermark="input password"
                    Width="400"

@@ -5,7 +5,7 @@
 ![AtomUI LineEdit组件](./images/with-icon.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:LineEdit Watermark="input with clear icon" 
                Width="400" 
                HorizontalAlignment="Left"

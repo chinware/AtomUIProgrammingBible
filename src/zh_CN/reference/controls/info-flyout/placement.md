@@ -4,7 +4,7 @@
 
 ![AtomUI InfoFlyout组件](./images/12-placement.webp)
 
-```axaml
+```xaml
 <Grid>
     <Grid.Styles>
         <Style Selector="atom|Button">

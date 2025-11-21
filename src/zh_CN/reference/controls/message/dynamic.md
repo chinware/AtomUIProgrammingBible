@@ -7,7 +7,7 @@
 ![AtomUI Message组件](./images/message-with-loading-indicator.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Button ButtonType="Default"
              Click="ShowLoadingMessage">
     Display a loading indicator
@@ -144,7 +144,7 @@ public class MessageViewModel : ReactiveObject, IRoutableViewModel
 
 ![AtomUI Message组件](./images/callback.webp)
 
-```axaml
+```xaml
 <atom:Button ButtonType="Default"
              Click="ShowSequentialMessage">
     Display a loading indicator

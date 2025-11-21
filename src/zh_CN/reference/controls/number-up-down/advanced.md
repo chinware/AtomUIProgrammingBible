@@ -13,7 +13,7 @@
 ![AtomUI NumberUpDown组件](./images/prepost.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:NumericUpDown LeftAddOn="http://" RightAddOn=".com" Width="400" HorizontalAlignment="Left"
                         Value="3" />
@@ -32,7 +32,7 @@ axaml文件：
 ![AtomUI NumberUpDown组件](./images/prefix-suffix.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:NumericUpDown Watermark="Enter your value"
                         InnerLeftContent="{atom:IconProvider Kind=UserOutlined, NormalFilledColor=#D7D7D7}"
@@ -49,7 +49,7 @@ axaml文件：
 ![AtomUI NumberUpDown组件](./images/with-clear-button.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:NumericUpDown Watermark="input with clear icon" Width="400" HorizontalAlignment="Left"
                     IsEnableClearButton="True" />
 ```

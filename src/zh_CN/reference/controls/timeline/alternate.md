@@ -7,7 +7,7 @@
 ![AtomUI Timeline组件](./images/alternate.png)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Timeline Mode="Alternate">
     <atom:TimelineItem Label="2024-01-01">
         2024-01-01 AtomUI Officially Initiated
@@ -33,7 +33,7 @@ axaml文件：
 ![AtomUI Timeline组件](./images/left-right.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel>
     <WrapPanel Margin="0,0,0,20" Orientation="Horizontal">
         <WrapPanel.Styles>
@@ -119,7 +119,7 @@ public partial class TimelineShowCase : ReactiveUserControl<TimelineViewModel>
 
 ![AtomUI Timeline组件](./images/right-alternate.png)
 
-```axaml
+```xaml
 <atom:Timeline Mode="Right">
     <atom:TimelineItem>
         2024-01-01 AtomUI Officially Initiated

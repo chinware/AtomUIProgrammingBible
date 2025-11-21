@@ -3,7 +3,7 @@
 ![AtomUI Menu组件](./images/toggle-type.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Menu>
     <atom:MenuItem Header="_Menu A">
         <atom:MenuItem Header="New Text File" InputGesture="Ctrl+N" ToggleType="Radio" GroupName="Group1" />

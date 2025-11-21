@@ -14,7 +14,7 @@
 ![AtomUI LineEdit组件](./images/search.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:SearchEdit Watermark="input search text" Width="400" HorizontalAlignment="Left" SizeType="Large" />
     <atom:SearchEdit Watermark="input search text" Width="400" HorizontalAlignment="Left"
@@ -47,7 +47,7 @@ axaml文件：
 ![AtomUI LineEdit组件](./images/disabled-search.png)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:SearchEdit Watermark="input search text" Width="400" HorizontalAlignment="Left" SizeType="Large"
                      IsEnabled="False" />

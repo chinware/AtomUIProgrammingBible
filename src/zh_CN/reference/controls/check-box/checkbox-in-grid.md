@@ -4,7 +4,7 @@
 
 ![AtomUI CheckBox组件](./images/grid-checkbox.webp)
 
-```axaml
+```xaml
 <Grid ColumnDefinitions="*,*,*" RowDefinitions="Auto,Auto,Auto" Margin="10">
     <atom:CheckBox Grid.Row="0" Grid.Column="0">A</atom:CheckBox>
     <atom:CheckBox Grid.Row="0" Grid.Column="1">B</atom:CheckBox>

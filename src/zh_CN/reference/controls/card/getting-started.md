@@ -11,7 +11,7 @@
 
 ![AtomUI Card组件](./images/simple-card.png)
 
-```axaml
+```xaml
 <atom:Card Width="300">
     <StackPanel Orientation="Vertical" Spacing="3">
         <atom:TextBlock>Card content</atom:TextBlock>
@@ -27,7 +27,7 @@
 
 ![AtomUI Card组件](./images/basic.png)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:Card Header="Large size card" SizeType="Large" Width="300">
         <atom:Card.Extra>

@@ -12,7 +12,7 @@
 ![AtomUI NumberUpDown组件](./images/basic.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:NumericUpDown Value="3" />
 ```
 
@@ -23,7 +23,7 @@ axaml文件：
 ![AtomUI NumberUpDown组件](./images/size.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:NumericUpDown SizeType="Large" Value="3" />
     <atom:NumericUpDown SizeType="Middle" Value="3" />
@@ -37,7 +37,7 @@ axaml文件：
 
 ![AtomUI NumberUpDown组件](./images/disabled.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
     <atom:NumericUpDown Value="3" StyleVariant="Outline" IsEnabled="False"/>
     <atom:NumericUpDown Value="3" StyleVariant="Filled" IsEnabled="False"/>
@@ -53,7 +53,7 @@ axaml文件：
 
 ![AtomUI NumberUpDown组件](./images/status.webp)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
     <atom:NumericUpDown Watermark="Error" Status="Error" />
     <atom:NumericUpDown Watermark="Warning" Status="Warning" />

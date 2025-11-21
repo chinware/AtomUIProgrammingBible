@@ -11,7 +11,7 @@
 
 ![AtomUI Tag组件](./images/basic.png)
 
-```axaml
+```xaml
 <WrapPanel HorizontalAlignment="Left" Orientation="Horizontal">
     <atom:Tag>Tag 1</atom:Tag>
     <atom:Tag>Link</atom:Tag>
@@ -29,7 +29,7 @@
 
 ![AtomUI Tag组件](./images/colorful.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical">
     <atom:TextBlock FontWeight="Bold" FontSize="14" Margin="0, 0, 0, 10">Presets</atom:TextBlock>
     <WrapPanel HorizontalAlignment="Left">
@@ -62,7 +62,7 @@
 
 ![AtomUI Tag组件](./images/status.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical">
     <atom:TextBlock FontWeight="Bold" FontSize="14" Margin="0, 0, 0, 10">Without icon</atom:TextBlock>
     <WrapPanel HorizontalAlignment="Left">
@@ -109,7 +109,7 @@
 
 ![AtomUI Tag组件](./images/icon.png)
 
-```axaml
+```xaml
 <WrapPanel HorizontalAlignment="Left" Orientation="Horizontal">
     <atom:Tag TagColor="#55acee"
               Icon="{atom:IconProvider Kind=TwitterOutlined}">
@@ -136,7 +136,7 @@
 
 ![AtomUI Tag组件](./images/border-less.png)
 
-```axaml
+```xaml
 <StackPanel Orientation="Vertical">
     <WrapPanel HorizontalAlignment="Left">
         <atom:Tag Bordered="False">Tag1</atom:Tag>

@@ -4,7 +4,7 @@
 
 ![AtomUI Card组件](./images/inner-card.png)
 
-```axaml
+```xaml
 <atom:Card Header="Card title" HorizontalAlignment="Stretch" SizeType="Large">
     <StackPanel Orientation="Vertical" Spacing="20">
         <atom:Card Header="Card title" HorizontalAlignment="Stretch" IsInnerMode="True">

@@ -4,7 +4,7 @@
 
 ![AtomUI SplitButton组件](./images/danger-split-button.webp)
 
-```axaml
+```xaml
 <StackPanel>
     <atom:SplitButton IsDanger="true">
         Default

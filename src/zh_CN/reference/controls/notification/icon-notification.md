@@ -9,7 +9,7 @@
 ![AtomUI Notification组件](./images/notification-with-icon.webp)
 
 axaml文件：
-```axaml
+```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <atom:Button ButtonType="Default" Click="ShowSuccessNotification">
         Success
@@ -122,7 +122,7 @@ public partial class NotificationShowCase : ReactiveUserControl<NotificationView
 ![AtomUI Notification组件](./images/custom-icon.webp)
 
 axaml文件：
-```axaml
+```xaml
 <atom:Button ButtonType="Primary" Click="ShowCustomIconNotification">
     Open the notification box
 </atom:Button>

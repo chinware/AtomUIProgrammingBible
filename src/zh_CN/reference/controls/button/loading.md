@@ -6,7 +6,7 @@
 
 ![AtomUI Button组件](./images/load-button.webp)
 
-```axaml
+```xaml
 <StackPanel HorizontalAlignment="Stretch" Orientation="Vertical" Margin="10">
     <WrapPanel>
         <atom:Button ButtonType="Primary" IsLoading="True">Loading</atom:Button>

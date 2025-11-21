@@ -13,7 +13,7 @@
 
 ![AtomUI TreeView组件](./images/basic.webp)
 
-```axaml
+```xaml
 <atom:TreeView ToggleType="CheckBox" IsDefaultExpandAll="True">
     <atom:TreeViewItem Header="parent 1">
         <atom:TreeViewItem Header="parent 1-0">

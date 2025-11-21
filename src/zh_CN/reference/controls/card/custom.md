@@ -4,7 +4,7 @@
 
 ![AtomUI Card组件](./images/custom-card.webp)
 
-```axaml
+```xaml
 <atom:Card Width="240" IsHoverable="True">
     <atom:Card.Cover>
         <Image Source="/Assets/CardShowCase/Cover1.png" />

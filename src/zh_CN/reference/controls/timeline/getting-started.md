@@ -11,7 +11,7 @@
 
 ![AtomUI Timeline组件](./images/basic.png)
 
-```axaml
+```xaml
 <atom:Timeline>
     <atom:TimelineItem>
         2024-01-01 AtomUI Officially Initiated
@@ -32,7 +32,7 @@
 
 ![AtomUI Timeline组件](./images/color.png)
 
-```axaml
+```xaml
 <atom:Timeline>
     <atom:TimelineItem IndicatorColor="green">
         2024-01-01 AtomUI Officially Initiated
