@@ -167,10 +167,6 @@
                                     "path": "getting-started.md"
                                 },
                                 {
-                                    "text": "基础用法",
-                                    "path": "basic.md"
-                                },
-                                {
                                     "text": "多类型",
                                     "path": "type.md"
                                 },
