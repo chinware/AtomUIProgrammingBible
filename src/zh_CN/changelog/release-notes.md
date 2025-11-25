@@ -1,5 +1,32 @@
 ![Changelog](./images/changelog.png)
 
+#### v5.1.1
+
+`2025 年 11 月 25 日`
+
+**API 变更说明**
+将 AntDesignProvider 从 AtomUI 命名空间移除，放到图标库自己的命名空间中，为后面引入其他图标库做准备
+现在 AntDesignProvider 和 Icon 使用统一的命名空间：`xmlns:antdicons="https://atomui.net/icons/antdesign"`
+
+
+用法如下：
+```xaml
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:atom="https://atomui.net"
+             xmlns:antdicons="https://atomui.net/icons/antdesign">
+    <atom:Avatar Icon="{antdicons:AntDesignIconProvider UserOutlined}" Size="64" />
+</UserControl>
+```
+
+**新特性**
+1. 新增全局响应式容器
+2. 新增 Result 控件
+3. 实现 Descriptions 控件
+
+**Bug 修复**
+1. 修复日期范围选择首次打开样式问题
+
 #### v5.1.0
 
 `2025 年 11 月 20 日`
