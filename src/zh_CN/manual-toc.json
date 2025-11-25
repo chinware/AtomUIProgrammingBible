@@ -197,10 +197,6 @@
                               "path": "getting-started.md"
                             },
                             {
-                              "text": "基础用法",
-                              "path": "basic.md"
-                            },
-                            {
                               "text": "独立使用",
                               "path": "standalone.md"
                             },
