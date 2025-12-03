@@ -1,5 +1,52 @@
 ![Changelog](./images/changelog.png)
 
+#### v5.1.2
+
+`2025 年 12 月 03 日`
+
+本次更新主要是完善 Icon 基础设施和 Bug 修复
+
+**新特性**
+
+1. 新增 AtomUI.Icons.Material 图标库
+2. 新增 AtomUI.Icons.IconPark 图标库
+
+> [!IMPORTANT]
+> 如果要使用 Material 和 IconPark 图标扩展包，请使用 v5.1.2 版本的 AtomUI.Desktop.Controls
+
+用法如下
+```xaml
+<atom:Window xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:atom="https://atomui.net"
+             xmlns:material="https://atomui.net/icons/material"
+             xmlns:iconpark="https://atomui.net/icons/iconpark"
+             xmlns:antdesign="https://atomui.net/icons/antdesign"
+             xmlns:local="using:AtomUIProgressApp"
+             x:Class="AtomUIProgressApp.MainWindow"
+             Title="AtomUIProgressApp"
+             Width="800"
+             Height="600"
+             x:DataType="local:MainWindow"
+             WindowState="Normal"
+             WindowStartupLocation="CenterScreen">
+    <Panel>
+        <StackPanel Orientation="Vertical" Spacing="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <atom:GroupBox HeaderTitle="Icons" HorizontalAlignment="Center" Padding="20">
+                <StackPanel Spacing="10" Orientation="Horizontal">
+                    <antdesign:WechatFilled Width="32" Height="32"/>
+                    <material:DeviceBluetoothSearchingFilled Width="32" Height="32"/>
+                    <iconpark:Cpu IconTheme="Filled" Width="32" Height="32"/>
+                </StackPanel>
+            </atom:GroupBox>
+        </StackPanel>
+    </Panel>
+</atom:Window>
+```
+
+**Bug 修复**
+1. 修复 GroupBox 内容间距不正确的问题
+
 #### v5.1.1
 
 `2025 年 11 月 25 日`
