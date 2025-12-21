@@ -1,92 +1,96 @@
-﻿# Collapse 快速入门
+﻿# ImagePreview 快速入门
 
 ### 基础配置条件
 
 * Nuget安装Avalonia
 * Nuget安装AtomUI
+* 本页文档末尾有公用的code-behind源码
 
 ### 基础用法
 
-![AtomUI Collapse组件](./images/basic.webp)
+使用 `Sources` 属性绑定图片源。
+
+![AtomUI ImagePreview组件](./images/basic.webp)
 
 ```xaml
-<atom:Carousel SelectedIndex="2">
-    <atom:CarouselPage>1</atom:CarouselPage>
-    <atom:CarouselPage>2</atom:CarouselPage>
-    <atom:CarouselPage>3</atom:CarouselPage>
-    <atom:CarouselPage>4</atom:CarouselPage>
-</atom:Carousel>
+<atom:ImagePreviewer Width="200" Sources="{Binding DefaultImages}" />
 ```
 
-### 位置设定
+### 兜底图片
 
-![AtomUI Collapse组件](./images/position.webp)
+有时候难免手抖或遇到预料外的业务情况，导致无法获取真正的图片文件，此时可以通过 `FallbackImageSrc` 属性设置一个兜底图片，避免应用故障。
+
+![AtomUI ImagePreview组件](./images/faild-placeholder.webp)
 
 ```xaml
-<StackPanel Orientation="Vertical" Spacing="20">
-    <StackPanel Orientation="Horizontal" Spacing="5">
-        <atom:TextBlock VerticalAlignment="Center">Pagination Position:</atom:TextBlock>
-        <atom:OptionButtonGroup ButtonStyle="Outline" Name="PositionOptionGroup">
-            <atom:OptionButton>Top</atom:OptionButton>
-            <atom:OptionButton IsChecked="True">Bottom</atom:OptionButton>
-            <atom:OptionButton>Left</atom:OptionButton>
-            <atom:OptionButton>Right</atom:OptionButton>
-        </atom:OptionButtonGroup>
-    </StackPanel>
-
-    <atom:Carousel PaginationPosition="{Binding PaginationPosition}">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-
-</StackPanel>
+<atom:ImagePreviewer Width="200" FallbackImageSrc="{Binding FallbackImage}"/>
 ```
 
-### 自动轮播
+### 单张图->画廊
 
-![AtomUI Collapse组件](./images/auto-play.webp)
+当 `Sources` 属性绑定的是多张图片时，会自动进入画廊模式，此时 `Sources` 绑定的图片源会作为画廊的图片源。
+
+![AtomUI ImagePreview组件](./images/gallery.webp)
 
 ```xaml
-<atom:Carousel IsAutoPlay="True" IsInfinite="False">
-    <atom:CarouselPage>1</atom:CarouselPage>
-    <atom:CarouselPage>2</atom:CarouselPage>
-    <atom:CarouselPage>3</atom:CarouselPage>
-    <atom:CarouselPage>4</atom:CarouselPage>
-</atom:Carousel>
+<atom:ImagePreviewer Width="200" Sources="{Binding ThreeImages}"/>
 ```
 
-### 淡入
+### 自定义预览图
 
-![AtomUI Collapse组件](./images/fade-in.webp)
+默认情况下 `ImagePreviewer` 会将实际要加载的图片作为预览图；开发者可以通过 `CoverImageSrc` 属性设置一个自定义的预览图。
+
+![AtomUI ImagePreview组件](./images/custom-preview-image.webp)
 
 ```xaml
-<atom:Carousel TransitionEffect="Fade">
-    <atom:CarouselPage Background="#B3001B">1</atom:CarouselPage>
-    <atom:CarouselPage Background="#255C99">2</atom:CarouselPage>
-    <atom:CarouselPage Background="#262626">3</atom:CarouselPage>
-    <atom:CarouselPage Background="#CCAD8F">4</atom:CarouselPage>
-</atom:Carousel>
+<atom:ImagePreviewer Width="200" Sources="{Binding DefaultImages}" CoverImageSrc="{Binding BlurImage}"/>
 ```
 
-### 播放箭头
+### 多图浏览
 
-![AtomUI Collapse组件](./images/with-arrow.webp)
+`atom:ImageGroupPreviewer` 组件可以预览多张图片，在预览时就可以形成一个左右横向的画廊。
+
+![AtomUI ImagePreview组件](./images/multiple-image.webp)
 
 ```xaml
-<StackPanel Orientation="Vertical" Spacing="10">
-    <atom:Carousel IsShowNavButtons="True">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-    <atom:Carousel PaginationPosition="Left" IsShowNavButtons="True" IsInfinite="False">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-</StackPanel>
+<atom:ImageGroupPreviewer Sources="{Binding TwoImages}" CoverWidth="200" CoverHeight="200"/>
+```
+
+### 公共文件
+
+code-behind文件：
+```csharp
+using AtomUIGallery.ShowCases.ViewModels;
+using ReactiveUI;
+using ReactiveUI.Avalonia;
+
+namespace AtomUIGallery.ShowCases.Views;
+
+public partial class ImagePreviewerShowCase : ReactiveUserControl<ImagePreviewerViewModel>
+{
+    public ImagePreviewerShowCase()
+    {
+        this.WhenActivated(disposables =>
+        {
+            if (DataContext is ImagePreviewerViewModel viewModel)
+            {
+                viewModel.DefaultImages = [
+                    "avares://AtomUIGallery/Assets/ImagePreviewerShowCase/1.png"
+                ];
+                viewModel.ThreeImages = [
+                    "avares://AtomUIGallery/Assets/ImagePreviewerShowCase/4.webp",
+                    "avares://AtomUIGallery/Assets/ImagePreviewerShowCase/5.webp",
+                    "avares://AtomUIGallery/Assets/ImagePreviewerShowCase/6.webp"
+                ];
+                viewModel.TwoImages = [
+                    "avares://AtomUIGallery/Assets/ImagePreviewerShowCase/2.svg",
+                    "avares://AtomUIGallery/Assets/ImagePreviewerShowCase/3.svg",
+                ];
+                viewModel.FallbackImage = "avares://AtomUIGallery/Assets/ImagePreviewerShowCase/Fallback.png";
+                viewModel.BlurImage = "avares://AtomUIGallery/Assets/ImagePreviewerShowCase/Blur.png";
+            }
+        });
+        InitializeComponent();
+    }
+}
 ```

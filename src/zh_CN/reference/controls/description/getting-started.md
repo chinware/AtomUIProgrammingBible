@@ -1,4 +1,4 @@
-﻿# Collapse 快速入门
+﻿# Description 快速入门
 
 ### 基础配置条件
 
@@ -7,86 +7,196 @@
 
 ### 基础用法
 
-![AtomUI Collapse组件](./images/basic.webp)
+![AtomUI Description组件](./images/basic.png)
 
 ```xaml
-<atom:Carousel SelectedIndex="2">
-    <atom:CarouselPage>1</atom:CarouselPage>
-    <atom:CarouselPage>2</atom:CarouselPage>
-    <atom:CarouselPage>3</atom:CarouselPage>
-    <atom:CarouselPage>4</atom:CarouselPage>
-</atom:Carousel>
+<atom:Descriptions Header="User Info">
+    <atom:DescriptionItem Label="UserName" Content="Zhou Maomao" />
+    <atom:DescriptionItem Label="Telephone" Content="1810000000" />
+    <atom:DescriptionItem Label="Live" Content="Hangzhou, Zhejiang" />
+    <atom:DescriptionItem Label="Remark" Content="empty" />
+    <atom:DescriptionItem Label="Address"
+                          Content="No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China" />
+</atom:Descriptions>
 ```
 
-### 位置设定
+### 边框
 
-![AtomUI Collapse组件](./images/position.webp)
+![AtomUI Description组件](./images/border.png)
 
 ```xaml
-<StackPanel Orientation="Vertical" Spacing="20">
-    <StackPanel Orientation="Horizontal" Spacing="5">
-        <atom:TextBlock VerticalAlignment="Center">Pagination Position:</atom:TextBlock>
-        <atom:OptionButtonGroup ButtonStyle="Outline" Name="PositionOptionGroup">
-            <atom:OptionButton>Top</atom:OptionButton>
-            <atom:OptionButton IsChecked="True">Bottom</atom:OptionButton>
-            <atom:OptionButton>Left</atom:OptionButton>
-            <atom:OptionButton>Right</atom:OptionButton>
-        </atom:OptionButtonGroup>
+<atom:Descriptions IsBordered="True">
+    <atom:DescriptionItem Label="Product" Content="Cloud Database" />
+    <atom:DescriptionItem Label="Billing Mode" Content="Prepaid" />
+    <atom:DescriptionItem Label="Automatic Renewal" Content="YES" />
+    <atom:DescriptionItem Label="Order time" Content="2018-04-24 18:00:00" />
+    <atom:DescriptionItem Label="Usage Time" Content="2019-04-24 18:00:00" Span="2" />
+    <atom:DescriptionItem Label="Status" Content="Running" Span="3" />
+    <atom:DescriptionItem Label="Negotiated Amount" Content="$80.00" />
+    <atom:DescriptionItem Label="Discount" Content="$20.00" />
+    <atom:DescriptionItem Label="Official Receipts" Content="$60.00" />
+    <atom:DescriptionItem Label="Config Info">
+        <atom:DescriptionItem.Content>
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock>Data disk type: MongoDB</TextBlock>
+                <TextBlock>Database version: 3.4</TextBlock>
+                <TextBlock>Package: dds.mongo.mid</TextBlock>
+                <TextBlock>Storage space: 10 GB</TextBlock>
+                <TextBlock>Replication factor: 3</TextBlock>
+                <TextBlock>Region: East China 1</TextBlock>
+            </StackPanel>
+        </atom:DescriptionItem.Content>
+    </atom:DescriptionItem>
+</atom:Descriptions>
+```
+
+### 尺寸大小
+
+![AtomUI Description组件](./images/size.webp)
+
+```xaml
+<StackPanel Orientation="Vertical" Spacing="30">
+    <StackPanel Orientation="Horizontal" Spacing="10">
+        <atom:RadioButton Name="DefaultSizeRadioButton" IsChecked="True">Large</atom:RadioButton>
+        <atom:RadioButton Name="MiddleSizeRadioButton">Middle</atom:RadioButton>
+        <atom:RadioButton Name="SmallSizeRadioButton">Small</atom:RadioButton>
     </StackPanel>
+    <atom:Descriptions IsBordered="True" SizeType="{Binding DescriptionsSizeType}"
+                       x:DataType="viewModels:DescriptionsViewModel"
+                       Header="Custom Size">
+        <atom:Descriptions.Extra>
+            <atom:Button ButtonType="Primary">Edit</atom:Button>
+        </atom:Descriptions.Extra>
+        <atom:DescriptionItem Label="Product" Content="Cloud Database" />
+        <atom:DescriptionItem Label="Billing Mode" Content="Prepaid" />
+        <atom:DescriptionItem Label="Automatic Renewal" Content="YES" />
+        <atom:DescriptionItem Label="Order time" Content="2018-04-24 18:00:00" />
+        <atom:DescriptionItem Label="Usage Time" Content="2019-04-24 18:00:00" Span="2" />
+        <atom:DescriptionItem Label="Status" Content="Running" Span="3" />
+        <atom:DescriptionItem Label="Negotiated Amount" Content="$80.00" />
+        <atom:DescriptionItem Label="Discount" Content="$20.00" />
+        <atom:DescriptionItem Label="Official Receipts" Content="$60.00" />
+        <atom:DescriptionItem Label="Config Info">
+            <atom:DescriptionItem.Content>
+                <StackPanel Orientation="Vertical" Spacing="5">
+                    <TextBlock>Data disk type: MongoDB</TextBlock>
+                    <TextBlock>Database version: 3.4</TextBlock>
+                    <TextBlock>Package: dds.mongo.mid</TextBlock>
+                    <TextBlock>Storage space: 10 GB</TextBlock>
+                    <TextBlock>Replication factor: 3</TextBlock>
+                    <TextBlock>Region: East China 1</TextBlock>
+                </StackPanel>
+            </atom:DescriptionItem.Content>
+        </atom:DescriptionItem>
+    </atom:Descriptions>
 
-    <atom:Carousel PaginationPosition="{Binding PaginationPosition}">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-
+    <atom:Descriptions Header="Custom Size"
+                       SizeType="{Binding DescriptionsSizeType}"
+                       x:DataType="viewModels:DescriptionsViewModel">
+        <atom:Descriptions.Extra>
+            <atom:Button ButtonType="Primary">Edit</atom:Button>
+        </atom:Descriptions.Extra>
+        <atom:DescriptionItem Label="UserName" Content="Zhou Maomao" />
+        <atom:DescriptionItem Label="Telephone" Content="1810000000" />
+        <atom:DescriptionItem Label="Live" Content="Hangzhou, Zhejiang" />
+        <atom:DescriptionItem Label="Remark" Content="empty" />
+        <atom:DescriptionItem Label="Address"
+                              Content="No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China" />
+    </atom:Descriptions>
 </StackPanel>
 ```
 
-### 自动轮播
+### 响应式
 
-![AtomUI Collapse组件](./images/auto-play.webp)
+![AtomUI Description组件](./images/responseive.webp)
 
 ```xaml
-<atom:Carousel IsAutoPlay="True" IsInfinite="False">
-    <atom:CarouselPage>1</atom:CarouselPage>
-    <atom:CarouselPage>2</atom:CarouselPage>
-    <atom:CarouselPage>3</atom:CarouselPage>
-    <atom:CarouselPage>4</atom:CarouselPage>
-</atom:Carousel>
+<atom:Descriptions IsBordered="True" SizeType="{Binding DescriptionsSizeType}"
+                   x:DataType="viewModels:DescriptionsViewModel"
+                   Header="Responsive Descriptions"
+                   ColumnInfo="xs: 1, sm: 2, md: 3, lg: 3, xl: 4, xxl: 4">
+    <atom:DescriptionItem Label="Product" Content="Cloud Database" />
+    <atom:DescriptionItem Label="Billing" Content="Prepaid" />
+    <atom:DescriptionItem Label="Time" Content="18:00:00" />
+    <atom:DescriptionItem Label="Amount" Content="$80.00" />
+    <atom:DescriptionItem Label="Discount" Content="$20.00" Span="xl: 2, xxl: 2" />
+    <atom:DescriptionItem Label="Official" Content="$60.00" Span="xl: 2, xxl: 2" />
+    <atom:DescriptionItem Label="Config Info" Span="xs: 1, sm: 2, md: 3, lg: 3, xl: 2, xxl: 2">
+        <atom:DescriptionItem.Content>
+            <StackPanel Orientation="Vertical">
+                <TextBlock>Data disk type: MongoDB</TextBlock>
+                <TextBlock>Database version: 3.4</TextBlock>
+                <TextBlock>Package: dds.mongo.mid</TextBlock>
+            </StackPanel>
+        </atom:DescriptionItem.Content>
+    </atom:DescriptionItem>
+    <atom:DescriptionItem Label="Hardware Info" Span="xs: 1, sm: 2, md: 3, lg: 3, xl: 2, xxl: 2">
+        <atom:DescriptionItem.Content>
+            <StackPanel Orientation="Vertical">
+                <TextBlock>CPU: 6 Core 3.5 GHz</TextBlock>
+                <TextBlock>Replication factor: 3</TextBlock>
+                <TextBlock>Region: East China 1</TextBlock>
+            </StackPanel>
+        </atom:DescriptionItem.Content>
+    </atom:DescriptionItem>
+</atom:Descriptions>
 ```
 
-### 淡入
+### 垂直显示
 
-![AtomUI Collapse组件](./images/fade-in.webp)
+![AtomUI Description组件](./images/vertical.png)
 
 ```xaml
-<atom:Carousel TransitionEffect="Fade">
-    <atom:CarouselPage Background="#B3001B">1</atom:CarouselPage>
-    <atom:CarouselPage Background="#255C99">2</atom:CarouselPage>
-    <atom:CarouselPage Background="#262626">3</atom:CarouselPage>
-    <atom:CarouselPage Background="#CCAD8F">4</atom:CarouselPage>
-</atom:Carousel>
+<atom:Descriptions Header="User Info" Layout="Vertical">
+    <atom:DescriptionItem Label="UserName" Content="Zhou Maomao" />
+    <atom:DescriptionItem Label="Telephone" Content="1810000000" />
+    <atom:DescriptionItem Label="Live" Content="Hangzhou, Zhejiang" />
+    <atom:DescriptionItem Label="Remark" Content="empty" />
+    <atom:DescriptionItem Label="Address"
+                          Content="No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China" />
+</atom:Descriptions>
 ```
 
-### 播放箭头
+### 垂直显示带边框
 
-![AtomUI Collapse组件](./images/with-arrow.webp)
+![AtomUI Description组件](./images/vertical-border.png)
 
 ```xaml
-<StackPanel Orientation="Vertical" Spacing="10">
-    <atom:Carousel IsShowNavButtons="True">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-    <atom:Carousel PaginationPosition="Left" IsShowNavButtons="True" IsInfinite="False">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-</StackPanel>
+<atom:Descriptions IsBordered="True" Layout="Vertical">
+    <atom:DescriptionItem Label="Product" Content="Cloud Database" />
+    <atom:DescriptionItem Label="Billing Mode" Content="Prepaid" />
+    <atom:DescriptionItem Label="Automatic Renewal" Content="YES" />
+    <atom:DescriptionItem Label="Order time" Content="2018-04-24 18:00:00" />
+    <atom:DescriptionItem Label="Usage Time" Content="2019-04-24 18:00:00" Span="2" />
+    <atom:DescriptionItem Label="Status" Content="Running" Span="3" />
+    <atom:DescriptionItem Label="Negotiated Amount" Content="$80.00" />
+    <atom:DescriptionItem Label="Discount" Content="$20.00" />
+    <atom:DescriptionItem Label="Official Receipts" Content="$60.00" />
+    <atom:DescriptionItem Label="Config Info">
+        <atom:DescriptionItem.Content>
+            <StackPanel Orientation="Vertical" Spacing="5">
+                <TextBlock>Data disk type: MongoDB</TextBlock>
+                <TextBlock>Database version: 3.4</TextBlock>
+                <TextBlock>Package: dds.mongo.mid</TextBlock>
+                <TextBlock>Storage space: 10 GB</TextBlock>
+                <TextBlock>Replication factor: 3</TextBlock>
+                <TextBlock>Region: East China 1</TextBlock>
+            </StackPanel>
+        </atom:DescriptionItem.Content>
+    </atom:DescriptionItem>
+</atom:Descriptions>
+```
+
+### 垂直显示带边框
+
+![AtomUI Description组件](./images/row.png)
+
+```xaml
+<atom:Descriptions Header="User Info" IsBordered="True">
+    <atom:DescriptionItem Label="UserName" Content="Zhou Maomao" />
+    <atom:DescriptionItem Label="Live" Content="Hangzhou, Zhejiang" IsFilled="True" />
+    <atom:DescriptionItem Label="Remark" Content="empty" IsFilled="True" />
+    <atom:DescriptionItem Label="Address"
+                          Content="No. 18, Wantang Road, Xihu District, Hangzhou, Zhejiang, China" />
+</atom:Descriptions>
 ```

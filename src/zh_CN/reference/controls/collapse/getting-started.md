@@ -10,83 +10,97 @@
 ![AtomUI Collapse组件](./images/basic.webp)
 
 ```xaml
-<atom:Carousel SelectedIndex="2">
-    <atom:CarouselPage>1</atom:CarouselPage>
-    <atom:CarouselPage>2</atom:CarouselPage>
-    <atom:CarouselPage>3</atom:CarouselPage>
-    <atom:CarouselPage>4</atom:CarouselPage>
-</atom:Carousel>
+<atom:Collapse>
+    <atom:CollapseItem Header="This is panel header 1">
+        <atom:TextBlock TextWrapping="Wrap">
+            A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </atom:TextBlock>
+    </atom:CollapseItem>
+    <atom:CollapseItem Header="This is panel header 2">
+        <atom:TextBlock TextWrapping="Wrap">
+            A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </atom:TextBlock>
+    </atom:CollapseItem>
+    <atom:CollapseItem Header="This is panel header 3">
+        <atom:TextBlock TextWrapping="Wrap">
+            A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </atom:TextBlock>
+    </atom:CollapseItem>
+</atom:Collapse>
 ```
 
-### 位置设定
+### 尺寸大小
 
-![AtomUI Collapse组件](./images/position.webp)
+![AtomUI Collapse组件](./images/size.png)
 
 ```xaml
-<StackPanel Orientation="Vertical" Spacing="20">
-    <StackPanel Orientation="Horizontal" Spacing="5">
-        <atom:TextBlock VerticalAlignment="Center">Pagination Position:</atom:TextBlock>
-        <atom:OptionButtonGroup ButtonStyle="Outline" Name="PositionOptionGroup">
-            <atom:OptionButton>Top</atom:OptionButton>
-            <atom:OptionButton IsChecked="True">Bottom</atom:OptionButton>
-            <atom:OptionButton>Left</atom:OptionButton>
-            <atom:OptionButton>Right</atom:OptionButton>
-        </atom:OptionButtonGroup>
-    </StackPanel>
-
-    <atom:Carousel PaginationPosition="{Binding PaginationPosition}">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-
+<StackPanel Orientation="Vertical" Spacing="20" >
+    <atom:Separator Title="Default Size" TitlePosition="Left" FontWeight="Bold" />
+    <atom:Collapse SizeType="Middle">
+        <atom:CollapseItem Header="This is default size panel header">
+            <atom:TextBlock TextWrapping="Wrap">
+                A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+            </atom:TextBlock>
+        </atom:CollapseItem>
+    </atom:Collapse>
+    <atom:Separator Title="Small Size" TitlePosition="Left" FontWeight="Bold" />
+    <atom:Collapse SizeType="Small">
+        <atom:CollapseItem Header="This is small size panel header">
+            <atom:TextBlock TextWrapping="Wrap">
+                A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+            </atom:TextBlock>
+        </atom:CollapseItem>
+    </atom:Collapse>
+    <atom:Separator Title="Large Size" TitlePosition="Left" FontWeight="Bold" />
+    <atom:Collapse SizeType="Large">
+        <atom:CollapseItem Header="This is large size panel header">
+            <atom:TextBlock TextWrapping="Wrap">
+                A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+            </atom:TextBlock>
+        </atom:CollapseItem>
+    </atom:Collapse>
 </StackPanel>
 ```
 
-### 自动轮播
+### 边框设定
 
-![AtomUI Collapse组件](./images/auto-play.webp)
+![AtomUI Collapse组件](./images/borderless.png)
 
 ```xaml
-<atom:Carousel IsAutoPlay="True" IsInfinite="False">
-    <atom:CarouselPage>1</atom:CarouselPage>
-    <atom:CarouselPage>2</atom:CarouselPage>
-    <atom:CarouselPage>3</atom:CarouselPage>
-    <atom:CarouselPage>4</atom:CarouselPage>
-</atom:Carousel>
+<atom:Collapse IsBorderless="True">
+    <atom:CollapseItem Header="This is panel header 1">
+        <atom:TextBlock TextWrapping="Wrap">
+            A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </atom:TextBlock>
+    </atom:CollapseItem>
+    <atom:CollapseItem Header="This is panel header 2">
+        <atom:TextBlock TextWrapping="Wrap">
+            A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </atom:TextBlock>
+    </atom:CollapseItem>
+    <atom:CollapseItem Header="This is panel header 3">
+        <atom:TextBlock TextWrapping="Wrap">
+            A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </atom:TextBlock>
+    </atom:CollapseItem>
+</atom:Collapse>
 ```
 
-### 淡入
+### 箭头
 
-![AtomUI Collapse组件](./images/fade-in.webp)
-
-```xaml
-<atom:Carousel TransitionEffect="Fade">
-    <atom:CarouselPage Background="#B3001B">1</atom:CarouselPage>
-    <atom:CarouselPage Background="#255C99">2</atom:CarouselPage>
-    <atom:CarouselPage Background="#262626">3</atom:CarouselPage>
-    <atom:CarouselPage Background="#CCAD8F">4</atom:CarouselPage>
-</atom:Carousel>
-```
-
-### 播放箭头
-
-![AtomUI Collapse组件](./images/with-arrow.webp)
+![AtomUI Collapse组件](./images/arrow-option.png)
 
 ```xaml
-<StackPanel Orientation="Vertical" Spacing="10">
-    <atom:Carousel IsShowNavButtons="True">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-    <atom:Carousel PaginationPosition="Left" IsShowNavButtons="True" IsInfinite="False">
-        <atom:CarouselPage>1</atom:CarouselPage>
-        <atom:CarouselPage>2</atom:CarouselPage>
-        <atom:CarouselPage>3</atom:CarouselPage>
-        <atom:CarouselPage>4</atom:CarouselPage>
-    </atom:Carousel>
-</StackPanel>
+<atom:Collapse>
+    <atom:CollapseItem Header="This is panel header 1">
+        <atom:TextBlock TextWrapping="Wrap">
+            A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </atom:TextBlock>
+    </atom:CollapseItem>
+    <atom:CollapseItem Header="This is panel header 2" IsShowExpandIcon="False">
+        <atom:TextBlock TextWrapping="Wrap">
+            A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.
+        </atom:TextBlock>
+    </atom:CollapseItem>
+</atom:Collapse>
 ```

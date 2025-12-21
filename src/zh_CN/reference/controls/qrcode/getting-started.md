@@ -34,6 +34,8 @@
 
 ### 内置状态
 
+通过 `Status` 属性可以控制二维码的显示状态，根据 `MVVM` 原则，开发者需要将 `Status` 绑定到一个属性上。
+
 ![AtomUI QRcode组件](./images/status.webp)
 
 ```xaml

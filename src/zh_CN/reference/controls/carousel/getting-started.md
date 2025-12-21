@@ -4,8 +4,11 @@
 
 * Nuget安装Avalonia
 * Nuget安装AtomUI
+* 本页文档末尾有公共样式代码与公共code-behind代码
 
 ### 基础用法
+
+一个最简单的示例，至于背景颜色，参考本页文档末尾的样式代码。
 
 ![AtomUI Carousel组件](./images/basic.webp)
 
@@ -19,6 +22,8 @@
 ```
 
 ### 位置设定
+
+通过 `PaginationPosition` 属性可以指定轮播图索引的位置，目前系统内置的可选值有：`Top`、`Bottom`、`Left`、`Right`。
 
 ![AtomUI Carousel组件](./images/position.webp)
 
@@ -46,6 +51,8 @@
 
 ### 自动轮播
 
+将 `IsAutoPlay` 属性设定为 `True`，即可开启自动轮播功能；`IsInfinite` 默认为 `True`，即轮播到最后一张图片后，会自动跳转到第一张图片继续循环。
+
 ![AtomUI Carousel组件](./images/auto-play.webp)
 
 ```xaml
@@ -59,6 +66,8 @@
 
 ### 淡入
 
+`TransitionEffect` 属性可以设定轮播图片的淡入效果，目前系统内置的可选值有：`Scroll`、`Fade`。
+
 ![AtomUI Result组件](./images/fade-in.webp)
 
 ```xaml
@@ -71,6 +80,8 @@
 ```
 
 ### 播放箭头
+
+`IsShowNavButtons` 属性用于显示轮播图片的左右切换箭头。
 
 ![AtomUI Carousel组件](./images/with-arrow.webp)
 
@@ -93,6 +104,8 @@
 
 ### 播放进度条
 
+假设开发者一定设定了4张轮播图，每张轮播图的展示时间长达5秒钟，那么 `IsShowTransitionProgress` 属性可以展示这5秒钟的进度，缓解用户等待焦虑。
+
 ![AtomUI Carousel组件](./images/progress-dot.webp)
 
 ```xaml
@@ -107,6 +120,22 @@
 ```
 
 ### 公共文件
+
+样式代码：
+```xaml
+<gallery:ShowCasePanel.Styles>
+    <Style Selector="atom|Carousel">
+        <Setter Property="Background" Value="#364d79" />
+        <Setter Property="Foreground" Value="#fff" />
+        <Setter Property="Height" Value="160" />
+    </Style>
+    <Style Selector="atom|CarouselPage">
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="FontWeight" Value="Bold" />
+    </Style>
+</gallery:ShowCasePanel.Styles>
+```
 
 code-behind文件：
 ```csharp

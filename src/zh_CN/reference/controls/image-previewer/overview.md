@@ -1,12 +1,11 @@
-﻿# Collapse 概述
+﻿# ImagePreview 概述
 
 ### 简介
 
-跑马灯、轮播图，非常实用且好用的图片轮播组件。
+一个轻量级的图片预览组件，基本上能满足常见的图片预览场景。
 
-![AtomUI Collapse组件](./images/basic.webp)
+![AtomUI ImagePreview组件](./images/basic.webp)
 
 ### 主要功能
-* 内置常见success、info、warning与error等风格
-* 内置HTTP 403/404/500风格
-* 自定义图标
+* 图片左右旋转、自由缩放、多张图片左右滑动查看
+* 自定义预览缩略图

@@ -413,6 +413,14 @@
                                 {
                                     "text": "快速开始",
                                     "path": "getting-started.md"
+                                },
+                                {
+                                  "text": "高级用法",
+                                  "path": "advanced.md"
+                                },
+                                {
+                                  "text": "其他",
+                                  "path": "other.md"
                                 }
                             ]
                         },

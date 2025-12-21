@@ -2,6 +2,10 @@
 
 ### 自定义状态
 
+这是一种自定义状态，通过设置 `QRCode.LoadingContent` `QRCode.ExpiredContent` `QRCode.ScannedContent` 属性，可以自定义二维码的状态。
+
+这个属性的意义在于：允许开发者针对自己的业务自定义某种 `Status` 处理过程中需要显示的界面。
+
 ![AtomUI QRcode组件](./images/custom-status.png)
 
 ```xaml
@@ -72,6 +76,8 @@
 ```
 
 ### 气泡二维码
+
+结合 `AtomUI` 的 `FlyoutHost` 组件，可以实现略过时出现二维码气泡功能。
 
 ![AtomUI QRcode组件](./images/hover.webp)
 
