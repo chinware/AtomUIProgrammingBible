@@ -359,6 +359,20 @@
                           ]
                         },
                         {
+                            "text": "Carousel",
+                            "path": "carousel",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
                           "text": "CheckBox",
                           "path": "check-box",
                           "items": [
@@ -389,6 +403,28 @@
                           ]
                         },
                         {
+                            "text": "Collapse",
+                            "path": "collapse",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                  "text": "高级用法",
+                                  "path": "advanced.md"
+                                },
+                                {
+                                  "text": "其他",
+                                  "path": "other.md"
+                                }
+                            ]
+                        },
+                        {
                             "text": "ComboBox",
                             "path": "combobox",
                             "items": [
@@ -415,6 +451,20 @@
                                     "path": "getting-started.md"
                                 }
                             ]
+                        },
+                        {
+                          "text": "Description",
+                          "path": "description",
+                          "items": [
+                              {
+                                  "text": "概述",
+                                  "path": "overview.md"
+                              },
+                              {
+                                  "text": "快速开始",
+                                  "path": "getting-started.md"
+                              }
+                          ]
                         },
                         {
                             "text": "Dialog",
@@ -533,6 +583,20 @@
                                 {
                                     "text": "概述",
                                     "path": "overview.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "ImagePreviewer",
+                            "path": "image-previewer",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
                                 }
                             ]
                         },
@@ -825,6 +889,24 @@
                             ]
                         },
                         {
+                            "text": "Qrcode",
+                            "path": "qrcode",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                },
+                                {
+                                    "text": "高级用法",
+                                    "path": "advanced.md"
+                                }
+                            ]
+                        },
+                        {
                             "text": "RadioButton",
                             "path": "radio-button",
                             "items": [
@@ -839,6 +921,34 @@
                                 {
                                     "text": "按钮样式",
                                     "path": "button.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Rate",
+                            "path": "rate",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Result",
+                            "path": "result",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
                                 }
                             ]
                         },
@@ -957,6 +1067,20 @@
                                 {
                                     "text": "触发方式",
                                     "path": "trigger-way.md"
+                                }
+                            ]
+                        },
+                        {
+                            "text": "Statistic",
+                            "path": "statistic",
+                            "items": [
+                                {
+                                    "text": "概述",
+                                    "path": "overview.md"
+                                },
+                                {
+                                    "text": "快速开始",
+                                    "path": "getting-started.md"
                                 }
                             ]
                         },
