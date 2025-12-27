@@ -1,5 +1,24 @@
 ![Changelog](./images/changelog.png)
 
+#### 5.1.3
+**新特性**
+1. 新增 Statistic 控件
+2. 新增 Rate 控件
+3. 新增全局  Message 静态通知方法
+4. 新增 AtomUI.Native 支持 Windows 和 Linux 的 32 位系统
+
+**Bug 修复**
+1. 修复 Select控件Tab切换焦后内容不会收回
+2. 修复 LineEdit需要按两次Tab键才能跳到下一个LineEdit
+3. 修复 Separator控件设置IsVisible="False"属性后程序无法运行
+4. 修复 List 控件水平内容不能平铺
+5. 修复 ContextMenu 阴影位置计算错误
+6. 修复 fix(tab): 修复选中后border样式异常问题
+7. 修复 Card 内容无法居中
+8. 修复 NavMenu 默认选中和路径打开重复应用
+9. 修复 TimeLineItem 设置 IsVisible="False"后卡死
+10. 修复 DropdownButton 下拉菜單，菜單的對話框箭頭位置錯誤
+
 #### v5.1.2
 
 `2025 年 12 月 03 日`
