@@ -1,5 +1,28 @@
 ![Changelog](./images/changelog.png)
 
+#### 5.1.4
+**新特性**
+1. 新增 Grid 栅格布局控件 @tuskermanshu
+2. 新增 FlexPanel 布局控件 @tuskermanshu
+3. 新增 Splitter 控件 @tuskermanshu
+4. 新增 TreeSelect 控件
+5. 新增 DataGrid 的分页相关的事件
+
+**优化**
+1. 优化滚动条，当滚动条不活动时候自动隐藏
+2. 优化 Icon 渲染
+3. 优化 Tree 控件，增加异步加载数据功能
+4. 优化 Tree 控件，增加数据过滤功能
+5. 优化 Button，让内容支持控件类型
+
+**Bug 修复**
+1. 修复 Select 过滤不能输入中文功能
+2. 修复 Popup 定位问题
+3. 修复动画播放问题
+
+**破坏性更新说明**
+本更新 Select 有部分属性名有变化
+
 #### 5.1.3
 **新特性**
 1. 新增 Statistic 控件
