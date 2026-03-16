@@ -1,13 +1,15 @@
-﻿# 快速入门
+# 快速入门
 
 ### 基础配置条件
 
-* Nuget安装Avalonia
-* Nuget安装AtomUI
+* Nuget 安装 Avalonia
+* Nuget 安装 AtomUI
+
+---
 
 ### 基础用法
 
-这个示例中通过顶部按钮改变 `BoxPanel` 的方向，本质上是通过 `Orientation` 属性来改变 `BoxPanel` 的方向，具体修改逻辑位于文档尾部code-behind文件中。
+最基本的用法是将子元素放入 `BoxPanel` 中，通过 `Orientation` 属性控制排列方向。以下示例通过顶部单选按钮动态切换 `BoxPanel` 的方向。
 
 ![AtomUI BoxPanel组件](./images/basic.webp)
 
@@ -37,9 +39,11 @@
 </StackPanel>
 ```
 
-### Flex布局
+---
 
-这个示例向开发者演示如何使用 `Flex` 布局，本质上是通过设定 `atom:BoxPanel.Flex` 属性的值来实现。
+### Flex 弹性布局
+
+通过设置附加属性 `atom:BoxPanel.Flex` 的值，可以让子元素按比例分配可用空间。例如，两个 `Flex="1"` 和一个 `Flex="2"` 的子元素将按 1:1:2 的比例分配空间。
 
 ![AtomUI BoxPanel组件](./images/flex.webp)
 
@@ -78,9 +82,11 @@
 </StackPanel>
 ```
 
-### Child alignment
+---
 
-使用标准的 `VerticalAlignment` 属性控制子元素在交叉轴上的位置，支持Stretch、Top、Center、Bottom对齐方式；同时也可以混合布局，结合固定尺寸与 `Flex` 混合使用。
+### 子元素对齐
+
+子元素可以通过 `VerticalAlignment` 属性控制在交叉轴上的位置，支持 Stretch、Top、Center、Bottom 四种对齐方式。同时也可以将固定尺寸元素与 Flex 弹性元素混合使用。
 
 ![AtomUI BoxPanel组件](./images/child-alignment.png)
 
@@ -116,9 +122,11 @@
 </StackPanel>
 ```
 
-### 调整距离
+---
 
-这个示例中使用 `Slider` 控件控制 `BoxPanel` 的 `Spacing` 属性，本质上是使用 `ValueChanged="HandleSpaceSliderValueChanged"` 事件处理程序实现实时调整元素间距。
+### 间距调节
+
+通过 `Spacing` 属性可以统一设置子元素之间的间距。以下示例使用 `Slider` 控件实时调整间距大小，并演示了动态添加固定间距和修改 Flex 值的操作。
 
 ![AtomUI BoxPanel组件](./images/space-flex.webp)
 
@@ -169,7 +177,11 @@
 </StackPanel>
 ```
 
-这个示例中通过触发 `HandleAddFlexButtonClicked` 事件动态向 `BoxPanel` 中添加新的弹性占位元素、`Flex` 占位符功能，除了一些业务场景中有类似需求，同时这种占位符可以做为一种辅助调试UI的手段。
+---
+
+### 动态 Flex 占位
+
+在运行时可以通过 `AddFlex` 方法动态向 `BoxPanel` 添加弹性占位元素。这在需要动态调整布局或辅助调试 UI 时非常有用。
 
 ![AtomUI BoxPanel组件](./images/ratio-child.webp)
 
@@ -202,9 +214,11 @@
 </StackPanel>
 ```
 
+---
+
 ### 公用文件
 
-code-behind文件：
+code-behind 文件：
 ```csharp
 using AtomUI.Controls;
 using AtomUIGallery.ShowCases.ViewModels;
@@ -220,17 +234,17 @@ public partial class BoxPanelShowCase : ReactiveUserControl<BoxPanelViewModel>
     {
         this.WhenActivated(disposables => { });
         InitializeComponent();
-        
+
         Vertical.IsCheckedChanged += HandleModeChecked;
 
         Horizontal.IsCheckedChanged += HandleModeChecked;
-        
+
         Vertical1.IsCheckedChanged += HandleMode1Checked;
 
         Horizontal1.IsCheckedChanged += HandleMode1Checked;
     }
-    
-    
+
+
     private void HandleMode1Checked(object? sender, RoutedEventArgs e)
     {
         if (sender is RadioButton button)
@@ -245,7 +259,7 @@ public partial class BoxPanelShowCase : ReactiveUserControl<BoxPanelViewModel>
             }
         }
     }
-    
+
     private void HandleModeChecked(object? sender, RoutedEventArgs e)
     {
         if (sender is RadioButton button)
@@ -301,16 +315,16 @@ public partial class BoxPanelShowCase : ReactiveUserControl<BoxPanelViewModel>
 }
 ```
 
-view-model文件：
+view-model 文件：
 ```csharp
 using ReactiveUI;
 
 public class BoxPanelViewModel : ReactiveObject, IRoutableViewModel
 {
     public const string ID = "BoxPanelShowCase";
-    
+
     public IScreen HostScreen { get; }
-    
+
     public string UrlPathSegment { get; } = ID;
 
     public BoxPanelViewModel(IScreen screen)

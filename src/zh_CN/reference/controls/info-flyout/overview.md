@@ -1,12 +1,16 @@
-﻿# InfoFlyout 概述
+# Flyout 气泡浮层
 
 ### 简介
 
-简洁而又不失精悍的 `InfoFlyout` 组件。
+`Flyout` 是一个轻量级的气泡浮层组件，继承自 `PopupFlyoutBase`，用于在目标元素附近弹出浮层以展示额外的信息或操作内容。它支持丰富的交互方式和灵活的定位能力，适用于提示、引导、操作确认等多种场景。
 
-![AtomUI Empty组件](./images/trigger-way.webp)
+![AtomUI Flyout组件](./images/trigger-way.webp)
 
 ### 主要功能
-* 支持多种触发方式
-* 支持12种弹出位置
-* 支持带箭头/无箭头样式
+
+* **悬浮与点击触发** -- 通过 `FlyoutHost` 的 `Trigger` 属性，支持 `Hover`（悬停触发）和 `Click`（点击触发）两种交互模式
+* **箭头显示与居中指向** -- 通过 `IsShowArrow` 控制箭头的显示与隐藏，通过 `IsPointAtCenter` 控制箭头是否指向目标元素中心
+* **12 种弹出方向** -- 通过 `Placement` 属性指定弹出层相对于触发元素的方向，涵盖上、下、左、右四个方位各三种对齐位置
+* **自定义内容** -- `Content` 属性接受任意对象，可以放置文本、面板或任意复杂控件
+* **遮罩阴影** -- 通过 `MaskShadows` 属性为弹出层添加阴影效果，增强视觉层次感
+* **自定义主题** -- 通过 `FlyoutPresenterTheme` 属性为弹出层面板指定自定义控件主题

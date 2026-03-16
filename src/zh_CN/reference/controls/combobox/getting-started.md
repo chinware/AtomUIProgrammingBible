@@ -1,13 +1,13 @@
-﻿# 快速入门
+# ComboBox 快速入门
 
-### 基础配置条件
+## 前置条件
 
-* Nuget安装Avalonia
-* Nuget安装AtomUI
+- NuGet 安装 `Avalonia`
+- NuGet 安装 `AtomUI`
 
-### 基础用法
+## 基础用法
 
-一眼就懂的使用方式。
+最简单的用法是直接通过 `ComboBoxItem` 声明选项列表。
 
 ![AtomUI ComboBox组件](./images/basic.webp)
 
@@ -17,50 +17,12 @@
     <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
     <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
     <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
-    <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
-    <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
-    <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
-    <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
 </atom:ComboBox>
 ```
 
-### ItemsSource
+## ItemsSource 数据绑定
 
-正常来说，这种 `ItemsSource` 方式才是最常见的使用方式。
-
-这本质上是 `Avalonia` 中的典型用法，先通过 `ItemsSource` 绑定数据来源，再通过 `ItemTemplate` 绑定数据项的显示方式。
+在实际业务中，更常见的做法是通过 `ItemsSource` 绑定数据源，再通过 `ItemTemplate` 定义每个选项的显示方式。这是 Avalonia 中的标准 MVVM 用法。
 
 ![AtomUI ComboBox组件](./images/generate.webp)
 
@@ -76,9 +38,9 @@
 </atom:ComboBox>
 ```
 
-### 禁用
+## 禁用状态
 
-一眼就懂的 `IsEnabled` 属性。
+通过 `IsEnabled` 属性可以将组件设置为禁用状态，禁用后用户无法与之交互。
 
 ![AtomUI ComboBox组件](./images/disabled.png)
 
@@ -91,14 +53,14 @@
 </atom:ComboBox>
 ```
 
-### 大小尺寸
+## 尺寸
 
-`SizeType` 属性可选值有Large、Middle、Small三个。
+通过 `SizeType` 属性控制组件的大小尺寸，可选值为 `Large`、`Middle`、`Small`。
 
 ![AtomUI ComboBox组件](./images/size.webp)
 
 ```xaml
-<StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
+<StackPanel Orientation="Vertical" Spacing="10">
     <atom:ComboBox SizeType="Large" PlaceholderText="Please select">
         <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
         <atom:ComboBoxItem>疑是地上霜</atom:ComboBoxItem>
@@ -120,9 +82,9 @@
 </StackPanel>
 ```
 
-### 多种变体
+## 样式变体
 
-变体的作用在于更好的融于不同的UI设计风格，是视觉方向的属性。其属性名为 `StyleVariant`，可选值有Outline、Filled、Borderless。
+通过 `StyleVariant` 属性切换不同的视觉风格，可选值为 `Outline`（线框，默认）、`Filled`（填充）、`Borderless`（无边框），便于融入不同的 UI 设计场景。
 
 ![AtomUI ComboBox组件](./images/variants.webp)
 
@@ -151,11 +113,9 @@
 </StackPanel>
 ```
 
-### Pre/Post tab
+## 前置/后置标签（Pre/Post Tab）
 
-有时候需要在输入框的左侧或者右侧添加一些内容，这时就可以使用 `LeftAddOn` 和 `RightAddOn` 属性。
-* `LeftAddOn` 表示输入框左侧位置的Pre Tab，其值可以是一个图标，也可以是字符串。
-* `RightAddOn` 表示输入框右侧位置的Pre Tab，其值可以是一个图标，也可以是字符串。
+通过 `LeftAddOn` 和 `RightAddOn` 属性在输入框的外部左侧或右侧添加附加内容，其值可以是字符串，也可以是图标等控件。
 
 ![AtomUI ComboBox组件](./images/pre-post-tab.webp)
 
@@ -186,18 +146,12 @@
         <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
         <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
     </atom:ComboBox>
-
 </StackPanel>
 ```
 
-### 前缀/后缀
+## 内部前缀/后缀
 
-前后缀和前面刚展示过的Pre/Post Tab略不太一样，
-
-* `InnerLeftContent` 则作为内部内容，位于输入框内部的左侧，是输入框的一部分。
-* `InnerRightContent` 则作为内部内容，位于输入框内部的右侧，是输入框的一部分。
-
-`InnerRightContent` 与 `RightAddOn` 区别是：前者更趋向于为输入框内部的补充，而后者更趋向于为输入框外部的装饰。
+通过 `InnerLeftContent` 和 `InnerRightContent` 属性在输入框内部的左侧或右侧添加前缀/后缀内容。与 `LeftAddOn` / `RightAddOn` 不同的是，前后缀位于输入框内部，是输入框的组成部分。
 
 ![AtomUI ComboBox组件](./images/prefix-suffix.webp)
 
@@ -229,18 +183,17 @@
         <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
         <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
     </atom:ComboBox>
-
 </StackPanel>
 ```
 
-### 状态色
+## 状态色
 
-`Status` 属性可以一键设定组件的状态色，用于向用户传达一种明确的意图。可选值有Default、Error、Warning。
+通过 `Status` 属性设定组件的状态色，用于向用户传达表单校验等信息。可选值为 `Default`、`Error`、`Warning`。状态色在所有样式变体下均生效。
 
 ![AtomUI ComboBox组件](./images/status.png)
 
 ```xaml
-<StackPanel Orientation="Vertical" Spacing="10" Margin="0, 0, 20, 0">
+<StackPanel Orientation="Vertical" Spacing="10">
     <atom:ComboBox PlaceholderText="Please select" Width="300"
                    Status="Error">
         <atom:ComboBoxItem>床前明月光</atom:ComboBoxItem>
@@ -314,6 +267,5 @@
         <atom:ComboBoxItem>举头望明月</atom:ComboBoxItem>
         <atom:ComboBoxItem>低头思故乡</atom:ComboBoxItem>
     </atom:ComboBox>
-
 </StackPanel>
 ```

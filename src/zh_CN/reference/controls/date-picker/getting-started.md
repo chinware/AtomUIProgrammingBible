@@ -1,4 +1,4 @@
-﻿# 快速入门
+# 快速入门
 
 ### 基础配置条件
 
@@ -7,7 +7,7 @@
 
 ### 基础用法
 
-`Watermark` 属性类似于HTML中的Placeholder，起到一种占位符的作用。
+`Watermark` 属性类似于HTML中的Placeholder，起到一种占位符的作用。通过 `SelectedDateTime` 可设置或绑定当前选中的日期。
 
 ![AtomUI DatePicker组件](./images/basic.webp)
 
@@ -17,7 +17,7 @@
 
 ### 日期范围选择
 
-在需要选择范围类型日期时，使用 `RangeDatePicker` 组件， `IsShowTime` 设定为True则可以将选择精确到时分秒。
+在需要选择范围类型日期时，使用 `RangeDatePicker` 组件。将 `IsShowTime` 设为 `True` 可以将选择精确到时分秒。
 
 ![AtomUI DatePicker组件](./images/range.webp)
 
@@ -30,7 +30,7 @@
 
 ### 带有确认按钮的日期选择器
 
-一些业务场景需要让用户确认选择的日期，将 `IsNeedConfirm` 属性设置为True。
+某些业务场景需要用户确认所选日期，将 `IsNeedConfirm` 属性设置为 `True` 即可启用确认按钮。启用后用户必须点击确认才能提交所选日期。
 
 ![AtomUI DatePicker组件](./images/confirm.webp)
 
@@ -41,9 +41,20 @@
 </StackPanel>
 ```
 
+### 时间精度
+
+将 `IsShowTime` 设置为 `True`，日期选择器会额外显示时间选择面板，允许用户选择具体的时、分、秒。可通过 `ClockIdentifier` 属性设置 12 小时制（`HourClock12`）或 24 小时制（`HourClock24`）。
+
+```xaml
+<StackPanel Orientation="Vertical" Spacing="10">
+    <atom:DatePicker IsShowTime="True" ClockIdentifier="HourClock24" Watermark="Select date"/>
+    <atom:DatePicker IsShowTime="True" ClockIdentifier="HourClock12" Watermark="Select date"/>
+</StackPanel>
+```
+
 ### 禁用
 
-老面孔了，`IsEnabled` 属性用于决定组件是否可用。
+`IsEnabled` 属性用于决定组件是否可用，设置为 `False` 后组件将变为只读灰色状态。
 
 ![AtomUI DatePicker组件](./images/disabled.png)
 
@@ -53,14 +64,14 @@
                      IsEnabled="False" />
     <atom:DatePicker IsNeedConfirm="True" Watermark="Select date" IsShowTime="True"
                      SelectedDateTime="2024-01-20 12:22:23 AM" IsEnabled="False" />
-    <atom:RangeDatePicker IsNeedConfirm="True" 
-                          Watermark="Select date" 
+    <atom:RangeDatePicker IsNeedConfirm="True"
+                          Watermark="Select date"
                           SecondaryWatermark="End date"
                           RangeStartDefaultDate="2024-01-20"
-                          RangeEndDefaultDate="2024-03-20" 
+                          RangeEndDefaultDate="2024-03-20"
                           IsEnabled="False" />
-    <atom:RangeDatePicker IsNeedConfirm="True" 
-                          Watermark="Select date" 
+    <atom:RangeDatePicker IsNeedConfirm="True"
+                          Watermark="Select date"
                           SecondaryWatermark="End date"
                           IsShowTime="True"
                           RangeStartDefaultDate="2024-01-20 12:22:23 AM"
@@ -78,7 +89,7 @@
 
 ### 大小尺寸
 
-`SizeType` 属性用于设置组件的大小，可选值有Large、Middle、Small。
+`SizeType` 属性用于设置组件的大小，可选值有 `Large`、`Middle`、`Small`。
 
 ![AtomUI DatePicker组件](./images/size.webp)
 
@@ -96,8 +107,8 @@
     <StackPanel Orientation="Vertical" Margin="0, 20, 0, 0" Spacing="10">
         <atom:DatePicker IsNeedConfirm="True" Watermark="Select date" SelectedDateTime="2024-01-20"
                          SizeType="{Binding PickerSizeType}" />
-        <atom:RangeDatePicker IsNeedConfirm="True" 
-                              Watermark="Select date" 
+        <atom:RangeDatePicker IsNeedConfirm="True"
+                              Watermark="Select date"
                               SecondaryWatermark="End date"
                               IsShowTime="True"
                               RangeStartDefaultDate="2024-01-20 12:22:23 AM"
@@ -109,7 +120,7 @@
 
 ### 状态色
 
-状态色可以向用户传递一种明确的信息，比如错误、警告、成功等。用 `Status` 属性即可快速设置组件的状态色。
+状态色可以向用户传递明确的信息，比如错误、警告等。通过 `Status` 属性可快速设置组件的状态色，可选值有 `Default`、`Warning`、`Error`。
 
 ![AtomUI DatePicker组件](./images/status.webp)
 
@@ -150,10 +161,11 @@
 
 ### 变体
 
-`StyleVariant` 属性的值可选参考如下列表：
-* Outline（轮廓样式）：具有明显的边框，适合需要强调输入控件边界的设计，常用于表单填写等需要明确指示用户输入区域的场景
-* Filled（填充样式）：背景有填充色，通常用于Material Design风格的界面，提供更好的视觉层次感
-* Borderless（无边框样式）：简洁的外观，适合在工具栏或需要紧凑布局的地方使用
+`StyleVariant` 属性用于设置组件的样式风格，可选值如下：
+
+* **Outline**（轮廓样式）：具有明显的边框，适合需要强调输入控件边界的设计，常用于表单填写等需要明确指示用户输入区域的场景
+* **Filled**（填充样式）：背景有填充色，通常用于 Material Design 风格的界面，提供更好的视觉层次感
+* **Borderless**（无边框样式）：简洁的外观，适合在工具栏或需要紧凑布局的地方使用
 
 ![AtomUI DatePicker组件](./images/variants.png)
 
@@ -192,9 +204,9 @@
 </StackPanel>
 ```
 
-### 位置
+### 弹出位置
 
-用于设定组件的弹出位置。
+通过 `PickerPlacement` 属性设定日期选择面板的弹出位置，可选值有 `TopLeft`、`TopRight`、`BottomLeft`、`BottomRight`。
 
 ![AtomUI DatePicker组件](./images/placement.webp)
 

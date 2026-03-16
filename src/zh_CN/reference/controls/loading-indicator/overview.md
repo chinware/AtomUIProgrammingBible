@@ -1,12 +1,20 @@
-﻿# LoadingIndicator 概述
+# Spin 加载中
 
-### 简介
+## 简介
 
-简洁而又不失精悍的 `LoadingIndicator`。
+用于页面和区块的加载中状态。当页面局部处于等待异步数据或正在渲染过程中时，合适的加载动效会有效缓解用户的焦虑。
 
-![AtomUI LoadingIndicator组件](./images/basic.webp)
+![AtomUI Spin 组件](./images/basic.webp)
 
-### 主要功能
-* 动态Loading，支持不同大小尺寸
-* 支持自定义Icon
-* 支持自定义Loading文案
+## 何时使用
+
+- 页面局部处于等待异步数据加载时
+- 需要在已有内容上叠加加载遮罩，告知用户后台正在处理
+
+## 主要特性
+
+- **三种尺寸** — Small、Middle、Large，适配不同场景
+- **加载提示** — 支持自定义 Tip 文案
+- **自定义指示器** — 通过 CustomIndicator / CustomIndicatorTemplate 替换默认旋转图标
+- **内容遮罩** — 作为 ContentControl 可包裹任意内容，在加载时显示模糊遮罩
+- **动画控制** — 可配置动画时长与缓动曲线

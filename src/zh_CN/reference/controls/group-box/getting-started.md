@@ -1,4 +1,4 @@
-﻿# GroupBox 快速入门
+# GroupBox 快速入门
 
 ### 基础配置条件
 
@@ -7,7 +7,7 @@
 
 ### 基础用法
 
-`HeaderTitle` 属性设定组件标题。
+通过 `HeaderTitle` 属性设定组件标题。
 
 ![AtomUI GroupBox组件](./images/basic.png)
 
@@ -23,7 +23,7 @@
 
 ### 标题位置
 
-`HeaderTitlePosition` 属性设定组件标题的位置，可选值有`Left`、`Center`、`Right`。
+通过 `HeaderTitlePosition` 属性设定标题的对齐位置，可选值有 `Left`（默认）、`Center`、`Right`。
 
 ![AtomUI GroupBox组件](./images/header-position.png)
 
@@ -55,7 +55,7 @@
 
 ### 标题样式
 
-`HeaderFontStyle` 属性来设定字体样式，通过 `HeaderFontWeight` 属性来设定字体的粗细，通过 `HeaderTitleColor` 属性来设定标题颜色。    
+通过 `HeaderFontStyle` 属性设定字体样式，通过 `HeaderFontWeight` 属性设定字体粗细，通过 `HeaderTitleColor` 属性设定标题颜色，通过 `HeaderFontSize` 属性设定标题字体大小。
 
 ![AtomUI GroupBox组件](./images/header-title-style.png)
 
@@ -95,7 +95,7 @@
 
 ### 图标设定
 
-`HeaderIcon` 属性来设定图标。
+通过 `HeaderIcon` 属性设定标题图标。
 
 ![AtomUI GroupBox组件](./images/header-icon.png)
 

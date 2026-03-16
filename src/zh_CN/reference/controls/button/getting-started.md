@@ -1,188 +1,181 @@
-﻿# 快速入门
+# Button 快速入门
 
-### 基础配置条件
+## 前置条件
 
-* Nuget安装Avalonia
-* Nuget安装AtomUI
+- NuGet 安装 `Avalonia`
+- NuGet 安装 `AtomUI`
 
-### 基础用法
+## 基础用法
 
-`ButtonType` 属性控制按钮的样式，可选值有Default、Dashed、Primary、Link、Text。
+通过 `ButtonType` 属性控制按钮的视觉风格。
 
-![AtomUI Button组件](./images/basic-button.webp)
+![AtomUI Button 基础用法](./images/basic-button.webp)
 
 ```xaml
 <atom:Button ButtonType="Primary">Primary Button</atom:Button>
 <atom:Button>Default Button</atom:Button>
+<atom:Button ButtonType="Dashed">Dashed Button</atom:Button>
 <atom:Button ButtonType="Text">Text Button</atom:Button>
 <atom:Button ButtonType="Link">Link Button</atom:Button>
 ```
 
-### 按钮形状
+| ButtonType | 说明 |
+|---|---|
+| `Primary` | 主要操作按钮，页面中建议只有一个 |
+| `Default` | 默认按钮，用于次要操作 |
+| `Dashed` | 虚线边框按钮，常用于添加操作 |
+| `Text` | 文本按钮，无边框无背景，用于最轻量的操作 |
+| `Link` | 链接按钮，类似超链接的视觉效果 |
 
-`Shape` 属性决定了按钮的形状，可选值有Default、Circle、Round。
+## 按钮形状
 
-![AtomUI Button组件](./images/button-shape.webp)
+通过 `Shape` 属性设置按钮的几何形状。
+
+![AtomUI Button 形状](./images/button-shape.webp)
 
 ```xaml
-<WrapPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0, 0, 0, 20">
-    <atom:Button ButtonType="Primary">Primary</atom:Button>
-    <atom:Button>Default</atom:Button>
-    <atom:Button ButtonType="Text">Text</atom:Button>
-    <atom:Button ButtonType="Link">Link</atom:Button>
-</WrapPanel>
-<WrapPanel HorizontalAlignment="Left" Orientation="Horizontal" Margin="0, 0, 0, 20">
-    <atom:Button ButtonType="Primary" Shape="Round">Primary</atom:Button>
-    <atom:Button Shape="Round">Default</atom:Button>
-    <atom:Button ButtonType="Text" Shape="Round">Text</atom:Button>
-    <atom:Button ButtonType="Link" Shape="Round">Link</atom:Button>
-</WrapPanel>
-<StackPanel HorizontalAlignment="Left" Spacing="10" Orientation="Horizontal" Margin="0, 0, 0, 20">
-    <atom:Button ButtonType="Primary" Shape="Circle">AA</atom:Button>
-    <atom:Button Shape="Circle">AA</atom:Button>
-    <atom:Button ButtonType="Text" Shape="Circle">AA</atom:Button>
-    <atom:Button ButtonType="Link" Shape="Circle">AA</atom:Button>
-</StackPanel>
+<!-- 默认形状（圆角矩形） -->
+<atom:Button ButtonType="Primary">Primary</atom:Button>
+
+<!-- 胶囊形 -->
+<atom:Button ButtonType="Primary" Shape="Round">Primary</atom:Button>
+
+<!-- 圆形（适合纯图标按钮） -->
+<atom:Button ButtonType="Primary" Shape="Circle"
+             Icon="{atom:IconProvider Kind=SearchOutlined}" />
 ```
 
-### 大小尺寸
+## 按钮尺寸
 
-通过 `SizeType` 属性可以控制按钮的大小，本示例需要集合Code Behind与ViewModel共同实现。
+通过 `SizeType` 属性控制按钮大小，可选值为 `Large`、`Middle`（默认）、`Small`。
 
-![AtomUI Button组件](./images/button-size.webp)
+![AtomUI Button 尺寸](./images/button-size.webp)
 
-axaml文件：
 ```xaml
-<StackPanel Orientation="Horizontal" Spacing="5" DockPanel.Dock="Top">
-    <atom:TextBlock VerticalAlignment="Center">Expand direction:</atom:TextBlock>
-    <atom:OptionButtonGroup ButtonStyle="Outline"
-                            OptionCheckedChanged="HandleButtonSizeTypeOptionCheckedChanged">
-        <atom:OptionButton IsChecked="True">Large</atom:OptionButton>
-        <atom:OptionButton>Default</atom:OptionButton>
-        <atom:OptionButton>Small</atom:OptionButton>
-    </atom:OptionButtonGroup>
-</StackPanel>
-
-<StackPanel Orientation="Vertical" Margin="0, 20, 0, 0" Spacing="10">
-    <WrapPanel>
-        <atom:Button ButtonType="Primary" SizeType="{Binding ButtonSizeType}">Primary</atom:Button>
-        <atom:Button ButtonType="Dashed" SizeType="{Binding ButtonSizeType}">Dashed</atom:Button>
-        <atom:Button ButtonType="Default" SizeType="{Binding ButtonSizeType}">Default</atom:Button>
-        <atom:Button ButtonType="Link" SizeType="{Binding ButtonSizeType}">Link</atom:Button>
-    </WrapPanel>
-    <WrapPanel>
-        <atom:Button ButtonType="Primary" Shape="Default"
-                     Icon="{atom:IconProvider Kind=DownloadOutlined}"
-                     SizeType="{Binding ButtonSizeType}" />
-        <atom:Button ButtonType="Dashed" Shape="Default"
-                     Icon="{atom:IconProvider Kind=DownloadOutlined}"
-                     SizeType="{Binding ButtonSizeType}" />
-        <atom:Button ButtonType="Primary" Shape="Circle"
-                     Icon="{atom:IconProvider Kind=DownloadOutlined}"
-                     SizeType="{Binding ButtonSizeType}" />
-        <atom:Button ButtonType="Primary" Shape="Round"
-                     Icon="{atom:IconProvider Kind=DownloadOutlined}"
-                     SizeType="{Binding ButtonSizeType}" />
-        <atom:Button ButtonType="Primary" Shape="Round"
-                     Icon="{atom:IconProvider Kind=DownloadOutlined}"
-                     SizeType="{Binding ButtonSizeType}">
-            Download
-        </atom:Button>
-        <atom:Button ButtonType="Primary" Shape="Default"
-                     Icon="{atom:IconProvider Kind=DownloadOutlined}"
-                     SizeType="{Binding ButtonSizeType}">
-            Download
-        </atom:Button>
-    </WrapPanel>
-</StackPanel>
+<atom:Button ButtonType="Primary" SizeType="Large">Large</atom:Button>
+<atom:Button ButtonType="Primary">Middle（默认）</atom:Button>
+<atom:Button ButtonType="Primary" SizeType="Small">Small</atom:Button>
 ```
 
-code-behind文件：
+配合数据绑定可实现动态切换尺寸：
+
+```xaml
+<atom:Button ButtonType="Primary" SizeType="{Binding ButtonSizeType}">
+    Primary
+</atom:Button>
+```
+
+## 图标按钮
+
+通过 `Icon` 属性设置按钮图标，图标来源于 AtomUI 内置的 AntDesign 图标库。
+
+![AtomUI Button 图标](./images/icon-button.webp)
+
+```xaml
+<!-- 图标 + 文字 -->
+<atom:Button ButtonType="Primary" Icon="{atom:IconProvider Kind=SearchOutlined}">
+    Search
+</atom:Button>
+
+<!-- 纯图标按钮（圆形） -->
+<atom:Button ButtonType="Primary" Shape="Circle"
+             Icon="{atom:IconProvider Kind=SearchOutlined}" />
+
+<!-- 纯图标按钮（胶囊形） -->
+<atom:Button ButtonType="Primary" Shape="Round"
+             Icon="{atom:IconProvider Kind=SearchOutlined}" />
+```
+
+## 危险按钮
+
+设置 `IsDanger="True"` 标识破坏性或不可逆操作，按钮会以红色系呈现。
+
+![AtomUI Button 危险](./images/danger-button.webp)
+
+```xaml
+<atom:Button ButtonType="Primary" IsDanger="True">Delete</atom:Button>
+<atom:Button ButtonType="Default" IsDanger="True">Remove</atom:Button>
+<atom:Button ButtonType="Text" IsDanger="True">Delete</atom:Button>
+<atom:Button ButtonType="Link" IsDanger="True">Delete</atom:Button>
+```
+
+## 幽灵按钮
+
+设置 `IsGhost="True"` 使按钮背景透明，适用于深色或彩色背景。
+
+![AtomUI Button 幽灵](./images/ghost-button.webp)
+
+```xaml
+<Border Background="rgb(190, 200, 200)" Padding="16">
+    <WrapPanel>
+        <atom:Button ButtonType="Primary" IsGhost="True">Primary</atom:Button>
+        <atom:Button ButtonType="Default" IsGhost="True">Default</atom:Button>
+        <atom:Button ButtonType="Primary" IsDanger="True" IsGhost="True">
+            Danger
+        </atom:Button>
+    </WrapPanel>
+</Border>
+```
+
+## 加载状态
+
+设置 `IsLoading="True"` 显示加载动画，按钮在加载期间会自动禁用交互。适用于提交表单、发起请求等需要等待的场景。
+
+![AtomUI Button 加载](./images/load-button.webp)
+
+```xaml
+<!-- 静态加载状态 -->
+<atom:Button ButtonType="Primary" IsLoading="True">Loading</atom:Button>
+
+<!-- 点击后动态切换加载状态 -->
+<atom:Button ButtonType="Primary" Click="HandleLoadingBtnClick">
+    Click me!
+</atom:Button>
+```
+
+Code-behind 实现：
+
 ```csharp
-using AtomUI;
-using AtomUI.Controls;
-using AtomUIGallery.ShowCases.ViewModels;
-using Avalonia.Interactivity;
-using Avalonia.Threading;
-using ReactiveUI;
-using ReactiveUI.Avalonia;
-
-public partial class ButtonShowCase : ReactiveUserControl<ButtonViewModel>
+public void HandleLoadingBtnClick(object? sender, RoutedEventArgs args)
 {
-    private ButtonViewModel? _viewModel;
-    public ButtonShowCase()
+    if (sender is Button button)
     {
-        this.WhenActivated(disposables =>
+        button.IsLoading = true;
+        Dispatcher.UIThread.InvokeAsync(async () =>
         {
-            _viewModel = DataContext as ButtonViewModel;
+            await Task.Delay(TimeSpan.FromSeconds(3));
+            button.IsLoading = false;
         });
-        InitializeComponent();
-    }
-    
-    public void HandleButtonSizeTypeOptionCheckedChanged(object? sender, OptionCheckedChangedEventArgs args)
-    {
-        if (_viewModel != null)
-        {
-            if (args.Index == 0)
-            {
-                _viewModel.ButtonSizeType = SizeType.Large;
-            }
-            else if (args.Index == 1)
-            {
-                _viewModel.ButtonSizeType = SizeType.Middle;
-            }
-            else
-            {
-                _viewModel.ButtonSizeType = SizeType.Small;
-            }
-        }
-        
-    }
-
-    public void HandleLoadingBtnClick(object? sender, RoutedEventArgs args)
-    {
-        if (sender is Button button)
-        {
-            button.IsLoading = true;
-            Dispatcher.UIThread.InvokeAsync(async () =>
-            {
-                await Task.Delay(TimeSpan.FromSeconds(3));
-                button.IsLoading = false;
-            });
-        }
     }
 }
 ```
 
-view-model文件：
-```csharp
-using AtomUI;
-using AtomUI.Controls;
-using Avalonia.Interactivity;
-using Avalonia.Threading;
-using ReactiveUI;
+## 禁用状态
 
-public class ButtonViewModel : ReactiveObject, IRoutableViewModel, IActivatableViewModel
-{
-    public static TreeNodeKey ID = "Button";
+设置 `IsEnabled="False"` 禁用按钮，所有按钮类型均支持禁用态。
 
-    public IScreen HostScreen { get; }
-    public ViewModelActivator Activator { get; }
+![AtomUI Button 禁用](./images/disabled-button.webp)
 
-    public string UrlPathSegment { get; } = ID.ToString();
+```xaml
+<atom:Button ButtonType="Primary" IsEnabled="False">Primary (disabled)</atom:Button>
+<atom:Button ButtonType="Default" IsEnabled="False">Default (disabled)</atom:Button>
+<atom:Button ButtonType="Text" IsEnabled="False">Text (disabled)</atom:Button>
+<atom:Button ButtonType="Link" IsEnabled="False">Link (disabled)</atom:Button>
+```
 
-    private SizeType _buttonSizeType;
+## 块状按钮
 
-    public SizeType ButtonSizeType
-    {
-        get => _buttonSizeType;
-        set => this.RaiseAndSetIfChanged(ref _buttonSizeType, value);
-    }
+设置 `HorizontalAlignment="Stretch"` 使按钮宽度撑满父容器，适用于移动端或表单场景。
 
-    public ButtonViewModel(IScreen screen)
-    {
-        Activator  = new ViewModelActivator();
-        HostScreen = screen;
-    }
-}
+![AtomUI Button 块状](./images/block-button.webp)
+
+```xaml
+<StackPanel Orientation="Vertical" Spacing="8">
+    <atom:Button ButtonType="Primary" HorizontalAlignment="Stretch">
+        Primary
+    </atom:Button>
+    <atom:Button ButtonType="Default" HorizontalAlignment="Stretch">
+        Default
+    </atom:Button>
+</StackPanel>
 ```
