@@ -1,4 +1,4 @@
-﻿# 快速入门
+# 快速入门
 
 ### 基础配置条件
 
@@ -7,7 +7,7 @@
 
 ### 基础用法
 
-`ButtonSpinner` 继承了 `Avalonia.Controls.ButtonSpinner` 类。
+`ButtonSpinner` 继承自 `Spinner` 类，通过 `Spin` 事件处理递增/递减逻辑。
 
 下面示例中点击上下箭头时，会获取当前诗句在整体诗歌中的偏移量，然后将偏移量根据不同操作做加法或减法，再根据新的偏移量值获取响应的诗句并展示到UI中。
 
@@ -24,7 +24,7 @@
 
 ### 大小尺寸
 
-通过 `SizeType` 属性设置组件大小，可选值有`Large`、`Middle`、`Small`。
+通过 `SizeType` 属性设置组件大小，可选值有 `Large`、`Middle`、`Small`。
 
 ![AtomUI ButtonSpinner组件](./images/size.webp)
 
@@ -53,7 +53,7 @@
 
 ### 多种变体
 
-变体的作用在于更好的融于不同的UI设计风格，是视觉方向的属性。其属性名为 `StyleVariant`，可选值有Outline、Filled、Borderless。
+变体的作用在于更好地融入不同的 UI 设计风格，是视觉方向的属性。通过 `StyleVariant` 属性设置，可选值有 `Outline`、`Filled`、`Borderless`。
 
 ![AtomUI ButtonSpinner组件](./images/variants.webp)
 
@@ -80,9 +80,9 @@
 </StackPanel>
 ```
 
-### 禁用
+### 禁用状态
 
-老规矩，`IsEnabled` 设定为True直接一把禁用。
+将 `IsEnabled` 设为 `False` 即可禁用组件，禁用后用户无法与 Spinner 按钮交互。
 
 ![AtomUI ButtonSpinner组件](./images/disabled.png)
 
@@ -109,11 +109,14 @@
 </StackPanel>
 ```
 
-### Pre/Post tab
+### LeftAddOn / RightAddOn 附加内容
 
-有时候需要在输入框的左侧或者右侧添加一些内容，这时就可以使用 `LeftAddOn` 和 `RightAddOn` 属性。
-* `LeftAddOn` 表示输入框左侧位置的Pre Tab，其值可以是一个图标，也可以是字符串。
-* `RightAddOn` 表示输入框右侧位置的Pre Tab，其值可以是一个图标，也可以是字符串。
+有时候需要在组件的左侧或者右侧添加附加内容，可以使用 `LeftAddOn` 和 `RightAddOn` 属性。
+
+* `LeftAddOn` 表示组件左侧的附加区域，其值可以是一个图标，也可以是字符串。
+* `RightAddOn` 表示组件右侧的附加区域，其值可以是一个图标，也可以是字符串。
+
+附加内容位于组件外部，与主体区域视觉上有明显的分隔。
 
 ![AtomUI ButtonSpinner组件](./images/pre-post-tab.webp)
 
@@ -153,14 +156,14 @@
 </StackPanel>
 ```
 
-### 前缀/后缀
+### InnerLeftContent / InnerRightContent 前缀与后缀
 
-前后缀和前面刚展示过的Pre/Post Tab略不太一样，
+前后缀与上面的 LeftAddOn / RightAddOn 不同，它们位于组件内部，是输入区域的一部分。
 
-* `InnerLeftContent` 则作为内部内容，位于输入框内部的左侧，是输入框的一部分。
-* `InnerRightContent` 则作为内部内容，位于输入框内部的右侧，是输入框的一部分。
+* `InnerLeftContent` 位于组件内部的左侧，作为内部前缀。
+* `InnerRightContent` 位于组件内部的右侧，作为内部后缀。
 
-`InnerRightContent` 与 `RightAddOn` 区别是：前者更趋向于为输入框内部的补充，而后者更趋向于为输入框外部的装饰。
+两者的区别在于：`InnerLeftContent` / `InnerRightContent` 更趋向于输入框内部的补充信息，而 `LeftAddOn` / `RightAddOn` 更趋向于输入框外部的装饰。
 
 ![AtomUI ButtonSpinner组件](./images/prefix-suffix.webp)
 
@@ -202,9 +205,9 @@
 </StackPanel>
 ```
 
-### 状态色
+### 状态颜色
 
-`Status` 属性可以一键设定组件的状态色，用于向用户传达一种明确的意图。可选值有Default、Error、Warning。
+`Status` 属性可以设定组件的状态颜色，用于向用户传达明确的意图。可选值有 `Default`、`Error`、`Warning`。
 
 ![AtomUI ButtonSpinner组件](./images/status.png)
 
@@ -303,7 +306,9 @@
 </StackPanel>
 ```
 
-### 公共文件
+### Spin 事件处理
+
+`ButtonSpinner` 通过 `Spin` 事件响应用户的递增/递减操作。以下是一个完整的事件处理示例。
 
 code-behind文件：
 ```csharp
@@ -367,7 +372,7 @@ public class ButtonSpinnerViewModel : ReactiveObject, IRoutableViewModel
     {
         HostScreen = screen;
     }
-    
+
     public void HandleSpin(object? sender, SpinEventArgs e)
     {
         if (sender is ButtonSpinner buttonSpinner)

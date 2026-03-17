@@ -1,4 +1,4 @@
-﻿# 快速入门
+# Pagination 快速入门
 
 ### 基础配置条件
 
@@ -7,6 +7,8 @@
 
 ### 基础用法
 
+最简单的分页用法，通过 `Total` 设置数据总条数，`CurrentPage` 设置当前页码。
+
 ![AtomUI Pagination组件](./images/basic.webp)
 
 ```xaml
@@ -14,6 +16,8 @@
 ```
 
 ### 对齐方式
+
+通过 `Align` 属性可以设置分页组件的对齐方式，支持 `Start`（默认，左对齐）、`Center`（居中对齐）和 `End`（右对齐）三种。
 
 ![AtomUI Pagination组件](./images/align.webp)
 
@@ -25,13 +29,19 @@
 </StackPanel>
 ```
 
-### More更多
+### 页面大小选择器
+
+设置 `IsShowSizeChanger="True"` 可以显示每页条目数的切换器，允许用户动态调整分页大小。
 
 ![AtomUI Pagination组件](./images/align.webp)
 
 ```xaml
 <atom:Pagination Total="500" CurrentPage="6" IsShowSizeChanger="True" />
 ```
+
+### 快速跳转
+
+设置 `IsShowQuickJumper="True"` 后会在分页组件右侧显示一个输入框，用户可以直接输入页码进行跳转。可与页面大小选择器组合使用。
 
 ```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
@@ -42,6 +52,8 @@
 ```
 
 ### 小尺寸
+
+通过 `SizeType="Small"` 可以使用小尺寸的分页组件，适用于空间有限的场景。
 
 ![AtomUI Pagination组件](./images/mini-size.webp)
 
@@ -57,7 +69,9 @@
 </StackPanel>
 ```
 
-### 总数
+### 总数信息
+
+设置 `IsShowTotalInfo="True"` 可以在分页组件中展示数据总条数信息。通过 `TotalInfoTemplate` 属性可以自定义总数信息的显示模板，支持 `${RangeStart}`、`${RangeEnd}` 和 `${Total}` 三个占位变量。
 
 ![AtomUI Pagination组件](./images/mini-size.webp)
 
@@ -73,7 +87,9 @@
 </StackPanel>
 ```
 
-### 简易模式
+### 简洁模式
+
+`SimplePagination` 提供简洁版的分页组件，仅显示当前页码和总页数，适用于空间有限或移动端场景。通过 `IsReadOnly` 属性可以控制页码输入框是否可编辑。
 
 ![AtomUI Pagination组件](./images/simple-mode.webp)
 

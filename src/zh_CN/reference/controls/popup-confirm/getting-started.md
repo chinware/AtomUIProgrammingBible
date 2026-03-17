@@ -1,4 +1,4 @@
-﻿# PopupConfirm 快速入门
+# PopupConfirm 快速入门
 
 ### 基础配置条件
 
@@ -7,9 +7,10 @@
 
 ### 基础用法
 
-`PopupConfirm` 弹窗在业务场景中极其常见，`AtomUI` 提供了一个非常简单的组件来满足这种业务场景。
+`PopupConfirm` 弹窗在业务场景中极其常见，`AtomUI` 提供了一个非常简洁的组件来满足这种业务场景。
 
-这个示例中，使用一个 `Button` 组件来触发 `PopupConfirm`，这其中需要留意的属性为：
+将需要触发弹窗的控件作为 `PopupConfirm` 的子元素，设置以下属性即可快速使用：
+
 * `Title`: 弹窗的标题
 * `ConfirmContent`: 弹窗内容
 * `OkText`: 确认按钮的文字
@@ -34,7 +35,7 @@ axaml文件：
 
 ### 默认本地语系
 
-这个示例中展示了默认情况下，弹窗中的确认按钮、取消按钮的语系与文案。
+当不指定 `OkText` 和 `CancelText` 时，确认按钮和取消按钮将自动使用当前本地化语系的默认文案。
 
 ![AtomUI PopupConfirm组件](./images/basic-locale-text.webp)
 
@@ -48,7 +49,7 @@ axaml文件：
 
 ### 弹出位置
 
-这个示例中，通过 `Placement` 来展示弹窗出现的位置。
+通过 `Placement` 属性可以指定弹窗相对于触发元素的 12 种弹出位置。
 
 ![AtomUI PopupConfirm组件](./images/placement.webp)
 
@@ -188,7 +189,7 @@ axaml文件：
 
 ### 自定义图标
 
-这个示例通过 `Icon` （图标参考 `AtomUI` 的图标库）来展示图标。
+通过 `Icon` 属性可以自定义弹窗的图标（图标参考 `AtomUI` 的图标库），配合 `ConfirmStatus` 属性可以设置不同语义下的图标配色。
 
 ![AtomUI PopupConfirm组件](./images/custom-icon.webp)
 

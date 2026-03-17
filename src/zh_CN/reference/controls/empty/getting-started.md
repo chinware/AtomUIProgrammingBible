@@ -1,25 +1,30 @@
-﻿# Empty 快速入门
+# Empty 快速入门
 
-### 基础配置条件
+## 前置条件
 
-* Nuget安装Avalonia
-* Nuget安装AtomUI
+- NuGet 安装 `Avalonia`
+- NuGet 安装 `AtomUI`
 
-### 基础用法
+## 基础用法
 
-`PresetImage` 属性表示使用预设图片，内置Default、Simple两种图片。
+通过 `PresetImage` 属性使用预设图片，内置 Default 和 Simple 两种样式。
 
-![AtomUI Empty组件](./images/basic.png)
+![AtomUI Empty 基础用法](./images/basic.png)
 
 ```xaml
 <atom:EmptyIndicator PresetImage="Default" />
 ```
 
-### 大小尺寸
+| PresetImage | 说明 |
+|---|---|
+| `Default` | 默认风格图片，适合一般空状态场景 |
+| `Simple` | 简洁风格图片，适合紧凑布局 |
 
-`SizeType` 属性内置了Small、Middle、Large三种尺寸。
+## 尺寸类型
 
-![AtomUI Empty组件](./images/size.png)
+通过 `SizeType` 属性控制组件大小，内置 Small、Middle、Large 三种尺寸。
+
+![AtomUI Empty 尺寸](./images/size.png)
 
 ```xaml
 <StackPanel Orientation="Vertical">
@@ -31,11 +36,11 @@
 </StackPanel>
 ```
 
-### 自定义化
+## 自定义图片与描述
 
-`Description` 属性表示交给用户自定义的描述信息，ImagePath属性表示用户自定义的图片路径。
+通过 `ImagePath` 属性指定自定义图片路径，通过 `Description` 属性设置描述文本。可配合其他控件构建完整的空状态引导界面。
 
-![AtomUI Empty组件](./images/customize.png)
+![AtomUI Empty 自定义](./images/customize.png)
 
 ```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
@@ -46,11 +51,11 @@
 </StackPanel>
 ```
 
-### 图标设定
+## 隐藏描述信息
 
-`IsShowDescription` 属性用来控制描述文本的显示/隐藏。
+通过 `IsShowDescription` 属性控制描述文本的显示与隐藏。设置为 `False` 时仅展示图片，适用于空间有限的场景。
 
-![AtomUI Empty组件](./images/no-description.png)
+![AtomUI Empty 无描述](./images/no-description.png)
 
 ```xaml
 <atom:EmptyIndicator PresetImage="Default" IsShowDescription="False" />

@@ -1,4 +1,4 @@
-﻿# Rate 快速入门
+# Rate 快速入门
 
 ### 基础配置条件
 
@@ -7,7 +7,7 @@
 
 ### 基础用法
 
-只需一行，闪电开启。
+默认提供五颗星的评分组件，只需一行即可使用。
 
 ![AtomUI Rate组件](./images/basic.webp)
 
@@ -15,9 +15,9 @@
 <atom:Rate />
 ```
 
-### 半星起步
+### 半星
 
-打分的基础步进可以设定为半星，同时通过 `DefaultValue` 属性设定默认值。
+将 `IsAllowHalf` 设为 `True` 即可支持半星选择，同时通过 `DefaultValue` 属性设定初始评分值。
 
 ![AtomUI Rate组件](./images/half-star.webp)
 
@@ -25,9 +25,9 @@
 <atom:Rate DefaultValue="3.5" IsAllowHalf="True" />
 ```
 
-### 只读
+### 只读模式
 
-我只需你看，我不许你摸。
+通过将 `IsEnabled` 设为 `False`，可以将评分组件设置为只读状态，仅供展示使用。
 
 ![AtomUI Rate组件](./images/readonly.png)
 
@@ -35,9 +35,9 @@
 <atom:Rate DefaultValue="2" IsEnabled="False" />
 ```
 
-### 文案显示
+### 提示文字
 
-打分同时通过文案给够足够的情绪价值。
+通过绑定 `ToolTips` 属性，可以在鼠标悬停时展示对应星级的提示文案，结合 `ValueChanged` 事件可以实时显示当前选中的文案。
 
 ![AtomUI Rate组件](./images/show-copywrite.webp)
 
@@ -51,7 +51,7 @@
 
 ### 自定义字符
 
-请记住 `Character` 属性！
+通过 `Character` 属性可以将默认的星形图标替换为任意字符，包括图标、字母或汉字。
 
 ![AtomUI Rate组件](./images/other-char.webp)
 

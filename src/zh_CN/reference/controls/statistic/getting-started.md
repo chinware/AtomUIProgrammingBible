@@ -1,4 +1,4 @@
-﻿# Statistic 快速入门
+# Statistic 快速入门
 
 ### 基础配置条件
 
@@ -6,6 +6,8 @@
 * Nuget安装AtomUI
 
 ### 基础用法
+
+通过 `Header` 设定标题，`Value` 设定展示数值。可使用 `Precision` 控制小数位数，将 `IsLoading` 设为 `True` 则显示加载中骨架屏。
 
 ![AtomUI Statistic组件](./images/basic.png)
 
@@ -20,7 +22,9 @@
 </UniformGrid>
 ```
 
-### 位置设定
+### 前缀与后缀
+
+通过 `ValuePrefixAddOn` 和 `ValueSuffixAddOn` 可以在数值前后添加图标或文字单位，满足"点赞数"、"百分比"等常见展示需求。
 
 ![AtomUI Statistic组件](./images/unit.png)
 

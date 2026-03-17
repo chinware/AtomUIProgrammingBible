@@ -1,14 +1,14 @@
-﻿# Carousel 快速入门
+# Carousel 快速入门
 
-### 基础配置条件
+## 前置条件
 
-* Nuget安装Avalonia
-* Nuget安装AtomUI
-* 本页文档末尾有公共样式代码与公共code-behind代码
+- NuGet 安装 `Avalonia`
+- NuGet 安装 `AtomUI`
+- 本页文档末尾有公共样式代码与公共 code-behind 代码
 
-### 基础用法
+## 基础用法
 
-一个最简单的示例，至于背景颜色，参考本页文档末尾的样式代码。
+最简单的轮播组件用法，使用 `CarouselPage` 作为每一页的容器。通过 `SelectedIndex` 属性可设置默认显示的页面。
 
 ![AtomUI Carousel组件](./images/basic.webp)
 
@@ -21,9 +21,9 @@
 </atom:Carousel>
 ```
 
-### 位置设定
+## 分页指示器位置
 
-通过 `PaginationPosition` 属性可以指定轮播图索引的位置，目前系统内置的可选值有：`Top`、`Bottom`、`Left`、`Right`。
+通过 `PaginationPosition` 属性指定分页指示器的位置，支持 `Top`、`Bottom`、`Left`、`Right` 四个方向。
 
 ![AtomUI Carousel组件](./images/position.webp)
 
@@ -49,9 +49,9 @@
 </StackPanel>
 ```
 
-### 自动轮播
+## 自动轮播
 
-将 `IsAutoPlay` 属性设定为 `True`，即可开启自动轮播功能；`IsInfinite` 默认为 `True`，即轮播到最后一张图片后，会自动跳转到第一张图片继续循环。
+将 `IsAutoPlay` 设为 `True` 即可开启自动轮播。`IsInfinite` 默认为 `True`，表示播放到最后一页后会自动跳转回第一页继续循环；设为 `False` 则在最后一页停止。通过 `AutoPlaySpeed` 属性可控制每页的停留时间，默认为 3000 毫秒。
 
 ![AtomUI Carousel组件](./images/auto-play.webp)
 
@@ -64,9 +64,9 @@
 </atom:Carousel>
 ```
 
-### 淡入
+## 淡入淡出效果
 
-`TransitionEffect` 属性可以设定轮播图片的淡入效果，目前系统内置的可选值有：`Scroll`、`Fade`。
+`TransitionEffect` 属性用于设置页面切换的过渡效果，支持 `Scroll`（滚动，默认）和 `Fade`（淡入淡出）两种效果。
 
 ![AtomUI Result组件](./images/fade-in.webp)
 
@@ -79,9 +79,9 @@
 </atom:Carousel>
 ```
 
-### 播放箭头
+## 导航箭头
 
-`IsShowNavButtons` 属性用于显示轮播图片的左右切换箭头。
+将 `IsShowNavButtons` 设为 `True`，可在轮播区域两侧显示左右切换箭头，方便用户手动翻页。
 
 ![AtomUI Carousel组件](./images/with-arrow.webp)
 
@@ -102,9 +102,9 @@
 </StackPanel>
 ```
 
-### 播放进度条
+## 播放进度展示
 
-假设开发者一定设定了4张轮播图，每张轮播图的展示时间长达5秒钟，那么 `IsShowTransitionProgress` 属性可以展示这5秒钟的进度，缓解用户等待焦虑。
+当自动轮播开启时，`IsShowTransitionProgress` 属性可以在分页指示器上展示当前页面的播放进度条，直观地告知用户页面切换的剩余时间。
 
 ![AtomUI Carousel组件](./images/progress-dot.webp)
 
@@ -119,7 +119,7 @@
 </StackPanel>
 ```
 
-### 公共文件
+## 公共文件
 
 样式代码：
 ```xaml
@@ -137,7 +137,7 @@
 </gallery:ShowCasePanel.Styles>
 ```
 
-code-behind文件：
+code-behind 文件：
 ```csharp
 using System.Reactive.Disposables;
 using AtomUI.Desktop.Controls;
@@ -158,7 +158,7 @@ public partial class CarouselShowCase : ReactiveUserControl<CarouselViewModel>
         });
         InitializeComponent();
     }
-    
+
     public void HandlePositionOptionChanged(object? sender, OptionCheckedChangedEventArgs args)
     {
         if (DataContext is CarouselViewModel viewModel)
@@ -178,9 +178,9 @@ public partial class CarouselShowCase : ReactiveUserControl<CarouselViewModel>
             else
             {
                 viewModel.PaginationPosition = CarouselPaginationPosition.Right;
-            }   
+            }
         }
-     
+
     }
 }
 ```

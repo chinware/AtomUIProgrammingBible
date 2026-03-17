@@ -1,26 +1,30 @@
-﻿# 快速入门
+# 快速入门
 
 ### 基础配置条件
 
-* Nuget安装Avalonia
-* Nuget安装AtomUI
+* Nuget 安装 Avalonia
+* Nuget 安装 AtomUI
 
 ### 基础用法
 
-这个示例中为开发者展示了 `Dialog` 提供的两种不同的模态对话框：
-* Overlay Modal
-* Window
+以下示例展示了 `Dialog` 的两种宿主模式：Overlay 模态和 Window 模态。
 
-其中 `Overlay Modal` 属于是模态对话框，它的活动范围仅限于主UI窗口内部，而 `Window` 属于独立窗口，它可以独立于主UI窗口进行显示，是真正意义上的窗口，活动范围是整个桌面。
+* **Overlay Modal**：模态对话框，活动范围限于主 UI 窗口内部
+* **Window Modal**：独立原生窗口，可以在整个桌面范围内自由移动
 
-开发者需要留意如下三个属性：
-* `PlacementTarget`：建立按钮与对话框之间的关联关系，对话框会根据目标控件的位置来确定自己的显示位置
-* `IsOpen`：这个属性就是控制对话框的显示与隐藏的关键所在
-* `DialogHostType`：这个属性用于指定对话框的宿主类型，值为 `Window` 或 `Overlay`
+开发者需要关注以下关键属性：
+
+| 属性 | 说明 |
+|------|------|
+| `PlacementTarget` | 建立按钮与对话框之间的关联关系，对话框根据目标控件的位置来确定显示位置 |
+| `IsOpen` | 控制对话框的显示与隐藏 |
+| `DialogHostType` | 指定对话框的宿主类型，可选值为 `Window` 或 `Overlay` |
+| `StandardButtons` | 设定对话框底部的标准按钮，如 `Ok`、`Cancel`、`Yes`、`No` 等 |
+| `IsModal` | 是否为模态对话框，为 `True` 时会产生遮罩阻止点击下方区域 |
 
 ![AtomUI Dialog组件](./images/basic.webp)
 
-axaml文件：
+axaml 文件：
 ```xaml
 <StackPanel Orientation="Horizontal" Spacing="10">
     <Panel>
@@ -76,422 +80,9 @@ axaml文件：
 </StackPanel>
 ```
 
-code-behind文件：
-```csharp
-using System.Reactive.Disposables;
-using AtomUI.Controls;
-using AtomUIGallery.ShowCases.ViewModels;
-using Avalonia.Interactivity;
-using Avalonia.ReactiveUI;
-using Avalonia.Threading;
-using ReactiveUI;
-
-namespace AtomUIGallery.ShowCases.Views;
-
-public partial class ModalShowCase : ReactiveUserControl<ModalViewModel>
-{
-    public ModalShowCase()
-    {
-        this.WhenActivated(disposables =>
-        {
-            BasicOpenModalButton.Click       += HandleBasicModalButtonClick;
-            BasicWindowOpenModalButton.Click += HandleBasicWindowModalButtonClick;
-
-            ConfirmMsgBoxBtn.Click                   += HandleConfirmMsgBoxBtnClick;
-            InformationMsgBoxBtn.Click               += HandleInformationMsgBoxBtnClick;
-            SuccessMsgBoxBtn.Click                   += HandleSuccessMsgBoxBtnClick;
-            ErrorMsgBoxBtn.Click                     += HandleErrorMsgBoxBtnClick;
-            WarningMsgBoxBtn.Click                   += HandleWarningMsgBoxBtnClick;
-            StyleCaseHostTypeSwitch.IsCheckedChanged += HandleStyleCaseHostTypeSwitchChanged;
-            LoadingDialogOpenModalButton.Click       += HandleLoadingDialogOpenModalButtonClick;
-            AsyncDialogOpenModalButton.Click         += HandleAsyncDialogOpenModalButtonClick;
-            CustomFooterDialogOpenButton.Click       += HandleCustomFooterDialogOpenButtonClick;
-            CustomFooterMsgBoxOpenButton.Click       += HandleCustomFooterMsgBoxOpenButtonClick;
-            DraggableDialogOpenButton.Click          += HandleDraggableMsgBoxOpenButtonClick;
-            DelayedCloseMsgBoxOpenButton.Click       += HandleDelayedCloseMsgBoxOpenButtonClick;
-            ConfigureButtonsDialogOpenButton.Click   += HandleConfigureButtonsDialogButtonClick;
-            
-            disposables.Add(Disposable.Create(() => BasicOpenModalButton.Click       -= HandleBasicModalButtonClick));
-            disposables.Add(Disposable.Create(() => BasicWindowOpenModalButton.Click -= HandleBasicWindowModalButtonClick));
-            disposables.Add(Disposable.Create(() => ConfirmMsgBoxBtn.Click -= HandleConfirmMsgBoxBtnClick));
-            disposables.Add(Disposable.Create(() => InformationMsgBoxBtn.Click -= HandleInformationMsgBoxBtnClick));
-            disposables.Add(Disposable.Create(() => SuccessMsgBoxBtn.Click -= HandleSuccessMsgBoxBtnClick));
-            disposables.Add(Disposable.Create(() => ErrorMsgBoxBtn.Click -= HandleErrorMsgBoxBtnClick));
-            disposables.Add(Disposable.Create(() => WarningMsgBoxBtn.Click -= HandleWarningMsgBoxBtnClick));
-            disposables.Add(Disposable.Create(() => StyleCaseHostTypeSwitch.IsCheckedChanged -= HandleStyleCaseHostTypeSwitchChanged));
-            disposables.Add(Disposable.Create(() => LoadingDialogOpenModalButton.Click -= HandleLoadingDialogOpenModalButtonClick));
-            disposables.Add(Disposable.Create(() => CustomFooterDialogOpenButton.Click -= HandleCustomFooterDialogOpenButtonClick));
-            disposables.Add(Disposable.Create(() => CustomFooterMsgBoxOpenButton.Click -= HandleCustomFooterMsgBoxOpenButtonClick));
-            disposables.Add(Disposable.Create(() => DraggableDialogOpenButton.Click -= HandleDraggableMsgBoxOpenButtonClick));
-            disposables.Add(Disposable.Create(() => DelayedCloseMsgBoxOpenButton.Click -= HandleDelayedCloseMsgBoxOpenButtonClick));
-            disposables.Add(Disposable.Create(() => ConfigureButtonsDialogOpenButton.Click -= HandleConfigureButtonsDialogButtonClick));
-
-            ConfigureButtonPropertiesDialog.ButtonsConfigure = ConfigureButtonProperties;
-            
-            if (DataContext is ModalViewModel viewModel)
-            {
-                viewModel.MessageBoxStyleCaseHostType = DialogHostType.Overlay;
-                viewModel.CountdownSeconds            = 5;
-            }
-        });
-        InitializeComponent();
-    }
-
-    private void HandleBasicModalButtonClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsBasicModalOpened = true;
-        }
-    }
-    
-    private void HandleBasicWindowModalButtonClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsBasicWindowModalOpened = true;
-        }
-    }
-    
-    private void HandleConfirmMsgBoxBtnClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsConfirmMsgBoxOpened = true;
-        }
-    }
-    
-    private void HandleInformationMsgBoxBtnClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsInformationMsgBoxOpened = true;
-        }
-    }
-    
-    private void HandleSuccessMsgBoxBtnClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsSuccessMsgBoxOpened = true;
-        }
-    }
-    
-    private void HandleErrorMsgBoxBtnClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsErrorMsgBoxOpened = true;
-        }
-    }
-    
-    private void HandleWarningMsgBoxBtnClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsWarningMsgBoxOpened = true;
-        }
-    }
-
-    private void HandleStyleCaseHostTypeSwitchChanged(object? sender, RoutedEventArgs e)
-    {
-        if (sender is ToggleSwitch toggleSwitch)
-        {
-            if (DataContext is ModalViewModel viewModel)
-            {
-                viewModel.MessageBoxStyleCaseHostType = toggleSwitch.IsChecked == true ? DialogHostType.Window : DialogHostType.Overlay;
-            }
-        }
-    }
-    
-    private void HandleLoadingDialogOpenModalButtonClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsLoadingMsgBoxOpened = true;
-        }
-    }
-
-    private void HandleLoadingDialogOpened(object? sender, EventArgs e)
-    {
-        if (sender is Dialog dialog)
-        {
-            DispatcherTimer.RunOnce(() =>
-            {
-                dialog.IsLoading = false;
-            }, TimeSpan.FromMilliseconds(3000));
-        }
-    }
-
-    private void HandleLoadingDialogButtonClicked(object? sender, DialogButtonClickedEventArgs e)
-    {
-        if (sender is Dialog dialog)
-        {
-            dialog.IsLoading = true;
-            DispatcherTimer.RunOnce(() =>
-            {
-                dialog.IsLoading = false;
-            }, TimeSpan.FromMilliseconds(3000));
-        }
-    }
-    
-    private void HandleAsyncDialogOpenModalButtonClick(object? sender, RoutedEventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsAsyncDialogOpened = true;
-        }
-    }
-    
-    private void HandleAsyncDialogButtonClicked(object? sender, DialogButtonClickedEventArgs e)
-    {
-        if (sender is Dialog dialog && e.SourceButton.Role == DialogButtonRole.AcceptRole)
-        {
-            dialog.IsConfirmLoading = true;
-            e.Handled               = true;
-            DispatcherTimer.RunOnce(() =>
-            {
-                dialog.IsConfirmLoading = false;
-                dialog.Done();
-            }, TimeSpan.FromMilliseconds(3000));
-        }
-    }
-
-    private void HandleCustomFooterDialogOpenButtonClick(object? sender, EventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsCustomFooterDialogOpened = true;
-        }
-    }
-
-    private void HandleCustomFooterMsgBoxOpenButtonClick(object? sender, EventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsCustomFooterMsgBoxOpened = true;
-        }
-    }
-    
-    private void HandleDraggableMsgBoxOpenButtonClick(object? sender, EventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsDraggableMsgBoxOpened = true;
-        }
-    }
-    
-    private void HandleDelayedCloseMsgBoxOpenButtonClick(object? sender, EventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsDelayedCloseMsgBoxOpened = true;
-        }
-    }
-
-    private IDisposable? _delayedCloseDialogDisposal;
-    
-    private void HandleDelayedCloseMsgBoxOpened(object? sender, EventArgs e)
-    {
-        if (sender is MessageBox messageBox)
-        {
-            if (DataContext is ModalViewModel viewModel)
-            {
-                viewModel.CountdownSeconds = 5;
-                _delayedCloseDialogDisposal?.Dispose();
-                _delayedCloseDialogDisposal = DispatcherTimer.Run(() =>
-                {
-                    if (viewModel.CountdownSeconds == 0)
-                    {
-                        messageBox.Confirm();
-                        return false;
-                    }
-                    viewModel.CountdownSeconds--;
-                    return true;
-                }, TimeSpan.FromMilliseconds(1000));
-            }
-        }
-    }
-    
-    private void HandleConfigureButtonsDialogButtonClick(object? sender, EventArgs e)
-    {
-        if (DataContext is ModalViewModel viewModel)
-        {
-            viewModel.IsConfigureButtonsDialogOpened = true;
-        }
-    }
-
-    private void ConfigureButtonProperties(IReadOnlyList<DialogButton> buttons)
-    {
-        foreach (var button in buttons)
-        {
-            button.IsEnabled = false;
-        }
-    }
-}
-```
-
-view-model文件：
-```csharp
-using AtomUI.Controls;
-using ReactiveUI;
-
-namespace AtomUIGallery.ShowCases.ViewModels;
-
-public class ModalViewModel : ReactiveObject, IRoutableViewModel
-{
-    public const string ID = "Modal";
-    
-    public IScreen HostScreen { get; }
-    
-    public string UrlPathSegment { get; } = ID;
-    
-    private bool _isBasicModalOpened;
-
-    public bool IsBasicModalOpened
-    {
-        get => _isBasicModalOpened;
-        set => this.RaiseAndSetIfChanged(ref _isBasicModalOpened, value);
-    }
-
-    private bool _isBasicWindowModalOpened;
-
-    public bool IsBasicWindowModalOpened
-    {
-        get => _isBasicWindowModalOpened;
-        set => this.RaiseAndSetIfChanged(ref _isBasicWindowModalOpened, value);
-    }
-    
-    private DialogHostType _messageBoxStyleCaseHostType;
-
-    public DialogHostType MessageBoxStyleCaseHostType
-    {
-        get => _messageBoxStyleCaseHostType;
-        set => this.RaiseAndSetIfChanged(ref _messageBoxStyleCaseHostType, value);
-    }
-   
-    private bool _isConfirmMsgBoxOpened;
-
-    public bool IsConfirmMsgBoxOpened
-    {
-        get => _isConfirmMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isConfirmMsgBoxOpened, value);
-    }
-    
-    private bool _isInformationMsgBoxOpened;
-
-    public bool IsInformationMsgBoxOpened
-    {
-        get => _isInformationMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isInformationMsgBoxOpened, value);
-    }
-    
-    private bool _isSuccessMsgBoxOpened;
-
-    public bool IsSuccessMsgBoxOpened
-    {
-        get => _isSuccessMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isSuccessMsgBoxOpened, value);
-    }
-        
-    private bool _isErrorMsgBoxOpened;
-
-    public bool IsErrorMsgBoxOpened
-    {
-        get => _isErrorMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isErrorMsgBoxOpened, value);
-    }
-    
-    private bool _isWarningMsgBoxOpened;
-
-    public bool IsWarningMsgBoxOpened
-    {
-        get => _isWarningMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isWarningMsgBoxOpened, value);
-    }
-    
-    private bool _isLoadingMsgBoxOpened;
-
-    public bool IsLoadingMsgBoxOpened
-    {
-        get => _isLoadingMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isLoadingMsgBoxOpened, value);
-    }
-    
-    private bool _isAsyncDialogOpened;
-
-    public bool IsAsyncDialogOpened
-    {
-        get => _isAsyncDialogOpened;
-        set => this.RaiseAndSetIfChanged(ref _isAsyncDialogOpened, value);
-    }
-    
-    private bool _isCustomFooterDialogOpened;
-
-    public bool IsCustomFooterDialogOpened
-    {
-        get => _isCustomFooterDialogOpened;
-        set => this.RaiseAndSetIfChanged(ref _isCustomFooterDialogOpened, value);
-    }
-    
-    private bool _isCustomFooterMsgBoxOpened;
-
-    public bool IsCustomFooterMsgBoxOpened
-    {
-        get => _isCustomFooterMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isCustomFooterMsgBoxOpened, value);
-    }
-    
-    private bool _isDraggableMsgBoxOpened;
-
-    public bool IsDraggableMsgBoxOpened
-    {
-        get => _isDraggableMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isDraggableMsgBoxOpened, value);
-    }
-    
-    private bool _isDelayedCloseMsgBoxOpened;
-
-    public bool IsDelayedCloseMsgBoxOpened
-    {
-        get => _isDelayedCloseMsgBoxOpened;
-        set => this.RaiseAndSetIfChanged(ref _isDelayedCloseMsgBoxOpened, value);
-    }
-    
-    private int _countdownSeconds;
-
-    public int CountdownSeconds
-    {
-        get => _countdownSeconds;
-        set => this.RaiseAndSetIfChanged(ref _countdownSeconds, value);
-    }
-    
-    private bool _isConfigureButtonsDialogOpened;
-
-    public bool IsConfigureButtonsDialogOpened
-    {
-        get => _isConfigureButtonsDialogOpened;
-        set => this.RaiseAndSetIfChanged(ref _isConfigureButtonsDialogOpened, value);
-    }
-    
-    public ModalViewModel(IScreen screen)
-    {
-        HostScreen = screen;
-    }
-}
-```
-
 ### 多种样式
 
-下面这个示例，`AtomUI` 引入了一个新的组件叫做 `MessageBox`，为什么把 `MessageBox` 放在 `Dialog` 组件文档中呢？
-
-因为 `MessageBox` 组件组合使用了 `Dialog` 组件，简单说就是 `MessageBox` 将属性绑定到了一个叫做 `MessageBoxDialog` 的内部类上，而 `MessageBoxDialog` 继承了 `Dialog`。所以 `MessageBox` 是组合使用了 `Dialog` 组件的很多特性，它是一个特殊定制版本的 `Dialog`。
-
-那么 `MessageBox` 与 `Dialog` 主要应用场景分别是什么呢？
-* `Dialog` 组件适合业务复杂、需要高度定制的场景，业务流程较为复杂，它给予了开发者最大范围的开发自由度
-* `MessageBox`组件：用于较为简单的通知提示等场景
-
-设定 `MessageBox` 的样式则直接使用 `Style` 属性即可，可选值有Normal、Confirm、Information、Success、Warning、Error。
+`MessageBox` 组件支持通过 `Style` 属性设定不同的样式，可选值有 Normal、Confirm、Information、Success、Warning、Error。
 
 ![AtomUI Dialog组件](./images/style.webp)
 
@@ -508,24 +99,9 @@ public class ModalViewModel : ReactiveObject, IRoutableViewModel
                              IsOpen="{Binding IsConfirmMsgBoxOpened, Mode=TwoWay}"
                              Style="Confirm"
                              HostType="{Binding MessageBoxStyleCaseHostType}">
-                <StackPanel Orientation="Vertical" Spacing="10">
-                    <TextBlock>Some descriptions</TextBlock>
-                </StackPanel>
+                <TextBlock>Some descriptions</TextBlock>
             </atom:MessageBox>
             <atom:Button Name="ConfirmMsgBoxBtn">Confirm</atom:Button>
-        </Panel>
-        <Panel>
-            <atom:MessageBox PlacementTarget="InformationMsgBoxBtn"
-                             Title="This is a notification message"
-                             IsOpen="{Binding IsInformationMsgBoxOpened, Mode=TwoWay}"
-                             Style="Information"
-                             HostType="{Binding MessageBoxStyleCaseHostType}">
-                <StackPanel Orientation="Vertical" Spacing="10">
-                    <TextBlock>some messages...some messages...</TextBlock>
-                    <TextBlock>some messages...some messages...</TextBlock>
-                </StackPanel>
-            </atom:MessageBox>
-            <atom:Button Name="InformationMsgBoxBtn">Information</atom:Button>
         </Panel>
         <Panel>
             <atom:MessageBox PlacementTarget="SuccessMsgBoxBtn"
@@ -533,10 +109,7 @@ public class ModalViewModel : ReactiveObject, IRoutableViewModel
                              Style="Success"
                              HostType="{Binding MessageBoxStyleCaseHostType}"
                              IsOpen="{Binding IsSuccessMsgBoxOpened, Mode=TwoWay}">
-                <StackPanel Orientation="Vertical" Spacing="10">
-                    <TextBlock>some messages...some messages...</TextBlock>
-                    <TextBlock>some messages...some messages...</TextBlock>
-                </StackPanel>
+                <TextBlock>some messages...</TextBlock>
             </atom:MessageBox>
             <atom:Button Name="SuccessMsgBoxBtn">Success</atom:Button>
         </Panel>
@@ -546,61 +119,221 @@ public class ModalViewModel : ReactiveObject, IRoutableViewModel
                              Style="Error"
                              HostType="{Binding MessageBoxStyleCaseHostType}"
                              IsOpen="{Binding IsErrorMsgBoxOpened, Mode=TwoWay}">
-                <StackPanel Orientation="Vertical" Spacing="10">
-                    <TextBlock>some messages...some messages...</TextBlock>
-                    <TextBlock>some messages...some messages...</TextBlock>
-                </StackPanel>
+                <TextBlock>some messages...</TextBlock>
             </atom:MessageBox>
             <atom:Button Name="ErrorMsgBoxBtn">Error</atom:Button>
-        </Panel>
-        <Panel>
-            <atom:MessageBox PlacementTarget="WarningMsgBoxBtn"
-                             Title="This is a warning message"
-                             Style="Warning"
-                             HostType="{Binding MessageBoxStyleCaseHostType}"
-                             IsOpen="{Binding IsWarningMsgBoxOpened, Mode=TwoWay}">
-                <StackPanel Orientation="Vertical" Spacing="10">
-                    <TextBlock>some messages...some messages...</TextBlock>
-                    <TextBlock>some messages...some messages...</TextBlock>
-                </StackPanel>
-            </atom:MessageBox>
-            <atom:Button Name="WarningMsgBoxBtn">Warning</atom:Button>
         </Panel>
     </StackPanel>
 </StackPanel>
 ```
 
-# 拖拽特性
+### 拖拽移动
 
-本示例较为简单，主要是为了给开发者演示拖拽特性，同时在简单说明下 `IsModal` 属性。
-
-`IsDragMovable` 属性为True即表示可以拖动；`IsModal` 属性为True表示会形成一个遮罩，这个遮罩会阻止鼠标点击遮罩下的区域。
+通过设置 `IsDragMovable="True"` 可以使对话框支持鼠标拖拽移动。配合 `IsModal="True"` 会产生遮罩层，阻止用户与遮罩下方的区域进行交互。
 
 ![AtomUI Dialog组件](./images/draggable.webp)
 
-axaml文件：
 ```xaml
-<StackPanel Orientation="Horizontal" Spacing="10">
-    <Panel>
-        <atom:Button ButtonType="Primary" Name="DraggableDialogOpenButton">
-            Open Modal
-        </atom:Button>
-        <atom:Dialog PlacementTarget="DraggableDialogOpenButton"
-                     IsOpen="{Binding IsDraggableMsgBoxOpened, Mode=TwoWay}"
-                     Title="Draggable Modal"
-                     IsModal="True"
-                     IsDragMovable="True"
-                     IsLightDismissEnabled="True"
-                     StandardButtons="Ok, Cancel"
-                     HorizontalStartupLocation="Center"
-                     VerticalStartupLocation="Center"
-                     DefaultStandardButton="Ok"
-                     Width="400">
-            <StackPanel Spacing="10">
-                <TextBlock TextWrapping="Wrap">Just don't learn physics at school and your life will be full of magic and miracles.</TextBlock>
-                <TextBlock TextWrapping="Wrap">Day before yesterday I saw a rabbit, and yesterday a deer, and today, you.</TextBlock>
-            </StackPanel>
-        </atom:Dialog>
-    </Panel>
-</StackPanel>
+<Panel>
+    <atom:Button ButtonType="Primary" Name="DraggableDialogOpenButton">
+        Open Modal
+    </atom:Button>
+    <atom:Dialog PlacementTarget="DraggableDialogOpenButton"
+                 IsOpen="{Binding IsDraggableMsgBoxOpened, Mode=TwoWay}"
+                 Title="Draggable Modal"
+                 IsModal="True"
+                 IsDragMovable="True"
+                 IsLightDismissEnabled="True"
+                 StandardButtons="Ok, Cancel"
+                 HorizontalStartupLocation="Center"
+                 VerticalStartupLocation="Center"
+                 DefaultStandardButton="Ok"
+                 Width="400">
+        <StackPanel Spacing="10">
+            <TextBlock TextWrapping="Wrap">Just don't learn physics at school and your life will be full of magic and miracles.</TextBlock>
+            <TextBlock TextWrapping="Wrap">Day before yesterday I saw a rabbit, and yesterday a deer, and today, you.</TextBlock>
+        </StackPanel>
+    </atom:Dialog>
+</Panel>
+```
+
+### 自定义页脚按钮
+
+除了内置的标准按钮外，还可以通过 `CustomButtons` 添加自定义按钮。每个按钮都有一个 `Role` 属性，可选值包括 AcceptRole、RejectRole、DestructiveRole、ActionRole、HelpRole、YesRole、NoRole、ApplyRole、ResetRole、CustomRole。
+
+![AtomUI Dialog组件](./images/custom-footer.webp)
+
+```xaml
+<Panel>
+    <atom:Button ButtonType="Primary" Name="CustomFooterDialogOpenButton">
+        Open Modal
+    </atom:Button>
+    <atom:Dialog PlacementTarget="CustomFooterDialogOpenButton"
+                 IsOpen="{Binding IsCustomFooterDialogOpened, Mode=TwoWay}"
+                 Title="Title"
+                 IsModal="True"
+                 IsLightDismissEnabled="True"
+                 StandardButtons="Ok, Cancel"
+                 HorizontalStartupLocation="Center"
+                 VerticalStartupLocation="Center"
+                 DefaultStandardButton="Ok"
+                 MinWidth="400">
+        <atom:Dialog.CustomButtons>
+            <atom:DialogButton Role="ActionRole">Custom Button</atom:DialogButton>
+        </atom:Dialog.CustomButtons>
+        <StackPanel Spacing="5">
+            <TextBlock>Some contents...</TextBlock>
+            <TextBlock>Some contents...</TextBlock>
+            <TextBlock>Some contents...</TextBlock>
+        </StackPanel>
+    </atom:Dialog>
+</Panel>
+```
+
+### 异步业务逻辑
+
+通过 `ButtonClicked` 事件可以在按钮点击后执行异步业务逻辑。设置 `e.Handled = true` 阻止对话框自动关闭，待异步操作完成后手动调用 `dialog.Done()` 关闭。`IsConfirmLoading` 属性可以在确认按钮上显示加载状态。
+
+![AtomUI Dialog组件](./images/async-close.webp)
+
+```xaml
+<Panel>
+    <atom:Button ButtonType="Primary" Name="AsyncDialogOpenModalButton">
+        Open Modal with async logic
+    </atom:Button>
+    <atom:Dialog PlacementTarget="AsyncDialogOpenModalButton"
+                 IsOpen="{Binding IsAsyncDialogOpened, Mode=TwoWay}"
+                 Title="Asynchronously close Modal"
+                 IsModal="True"
+                 IsDragMovable="True"
+                 IsLightDismissEnabled="True"
+                 StandardButtons="Ok, Cancel"
+                 HorizontalStartupLocation="Center"
+                 VerticalStartupLocation="Center"
+                 DefaultStandardButton="Ok"
+                 ButtonClicked="HandleAsyncDialogButtonClicked"
+                 MinWidth="400">
+        <TextBlock>Content of the modal</TextBlock>
+    </atom:Dialog>
+</Panel>
+```
+
+code-behind 关键代码：
+```csharp
+private void HandleAsyncDialogButtonClicked(object? sender, DialogButtonClickedEventArgs e)
+{
+    if (sender is Dialog dialog && e.SourceButton.Role == DialogButtonRole.AcceptRole)
+    {
+        dialog.IsConfirmLoading = true;
+        e.Handled               = true;
+        DispatcherTimer.RunOnce(() =>
+        {
+            dialog.IsConfirmLoading = false;
+            dialog.Done();
+        }, TimeSpan.FromMilliseconds(3000));
+    }
+}
+```
+
+### 加载状态
+
+通过 `IsLoading` 属性可以使对话框在打开时或按钮点击后显示整体加载状态。配合 `Opened` 事件和 `ButtonClicked` 事件，可以实现打开时自动加载、按钮触发重新加载等效果。
+
+![AtomUI Dialog组件](./images/loading.webp)
+
+```xaml
+<Panel>
+    <atom:Button ButtonType="Primary" Name="LoadingDialogOpenModalButton">
+        Open Modal
+    </atom:Button>
+    <atom:Dialog PlacementTarget="LoadingDialogOpenModalButton"
+                 IsOpen="{Binding IsLoadingMsgBoxOpened, Mode=TwoWay}"
+                 Title="Loading Modal"
+                 IsModal="True"
+                 IsLoading="True"
+                 IsDragMovable="True"
+                 IsLightDismissEnabled="True"
+                 StandardButtons="Reload"
+                 HorizontalStartupLocation="Center"
+                 VerticalStartupLocation="Center"
+                 DefaultStandardButton="Reload"
+                 Opened="HandleLoadingDialogOpened"
+                 ButtonClicked="HandleLoadingDialogButtonClicked"
+                 MinWidth="400">
+        <StackPanel>
+            <TextBlock>Some contents...</TextBlock>
+            <TextBlock>Some contents...</TextBlock>
+            <TextBlock>Some contents...</TextBlock>
+        </StackPanel>
+    </atom:Dialog>
+</Panel>
+```
+
+### 倒计时自动关闭
+
+通过 `Opened` 事件配合定时器，可以实现倒计时自动关闭的效果。
+
+![AtomUI Dialog组件](./images/auto-close.webp)
+
+```xaml
+<Panel>
+    <atom:Button Name="DelayedCloseMsgBoxOpenButton">
+        Open modal to close in 5s
+    </atom:Button>
+    <atom:MessageBox PlacementTarget="DelayedCloseMsgBoxOpenButton"
+                 IsOpen="{Binding IsDelayedCloseMsgBoxOpened, Mode=TwoWay}"
+                 Title="This is a notification message"
+                 IsModal="True"
+                 Style="Success"
+                 Opened="HandleDelayedCloseMsgBoxOpened"
+                 Width="400">
+        <TextBlock TextWrapping="Wrap">
+            This modal will be destroyed after <Run Text="{Binding CountdownSeconds}"/> second.
+        </TextBlock>
+    </atom:MessageBox>
+</Panel>
+```
+
+### 按钮属性配置
+
+通过 `ButtonsConfigure` 回调可以在对话框打开前对按钮进行批量属性配置，例如禁用按钮等。
+
+![AtomUI Dialog组件](./images/button-props.webp)
+
+```xaml
+<Panel>
+    <atom:Button ButtonType="Primary" Name="ConfigureButtonsDialogOpenButton">
+        Open Modal with customized button props
+    </atom:Button>
+    <atom:Dialog Name="ConfigureButtonPropertiesDialog"
+                 PlacementTarget="ConfigureButtonsDialogOpenButton"
+                 IsOpen="{Binding IsConfigureButtonsDialogOpened, Mode=TwoWay}"
+                 Title="Basic Modal"
+                 IsModal="True"
+                 IsDragMovable="True"
+                 StandardButtons="Ok, Cancel"
+                 HorizontalStartupLocation="Center"
+                 VerticalStartupLocation="Center"
+                 DefaultStandardButton="Ok"
+                 Width="400">
+        <StackPanel Orientation="Vertical">
+            <TextBlock>Some contents...</TextBlock>
+            <TextBlock>Some contents...</TextBlock>
+            <TextBlock>Some contents...</TextBlock>
+        </StackPanel>
+    </atom:Dialog>
+</Panel>
+```
+
+code-behind 关键代码：
+```csharp
+ConfigureButtonPropertiesDialog.ButtonsConfigure = ConfigureButtonProperties;
+
+private void ConfigureButtonProperties(IReadOnlyList<DialogButton> buttons)
+{
+    foreach (var button in buttons)
+    {
+        button.IsEnabled = false;
+    }
+}
 ```

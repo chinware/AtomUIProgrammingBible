@@ -1,13 +1,13 @@
-﻿# Tag 快速入门
+# Tag 快速入门
 
 ### 基础配置条件
 
-* Nuget安装Avalonia
-* Nuget安装AtomUI
+* Nuget 安装 Avalonia
+* Nuget 安装 AtomUI
 
 ### 基础用法
 
-`IsClosable` 属性用于打开右侧关闭按钮，`CloseIcon` 属性可以指定一个关闭图标。
+通过 `IsClosable` 属性开启关闭按钮，通过 `CloseIcon` 属性自定义关闭图标。
 
 ![AtomUI Tag组件](./images/basic.png)
 
@@ -15,7 +15,7 @@
 <WrapPanel HorizontalAlignment="Left" Orientation="Horizontal">
     <atom:Tag>Tag 1</atom:Tag>
     <atom:Tag>Link</atom:Tag>
-    <atom:Tag IsClosable="true">Prevent Default</atom:Tag>
+    <atom:Tag IsClosable="True">Prevent Default</atom:Tag>
     <atom:Tag IsClosable="True"
               CloseIcon="{atom:IconProvider Kind=CloseCircleOutlined}">
         Tag 2
@@ -25,7 +25,7 @@
 
 ### 预设颜色
 
-`TagColor` 属性内置了13种预设颜色，也可以通过指定十六进制颜色指定颜色。
+`TagColor` 属性内置了 13 种预设颜色，也可以通过指定十六进制颜色值来自定义颜色。
 
 ![AtomUI Tag组件](./images/colorful.png)
 
@@ -56,9 +56,9 @@
 </StackPanel>
 ```
 
-### status状态
+### 状态颜色
 
-`TagColor` 属性内置了5种可以表达状态的颜色，分别为 `default`、 `success`、 `info`、 `warning`、 `error`。
+`TagColor` 属性内置了 5 种表达状态的颜色：`default`、`success`、`info`、`warning`、`error`。可结合 `Icon` 属性为状态标签添加图标，增强可读性。
 
 ![AtomUI Tag组件](./images/status.png)
 
@@ -73,7 +73,7 @@
         <atom:Tag TagColor="default">default</atom:Tag>
     </WrapPanel>
 
-    <atom:TextBlock FontWeight="Bold" FontSize="14" Margin="0, 20, 0, 10">Custom</atom:TextBlock>
+    <atom:TextBlock FontWeight="Bold" FontSize="14" Margin="0, 20, 0, 10">With icon</atom:TextBlock>
     <WrapPanel HorizontalAlignment="Left">
         <atom:Tag TagColor="success"
                   Icon="{atom:IconProvider Kind=CheckCircleOutlined}">
@@ -105,7 +105,7 @@
 
 ### 图标设定
 
-通过设定属性 `Icon` 即可选择不同的各种图标。
+通过 `Icon` 属性可以为标签添加各种图标，适用于展示带有品牌或功能标识的标签。
 
 ![AtomUI Tag组件](./images/icon.png)
 
@@ -130,9 +130,9 @@
 </WrapPanel>
 ```
 
-### 图标设定
+### 无边框模式
 
-通过设定属性 `Bordered` 为 `True` 或 `False` 来控制是否显示边框。
+通过将 `Bordered` 属性设置为 `False` 来隐藏标签边框，呈现更简洁的视觉效果。
 
 ![AtomUI Tag组件](./images/border-less.png)
 

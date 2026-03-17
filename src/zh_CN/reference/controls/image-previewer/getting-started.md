@@ -1,4 +1,4 @@
-﻿# ImagePreview 快速入门
+# ImagePreviewer 快速入门
 
 ### 基础配置条件
 
@@ -8,9 +8,9 @@
 
 ### 基础用法
 
-使用 `Sources` 属性绑定图片源。
+使用 `Sources` 属性绑定图片源，组件会将第一张图片作为封面展示。点击封面即可打开预览对话框。
 
-![AtomUI ImagePreview组件](./images/basic.webp)
+![AtomUI ImagePreviewer组件](./images/basic.webp)
 
 ```xaml
 <atom:ImagePreviewer Width="200" Sources="{Binding DefaultImages}" />
@@ -18,19 +18,19 @@
 
 ### 兜底图片
 
-有时候难免手抖或遇到预料外的业务情况，导致无法获取真正的图片文件，此时可以通过 `FallbackImageSrc` 属性设置一个兜底图片，避免应用故障。
+当图片加载失败时，可通过 `FallbackImageSrc` 属性指定一张兜底图片，避免界面出现空白或异常。
 
-![AtomUI ImagePreview组件](./images/faild-placeholder.webp)
+![AtomUI ImagePreviewer组件](./images/faild-placeholder.webp)
 
 ```xaml
 <atom:ImagePreviewer Width="200" FallbackImageSrc="{Binding FallbackImage}"/>
 ```
 
-### 单张图->画廊
+### 画廊模式
 
-当 `Sources` 属性绑定的是多张图片时，会自动进入画廊模式，此时 `Sources` 绑定的图片源会作为画廊的图片源。
+当 `Sources` 属性绑定多张图片时，组件会自动进入画廊模式，预览时可在多张图片之间左右切换。
 
-![AtomUI ImagePreview组件](./images/gallery.webp)
+![AtomUI ImagePreviewer组件](./images/gallery.webp)
 
 ```xaml
 <atom:ImagePreviewer Width="200" Sources="{Binding ThreeImages}"/>
@@ -38,9 +38,9 @@
 
 ### 自定义预览图
 
-默认情况下 `ImagePreviewer` 会将实际要加载的图片作为预览图；开发者可以通过 `CoverImageSrc` 属性设置一个自定义的预览图。
+默认情况下 `ImagePreviewer` 会将实际要加载的图片作为封面。开发者可以通过 `CoverImageSrc` 属性设置自定义的封面图片，例如使用模糊缩略图来提升加载体验。
 
-![AtomUI ImagePreview组件](./images/custom-preview-image.webp)
+![AtomUI ImagePreviewer组件](./images/custom-preview-image.webp)
 
 ```xaml
 <atom:ImagePreviewer Width="200" Sources="{Binding DefaultImages}" CoverImageSrc="{Binding BlurImage}"/>
@@ -48,9 +48,9 @@
 
 ### 多图浏览
 
-`atom:ImageGroupPreviewer` 组件可以预览多张图片，在预览时就可以形成一个左右横向的画廊。
+`ImageGroupPreviewer` 组件支持同时展示多张图片的封面缩略图，点击任意一张即可打开画廊预览。
 
-![AtomUI ImagePreview组件](./images/multiple-image.webp)
+![AtomUI ImagePreviewer组件](./images/multiple-image.webp)
 
 ```xaml
 <atom:ImageGroupPreviewer Sources="{Binding TwoImages}" CoverWidth="200" CoverHeight="200"/>
