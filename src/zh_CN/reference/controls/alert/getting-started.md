@@ -9,7 +9,7 @@
 
 Alert 提供四种类型，通过 `Type` 属性设置，分别表达不同的语义。Message 内容可直接作为 Alert 的 Content 书写。
 
-![AtomUI Alert 基础用法](./images/basic.png)
+![AtomUI Alert 四种类型](./images/different-types.png)
 
 ```xaml
 <StackPanel Orientation="Vertical" Spacing="10">
