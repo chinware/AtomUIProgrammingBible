@@ -6,6 +6,29 @@
 ## Contribution
 Everyone is welcome to help improve the documentation. To contribute to the AtomUI documentation, you need to fork this repository and submit a pull request for your proposed markdown or image changes.
 
+## DocsKit Layout
+
+This repository uses the AtomIdea DocsKit manual layout compatible with ABP Docs:
+
+```text
+src/
++-- docs-langs.json
+`-- zh-Hans/
+    +-- docs-nav.json
+    +-- docs-params.json
+    +-- Index.md
+    `-- ...
+```
+
+Recommended DocsKit project settings:
+
+- `RepositoryRootPath`: `src`
+- `LanguageConfigDocumentName`: `docs-langs.json`
+- `TableOfContentDocumentName`: `docs-nav.json`
+- `ParametersDocumentName`: `docs-params.json`
+- `DefaultDocumentName`: `Index`
+- `DefaultLanguageCode`: `zh-Hans`
+
 ## Thanks
 Thank you for all your contributions and efforts to improve the AtomUI documentation. Thank you for being a member of our AtomUI/Avalonia community and building a useful cross-platform desktop software control library together.
 
